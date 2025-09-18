@@ -1,0 +1,4009 @@
+{
+  "produtos": [
+    {
+      "id": 791,
+      "tipo": "simple",
+      "sku": "SKU-72MQQO",
+      "name": "STIG LUSH ICE",
+      "price": "175",
+      "categories": "DESCARTÁVEL, VGOD STIG > STIG CAIXA 900, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2021/02/WhatsApp-Image-2023-06-01-at-21.44.31.jpeg, https://mypodss.com/wp-content/uploads/2021/02/Lush-Ice.jpg"
+    },
+    {
+      "id": 794,
+      "tipo": "simple",
+      "sku": "SKU-JR3TAV",
+      "name": "JUUL MANGO 1.8%",
+      "price": "200",
+      "categories": "JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/02/WhatsApp-Image-2023-06-01-at-21.28.14.jpeg, https://mypodss.com/wp-content/uploads/2021/02/mango.jpg"
+    },
+    {
+      "id": 799,
+      "tipo": "simple",
+      "sku": "SKU-XNBKUR",
+      "name": "STIG CAIXA MANGO BOMB",
+      "price": "70",
+      "categories": "DESCARTÁVEL, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2022/02/15.png, https://mypodss.com/wp-content/uploads/2021/02/stig-mango-bomb-min.png"
+    },
+    {
+      "id": 801,
+      "tipo": "simple",
+      "sku": "SKU-514JBP",
+      "name": "STIG PURPLE BOMB",
+      "price": "175",
+      "categories": "DESCARTÁVEL, VGOD STIG > STIG CAIXA 900, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2021/02/WhatsApp-Image-2023-06-01-at-21.45.14.jpeg, https://mypodss.com/wp-content/uploads/2021/02/sitg-purple-bomb_grande.jpg"
+    },
+    {
+      "id": 804,
+      "tipo": "simple",
+      "sku": "SKU-K8A1XQ",
+      "name": "STIG MIGHTY MINT",
+      "price": "160",
+      "categories": "DESCARTÁVEL, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2021/02/Design-sem-nome-3.jpg, https://mypodss.com/wp-content/uploads/2021/02/STIG-MIGHTY-MINT.jpg"
+    },
+    {
+      "id": 806,
+      "tipo": "simple",
+      "sku": "SKU-R60ASE",
+      "name": "STIG CRISP APPLE",
+      "price": "175",
+      "categories": "DESCARTÁVEL, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2021/02/Design-sem-nome-2.jpg, https://mypodss.com/wp-content/uploads/2021/02/cripsapple.jpg"
+    },
+    {
+      "id": 809,
+      "tipo": "simple",
+      "sku": "SKU-MMSNLH",
+      "name": "LUSH ICE",
+      "price": "80",
+      "categories": "DESCARTÁVEL, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2021/02/STIG-PODS_Lush_Ice.webp, https://mypodss.com/wp-content/uploads/2021/02/Stig-Pods-VGOD-Lush-Ice.jpg"
+    },
+    {
+      "id": 812,
+      "tipo": "simple",
+      "sku": "SKU-TEEQC8",
+      "name": "CRISP APPLE",
+      "price": "80",
+      "categories": "DESCARTÁVEL, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2021/02/crispapple.png, https://mypodss.com/wp-content/uploads/2021/02/crisp.jpg"
+    },
+    {
+      "id": 814,
+      "tipo": "simple",
+      "sku": "SKU-Y4ESU0",
+      "name": "PURPLE BOMB",
+      "price": "80",
+      "categories": "DESCARTÁVEL, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2021/02/purple.png, https://mypodss.com/wp-content/uploads/2021/02/Purple-Bomb-Product.png"
+    },
+    {
+      "id": 816,
+      "tipo": "simple",
+      "sku": "SKU-DO25NI",
+      "name": "MIGHTY MINT",
+      "price": "80",
+      "categories": "DESCARTÁVEL, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2021/02/WhatsApp-Image-2021-03-17-at-14.55.58.jpeg, https://mypodss.com/wp-content/uploads/2021/02/MIGHTY-MINT-1.jpg"
+    },
+    {
+      "id": 818,
+      "tipo": "simple",
+      "sku": "SKU-S3CH0A",
+      "name": "MANGO BOMB",
+      "price": "80",
+      "categories": "DESCARTÁVEL, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2021/02/lushice.png.png, https://mypodss.com/wp-content/uploads/2021/02/mango1stig.jpg"
+    },
+    {
+      "id": 820,
+      "tipo": "simple",
+      "sku": "SKU-UBX2UY",
+      "name": "JUUL MINT",
+      "price": "350",
+      "categories": "JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/03/2.jpg, https://mypodss.com/wp-content/uploads/2021/02/mint.jpg"
+    },
+    {
+      "id": 822,
+      "tipo": "simple",
+      "sku": "SKU-3V2197",
+      "name": "JUUL FRUIT MEDLEY",
+      "price": "245",
+      "categories": "JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/03/4.jpg, https://mypodss.com/wp-content/uploads/2021/02/fruit-medley.jpg"
+    },
+    {
+      "id": 824,
+      "tipo": "simple",
+      "sku": "SKU-QNJQ5U",
+      "name": "JUUL CUCUMBER",
+      "price": "245",
+      "categories": "JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/02/juul-cucumber.png, https://mypodss.com/wp-content/uploads/2021/02/cucumber.jpg"
+    },
+    {
+      "id": 826,
+      "tipo": "simple",
+      "sku": "SKU-RLAFMN",
+      "name": "JUUL PODS MENTHOL 5% 4 PACK",
+      "price": "240",
+      "categories": "JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/02/WhatsApp-Image-2023-03-07-at-21.37.46.jpeg, https://mypodss.com/wp-content/uploads/2021/03/menthol.jpg"
+    },
+    {
+      "id": 828,
+      "tipo": "simple",
+      "sku": "SKU-X7CZLT",
+      "name": "JUUL PODS VIRGINIA TOBACCO 5% 4PACK",
+      "price": "240",
+      "categories": "JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/03/5.jpg, https://mypodss.com/wp-content/uploads/2021/03/5beabbffa2.png"
+    },
+    {
+      "id": 830,
+      "tipo": "simple",
+      "sku": "SKU-4DPACL",
+      "name": "JUUL FLAVOR MULTIPACK",
+      "price": "120",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/02/FLAVOR-MULTIPACK.jpg"
+    },
+    {
+      "id": 832,
+      "tipo": "simple",
+      "sku": "SKU-W6U3YV",
+      "name": "JUUL DEVICE BLACK",
+      "price": "260",
+      "categories": "JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/03/13.jpg, https://mypodss.com/wp-content/uploads/2021/02/DEVICE-BLACK-Acess.jpg"
+    },
+    {
+      "id": 963,
+      "tipo": "simple",
+      "sku": "SKU-0S5MT1",
+      "name": "PACOTE JUUL VIRGINIA",
+      "price": "2400,00",
+      "categories": "DESCARTÁVEL > COMPRE EM ATACADO, JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/03/11.jpg, https://mypodss.com/wp-content/uploads/2021/03/5beabbffa2.png"
+    },
+    {
+      "id": 968,
+      "tipo": "simple",
+      "sku": "SKU-U58JAV",
+      "name": "PACOTE JUUL MENTHOL",
+      "price": "2400",
+      "categories": "DESCARTÁVEL > COMPRE EM ATACADO, JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/03/10.jpg, https://mypodss.com/wp-content/uploads/2021/03/menthol.jpg"
+    },
+    {
+      "id": 971,
+      "tipo": "simple",
+      "sku": "SKU-1BR1CC",
+      "name": "COMBO JUUL MENTHOL",
+      "price": "440",
+      "categories": "JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/03/9.jpg, https://mypodss.com/wp-content/uploads/2021/03/menthol.jpg, https://mypodss.com/wp-content/uploads/2022/01/juulprata.webp"
+    },
+    {
+      "id": 985,
+      "tipo": "simple",
+      "sku": "SKU-RFXU7J",
+      "name": "COMBO STIG MINT",
+      "price": "1750",
+      "categories": "DESCARTÁVEL > COMPRE EM ATACADO, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2022/02/19.png, https://mypodss.com/wp-content/uploads/2021/02/802736_stig_salt_nic_mighty_mint_001.png"
+    },
+    {
+      "id": 991,
+      "tipo": "simple",
+      "sku": "SKU-NU39S3",
+      "name": "COMBO STIG PURPLE BOMB",
+      "price": "700",
+      "categories": "DESCARTÁVEL > COMPRE EM ATACADO, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2022/02/20.png, https://mypodss.com/wp-content/uploads/2021/02/purple.png, https://mypodss.com/wp-content/uploads/2022/02/16.png"
+    },
+    {
+      "id": 992,
+      "tipo": "simple",
+      "sku": "SKU-HAPF89",
+      "name": "COMBO STIG LUSH ICE",
+      "price": "700",
+      "categories": "DESCARTÁVEL > COMPRE EM ATACADO, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2022/02/21.png, https://mypodss.com/wp-content/uploads/2021/02/unidaedelus.png"
+    },
+    {
+      "id": 994,
+      "tipo": "simple",
+      "sku": "SKU-K6NHPZ",
+      "name": "COMBO JUUL VIRGINIA",
+      "price": "440",
+      "categories": "JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/03/8.jpg, https://mypodss.com/wp-content/uploads/2021/03/5beabbffa2.png"
+    },
+    {
+      "id": 1002,
+      "tipo": "simple",
+      "sku": "SKU-U6VK7O",
+      "name": "ATACADO STIG 50 CAIXAS",
+      "price": "3500",
+      "categories": "DESCARTÁVEL > COMPRE EM ATACADO, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2021/03/combo.jpg"
+    },
+    {
+      "id": 1004,
+      "tipo": "simple",
+      "sku": "SKU-5OG2CR",
+      "name": "ATACADO STIG 80 CAIXAS",
+      "price": "5600",
+      "categories": "DESCARTÁVEL > COMPRE EM ATACADO, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2021/03/combo.jpg"
+    },
+    {
+      "id": 1005,
+      "tipo": "simple",
+      "sku": "SKU-TOFAFM",
+      "name": "ATACADO STIG 200 CAIXAS",
+      "price": "18000",
+      "categories": "DESCARTÁVEL > COMPRE EM ATACADO, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2021/03/combo.jpg"
+    },
+    {
+      "id": 1007,
+      "tipo": "simple",
+      "sku": "SKU-XQJQRD",
+      "name": "ATACADO STIG 100 CAIXAS",
+      "price": "12000",
+      "categories": "DESCARTÁVEL > COMPRE EM ATACADO, VGOD STIG",
+      "images": "https://mypodss.com/wp-content/uploads/2021/03/combo.jpg"
+    },
+    {
+      "id": 1039,
+      "tipo": "simple",
+      "sku": "SKU-82GOAZ",
+      "name": "JUUL DEVICE SILVER",
+      "price": "280",
+      "categories": "JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/03/12.jpg, https://mypodss.com/wp-content/uploads/2021/12/juulprata.jpg"
+    },
+    {
+      "id": 1151,
+      "tipo": "simple",
+      "sku": "SKU-267R80",
+      "name": "MASKKING HIGH PRO PEACH ICE",
+      "price": "120",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2021/05/16.png, https://mypodss.com/wp-content/uploads/2021/05/propeachice.png"
+    },
+    {
+      "id": 1155,
+      "tipo": "simple",
+      "sku": "SKU-39HIMJ",
+      "name": "MASKKING HIGH PRO LUSH ICE",
+      "price": "120",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2021/05/19.png, https://mypodss.com/wp-content/uploads/2021/05/Lush-Ice.jpg"
+    },
+    {
+      "id": 1157,
+      "tipo": "simple",
+      "sku": "SKU-ML8OUF",
+      "name": "MASKKING HIGH PRO STRAWLYCHEE",
+      "price": "120",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2021/05/20.png, https://mypodss.com/wp-content/uploads/2021/05/prostraw.png"
+    },
+    {
+      "id": 1160,
+      "tipo": "simple",
+      "sku": "SKU-OHUCDL",
+      "name": "MASKKING HIGH PRO MANGO ICE",
+      "price": "120",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2021/05/17.png"
+    },
+    {
+      "id": 1162,
+      "tipo": "simple",
+      "sku": "SKU-WOAMDI",
+      "name": "MASKKING HIGH PRO COOL MINT",
+      "price": "120",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2021/05/18.png, https://mypodss.com/wp-content/uploads/2021/05/Maskking-High-Pro-Cool-Mint.png"
+    },
+    {
+      "id": 1165,
+      "tipo": "simple",
+      "sku": "SKU-ZQVG2W",
+      "name": "MASKKING HIGH PRO BANANA ICE",
+      "price": "120",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2021/05/21.png, https://mypodss.com/wp-content/uploads/2021/05/Maskking-High-Pro-Banana-Ice.jpg"
+    },
+    {
+      "id": 1167,
+      "tipo": "simple",
+      "sku": "SKU-XJTQR9",
+      "name": "MASKKING HIGH PRO PINEAPPLE",
+      "price": "120",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2021/05/21.jpg, https://mypodss.com/wp-content/uploads/2021/05/Maskking-High-Pro-Pineapple.jpg"
+    },
+    {
+      "id": 1170,
+      "tipo": "simple",
+      "sku": "SKU-XFBA4K",
+      "name": "MASKKING HIGH PRO CHERRY ICE",
+      "price": "120",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2021/05/22.png, https://mypodss.com/wp-content/uploads/2021/05/maskking-high-pro-cherry-ice.jpg"
+    },
+    {
+      "id": 1172,
+      "tipo": "simple",
+      "sku": "SKU-SXSASV",
+      "name": "Pod descartável Maskking High Pro MAX – Guava Raspberry",
+      "price": "55",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2021/05/Masking_GuavaRaspberry_620x.png"
+    },
+    {
+      "id": 1175,
+      "tipo": "simple",
+      "sku": "SKU-7NOI61",
+      "name": "Pod descartável Maskking High Pro MAX – Strawberry Lychee",
+      "price": "55",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2021/05/starwliche.png"
+    },
+    {
+      "id": 1176,
+      "tipo": "simple",
+      "sku": "SKU-DH0IHP",
+      "name": "Pod descartável Maskking High Pro MAX – Grape",
+      "price": "55",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2021/05/maksgrape.png"
+    },
+    {
+      "id": 1179,
+      "tipo": "simple",
+      "sku": "SKU-PLCES2",
+      "name": "Pod descartável Maskking High Pro MAX – Apple ice",
+      "price": "55",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2021/05/Masking_AppleIce_620x.png"
+    },
+    {
+      "id": 1182,
+      "tipo": "simple",
+      "sku": "SKU-T0XGCQ",
+      "name": "Pod descartável Maskking High Pro MAX – Lemon",
+      "price": "55",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2021/05/WhatsApp-Image-2021-05-21-at-17.47.45.jpeg"
+    },
+    {
+      "id": 1244,
+      "tipo": "simple",
+      "sku": "SKU-OXEWAY",
+      "name": "JUUL DEVICE RED EDIÇÃO LIMITADA",
+      "price": "599",
+      "categories": "JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/03/6.jpg, https://mypodss.com/wp-content/uploads/2021/07/juulrubyy.png"
+    },
+    {
+      "id": 1288,
+      "tipo": "simple",
+      "sku": "SKU-1935D6",
+      "name": "IGNITE STRAWBERRY GUAVA ICE",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2021/12/18.png, https://mypodss.com/wp-content/uploads/2021/11/Ignite-Strawberry-Guava-Ice.jpg"
+    },
+    {
+      "id": 1294,
+      "tipo": "simple",
+      "sku": "SKU-OVT5EV",
+      "name": "IGNITE PEACH CANTALOUPE PAPAYA",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2021/12/21.png, https://mypodss.com/wp-content/uploads/2021/11/pod-descartavel-v15-ignite-peach-cantaloupe-papaya-1500-pufF.jpg"
+    },
+    {
+      "id": 1296,
+      "tipo": "simple",
+      "sku": "SKU-11TBAH",
+      "name": "IGNITE SKITTLES",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2021/12/17.png, https://mypodss.com/wp-content/uploads/2021/11/IGNITE-V15-SKITTLES.jpg"
+    },
+    {
+      "id": 1297,
+      "tipo": "simple",
+      "sku": "SKU-ARRN0Y",
+      "name": "IGNITE ORANGE ICE",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2021/12/20.png, https://mypodss.com/wp-content/uploads/2021/11/Ignite-Orange-Ice.jpg"
+    },
+    {
+      "id": 1378,
+      "tipo": "simple",
+      "sku": "SKU-6EFHHF",
+      "name": "IGNITE BANANA ICE",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2021/12/19.png, https://mypodss.com/wp-content/uploads/2021/12/Ignite-banana-2.jpg"
+    },
+    {
+      "id": 1390,
+      "tipo": "simple",
+      "sku": "SKU-6NZ085",
+      "name": "IGNITE CRANBERRY LEMONADE",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2021/12/Design-sem-nome.jpg, https://mypodss.com/wp-content/uploads/2021/12/cranberry-lemonade-300x300-1.jpg"
+    },
+    {
+      "id": 1532,
+      "tipo": "bundle",
+      "sku": "SKU-COEG0X",
+      "name": "MASKKING 2 UNIDADES",
+      "price": "230",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2021/05/22.jpg, https://mypodss.com/wp-content/uploads/2022/02/promo.jpeg"
+    },
+    {
+      "id": 1620,
+      "tipo": "simple",
+      "sku": "SKU-JLP5M7",
+      "name": "JUUL ALPINE BERRY 1.8%",
+      "price": "200",
+      "categories": "JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/03/3.jpg, https://mypodss.com/wp-content/uploads/2022/01/juul-pods-alpine-berry-x4_2.jpg"
+    },
+    {
+      "id": 1626,
+      "tipo": "simple",
+      "sku": "SKU-1M6LHR",
+      "name": "JUUL GOLDEN TOBACCO 1.8%",
+      "price": "200",
+      "categories": "JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2022/01/WhatsApp-Image-2023-05-30-at-16.20.54.jpeg, https://mypodss.com/wp-content/uploads/2022/01/juul-pods-rich-tobacco-x4_1.jpg"
+    },
+    {
+      "id": 1629,
+      "tipo": "simple",
+      "sku": "SKU-6Y6UBO",
+      "name": "STARTER PACK + DEVICE RED",
+      "price": "600",
+      "categories": "JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/03/7.jpg, https://mypodss.com/wp-content/uploads/2022/01/Flavor-multipack.jpg, https://mypodss.com/wp-content/uploads/2022/01/device-red.png"
+    },
+    {
+      "id": 1772,
+      "tipo": "simple",
+      "sku": "SKU-N8KD83",
+      "name": "VGOD 1K MIGHTY MINT",
+      "price": "130,00",
+      "categories": "DESCARTÁVEL, VGOD STIG, VGOD STIG > VGOD STIG1K",
+      "images": "https://mypodss.com/wp-content/uploads/2022/02/22.png, https://mypodss.com/wp-content/uploads/2022/02/VGOD-1K-MIGHTY-MINT.jpg"
+    },
+    {
+      "id": 1774,
+      "tipo": "simple",
+      "sku": "SKU-GY4UUW",
+      "name": "VGOD 1K MANGO BOMB",
+      "price": "90",
+      "categories": "DESCARTÁVEL, VGOD STIG, VGOD STIG > VGOD STIG1K",
+      "images": "https://mypodss.com/wp-content/uploads/2022/02/23.png, https://mypodss.com/wp-content/uploads/2022/02/vgod_pod_1k_iced_mango_bomb_20mg_ml-1000_puffs.jpg"
+    },
+    {
+      "id": 1776,
+      "tipo": "simple",
+      "sku": "SKU-P15NPK",
+      "name": "VGOD 1K CRISPY APPLE",
+      "price": "130",
+      "categories": "DESCARTÁVEL, VGOD STIG, VGOD STIG > VGOD STIG1K",
+      "images": "https://mypodss.com/wp-content/uploads/2022/02/18.png, https://mypodss.com/wp-content/uploads/2022/02/vgod-pod-1k-crisp-apple-box_1024x1024.jpg"
+    },
+    {
+      "id": 1827,
+      "tipo": "simple",
+      "sku": "SKU-PGPO4K",
+      "name": "VIZO GRAPE ICE",
+      "price": "165",
+      "categories": "DESCARTÁVEL, VIZO",
+      "images": "https://mypodss.com/wp-content/uploads/2022/02/WhatsApp_Image_2022-02-23_at_11.45.45-removebg-preview-1.png"
+    },
+    {
+      "id": 1829,
+      "tipo": "simple",
+      "sku": "SKU-H6PFH4",
+      "name": "VIZO BANANA ICE",
+      "price": "165,00",
+      "categories": "DESCARTÁVEL, VIZO",
+      "images": "https://mypodss.com/wp-content/uploads/2022/02/WhatsApp_Image_2022-02-23_at_11.45.43__1_-removebg-preview-1.png"
+    },
+    {
+      "id": 1831,
+      "tipo": "simple",
+      "sku": "SKU-G431AS",
+      "name": "VIZO MINT",
+      "price": "165,00",
+      "categories": "DESCARTÁVEL, VIZO",
+      "images": "https://mypodss.com/wp-content/uploads/2022/02/7-removebg-preview.png, https://mypodss.com/wp-content/uploads/2022/02/Foto-24-02-2022-18-43-04.png"
+    },
+    {
+      "id": 1839,
+      "tipo": "simple",
+      "sku": "SKU-OWL2H3",
+      "name": "VIZO LYCHEE",
+      "price": "165,00",
+      "categories": "DESCARTÁVEL, VIZO",
+      "images": "https://mypodss.com/wp-content/uploads/2022/02/WhatsApp_Image_2022-02-23_at_11.45.44-removebg-preview.png, https://mypodss.com/wp-content/uploads/2022/02/Foto-24-02-2022-17-58-39.png"
+    },
+    {
+      "id": 1840,
+      "tipo": "simple",
+      "sku": "SKU-4L59V9",
+      "name": "VIZO STRAWBERRY E BANANA",
+      "price": "165,00",
+      "categories": "DESCARTÁVEL, VIZO",
+      "images": "https://mypodss.com/wp-content/uploads/2022/02/WhatsApp_Image_2022-02-23_at_11.45.43-removebg-preview.png"
+    },
+    {
+      "id": 1842,
+      "tipo": "simple",
+      "sku": "SKU-KYYGC4",
+      "name": "VIZO WATERMELON ICE",
+      "price": "165,00",
+      "categories": "DESCARTÁVEL, VIZO",
+      "images": "https://mypodss.com/wp-content/uploads/2022/02/WhatsApp_Image_2022-02-23_at_11.45.45__1_-removebg-preview.png, https://mypodss.com/wp-content/uploads/2022/02/Foto-24-02-2022-17-59-13.png, https://mypodss.com/wp-content/uploads/2022/02/7.png, https://mypodss.com/wp-content/uploads/2022/02/9.png"
+    },
+    {
+      "id": 1848,
+      "tipo": "simple",
+      "sku": "SKU-RB9Q04",
+      "name": "VIZO MANGO ICE",
+      "price": "165",
+      "categories": "DESCARTÁVEL, VIZO",
+      "images": "https://mypodss.com/wp-content/uploads/2022/02/WhatsApp_Image_2022-02-23_at_11.45.44__1_-removebg-preview.png, https://mypodss.com/wp-content/uploads/2022/02/Foto-24-02-2022-17-57-57.png"
+    },
+    {
+      "id": 2032,
+      "tipo": "simple",
+      "sku": "SKU-KWL9OD",
+      "name": "MASKKING HIGH PRO BLUE RAZZ",
+      "price": "120",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2021/05/14.png"
+    },
+    {
+      "id": 2048,
+      "tipo": "simple",
+      "sku": "SKU-G7OA71",
+      "name": "IGNITE GREEN APPLE PEACH KIWI",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2021/12/16.png"
+    },
+    {
+      "id": 2127,
+      "tipo": "simple",
+      "sku": "SKU-HVSKJ8",
+      "name": "VIZO RELAX MANGO E MELATONIN",
+      "price": "289",
+      "categories": "DESCARTÁVEL, VIZO",
+      "images": "https://mypodss.com/wp-content/uploads/2021/02/WhatsApp-Image-2023-03-07-at-21.37.33.jpeg, https://mypodss.com/wp-content/uploads/2022/03/vizo-A.png"
+    },
+    {
+      "id": 2129,
+      "tipo": "simple",
+      "sku": "SKU-C63L23",
+      "name": "VIZO ENERGY CAFEINA E BERRIES",
+      "price": "289",
+      "categories": "VIZO",
+      "images": "https://mypodss.com/wp-content/uploads/2022/03/WhatsApp-Image-2023-03-09-at-20.01.53.jpeg, https://mypodss.com/wp-content/uploads/2022/03/vizo-A.png"
+    },
+    {
+      "id": 2186,
+      "tipo": "simple",
+      "sku": "SKU-4Q4HMA",
+      "name": "Juul Mango 1.8%",
+      "price": "300",
+      "categories": "JUUL, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2021/02/mango.png"
+    },
+    {
+      "id": 2189,
+      "tipo": "simple",
+      "sku": "SKU-OGBGYP",
+      "name": "Kit Vizo 7 Flavours + 1 Energy",
+      "price": "1110",
+      "categories": "VIZO",
+      "images": "https://mypodss.com/wp-content/uploads/2022/04/4.png, https://mypodss.com/wp-content/uploads/2022/04/5.png, https://mypodss.com/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-18-at-11.11.04.jpeg"
+    },
+    {
+      "id": 2202,
+      "tipo": "simple",
+      "sku": "SKU-3VYAN9",
+      "name": "Vizo 30 unidades Atacado",
+      "price": "4350",
+      "categories": "DESCARTÁVEL > COMPRE EM ATACADO, VIZO",
+      "images": "https://mypodss.com/wp-content/uploads/2022/02/14-1.png, https://mypodss.com/wp-content/uploads/2022/02/16-1.png"
+    },
+    {
+      "id": 2221,
+      "tipo": "simple",
+      "sku": "SKU-9JJUJD",
+      "name": "VGOD 1K LUSH ICE",
+      "price": "130",
+      "categories": "DESCARTÁVEL, VGOD STIG, VGOD STIG > VGOD STIG1K",
+      "images": "https://mypodss.com/wp-content/uploads/2022/05/Design-sem-nome.png, https://mypodss.com/wp-content/uploads/2022/02/vgod_pod_1k_iced_mango_bomb_20mg_ml-1000_puffs.jpg"
+    },
+    {
+      "id": 2233,
+      "tipo": "simple",
+      "sku": "SKU-QI7K5O",
+      "name": "STARTER KIT JUUL 2 C/ 2 PODS",
+      "price": "290",
+      "categories": "JUUL2, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2022/06/WhatsApp-Image-2023-05-30-at-16.01.28.jpeg"
+    },
+    {
+      "id": 2248,
+      "tipo": "simple",
+      "sku": "SKU-N1RITY",
+      "name": "Juul2 Summer Menthol",
+      "price": "215",
+      "categories": "JUUL2, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2022/07/WhatsApp-Image-2023-05-30-at-15.59.05.jpeg"
+    },
+    {
+      "id": 2255,
+      "tipo": "simple",
+      "sku": "SKU-VTU13D",
+      "name": "Juul2 Polar Menthol",
+      "price": "215",
+      "categories": "JUUL2, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2022/07/WhatsApp-Image-2023-05-30-at-15.57.39.jpeg"
+    },
+    {
+      "id": 2257,
+      "tipo": "simple",
+      "sku": "SKU-W818WH",
+      "name": "Juul2 Virginia Tobacco",
+      "price": "215",
+      "categories": "JUUL2, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2022/07/WhatsApp-Image-2023-05-30-at-15.56.25.jpeg"
+    },
+    {
+      "id": 2283,
+      "tipo": "simple",
+      "sku": "SKU-ERREUZ",
+      "name": "Juul2 Ruby Menthol",
+      "price": "215",
+      "categories": "JUUL2, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2022/08/WhatsApp-Image-2023-05-30-at-15.55.33.jpeg"
+    },
+    {
+      "id": 2320,
+      "tipo": "simple",
+      "sku": "SKU-13TFWA",
+      "name": "Juul2 Autumn Tobacco",
+      "price": "215",
+      "categories": "JUUL2, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/WhatsApp-Image-2023-05-30-at-15.54.39.jpeg"
+    },
+    {
+      "id": 2321,
+      "tipo": "simple",
+      "sku": "SKU-8VASTN",
+      "name": "Juul2 Crisp Menthol",
+      "price": "215",
+      "categories": "JUUL2, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/WhatsApp-Image-2023-05-30-at-15.53.48.jpeg"
+    },
+    {
+      "id": 2323,
+      "tipo": "simple",
+      "sku": "SKU-I5HREG",
+      "name": "JUUL2 DEVICE",
+      "price": "300",
+      "categories": "JUUL2, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/WhatsApp-Image-2023-05-30-at-15.41.48.jpeg"
+    },
+    {
+      "id": 2325,
+      "tipo": "simple",
+      "sku": "SKU-4QZWCU",
+      "name": "IGNITE BLUEBERRY ICE",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/Ignite-V15-1500-Puffs-3.jpg, https://mypodss.com/wp-content/uploads/2021/11/Ignite-Orange-Ice.jpg"
+    },
+    {
+      "id": 2329,
+      "tipo": "simple",
+      "sku": "SKU-LRTVSJ",
+      "name": "IGNITE  BLUERAZZ",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/FOTOS-SITE-0703.jpg"
+    },
+    {
+      "id": 2331,
+      "tipo": "simple",
+      "sku": "SKU-P79NA6",
+      "name": "IGNITE  ICY MINT",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/Ignite-V15-1500-Puffs-2.jpg"
+    },
+    {
+      "id": 2333,
+      "tipo": "simple",
+      "sku": "SKU-VK2BXE",
+      "name": "IGNITE  MENTHOL",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2021/11/FOTOS-SITE-0703.png"
+    },
+    {
+      "id": 2337,
+      "tipo": "simple",
+      "sku": "SKU-NAHD8B",
+      "name": "IGNITE  PEACH",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/Ignite-V15-1500-Puffs-1.jpg"
+    },
+    {
+      "id": 2339,
+      "tipo": "simple",
+      "sku": "SKU-VVG14B",
+      "name": "IGNITE  STRAWBERRY APPLE WATERMELON",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/Ignite-V15-1500-Puffs.jpg"
+    },
+    {
+      "id": 2341,
+      "tipo": "simple",
+      "sku": "SKU-CU15T8",
+      "name": "IGNITE WATERMELON ICE",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/FOTOS-SITE-0703-2.png"
+    },
+    {
+      "id": 2343,
+      "tipo": "simple",
+      "sku": "SKU-TVVEGQ",
+      "name": "MASKKING HIGH PRO GUAVA ICE",
+      "price": "120",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/Guava-Ice.jpeg"
+    },
+    {
+      "id": 2345,
+      "tipo": "simple",
+      "sku": "SKU-4PGTOT",
+      "name": "MASKKING HIGH PRO O.M.G",
+      "price": "120",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/download-2.jpeg"
+    },
+    {
+      "id": 2347,
+      "tipo": "simple",
+      "sku": "SKU-XX3GJM",
+      "name": "MASKKING HIGH PRO APPLE CHAMPAGNE",
+      "price": "120",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/e5d5d84620-1.webp"
+    },
+    {
+      "id": 2349,
+      "tipo": "simple",
+      "sku": "SKU-ME3T8W",
+      "name": "MASKKING HIGH PRO MIXED BERRIES",
+      "price": "120",
+      "categories": "DESCARTÁVEL, MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/pod_descartavel_maskking_high_pro_1000_puffs_mixed_berries_7475_1_3eda03b5143a870d675d2e7536bf9b47.webp"
+    },
+    {
+      "id": 2351,
+      "tipo": "simple",
+      "sku": "SKU-WBB993",
+      "name": "MASKKING HIGH PRO GUAVA KIWI STRAWBERRY",
+      "price": "120",
+      "categories": "MASKKING",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/GUAVA-KIWI-STRAW-ICE.webp"
+    },
+    {
+      "id": 2353,
+      "tipo": "simple",
+      "sku": "SKU-W4O1YC",
+      "name": "ELF BAR 4000 BLUEBERRY ICE",
+      "price": "115",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/WhatsApp-Image-2023-03-07-at-21.22.54.jpeg"
+    },
+    {
+      "id": 2355,
+      "tipo": "simple",
+      "sku": "SKU-3PFICD",
+      "name": "ELF BAR 4000 PEACH MANGO WATERMELON",
+      "price": "115",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/WhatsApp-Image-2023-03-07-at-21.23.40.jpeg"
+    },
+    {
+      "id": 2357,
+      "tipo": "simple",
+      "sku": "SKU-WLJFQN",
+      "name": "ELF BAR 4000 PASSION FRUIT ORANGE GUAVA",
+      "price": "115",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/WhatsApp-Image-2023-03-07-at-21.23.51.jpeg"
+    },
+    {
+      "id": 2362,
+      "tipo": "simple",
+      "sku": "SKU-QNBBP7",
+      "name": "ELF BAR 4000 SAKURA GRAPE",
+      "price": "115",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/WhatsApp-Image-2023-03-07-at-21.22.30.jpeg"
+    },
+    {
+      "id": 2364,
+      "tipo": "simple",
+      "sku": "SKU-2WIM8J",
+      "name": "ELF BAR 4000 TRIPLE BERRY",
+      "price": "115",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-07-at-20.12.24.jpeg"
+    },
+    {
+      "id": 2366,
+      "tipo": "simple",
+      "sku": "SKU-N5WAZS",
+      "name": "ELF BAR 4000 KIWI PASSION FRUIT GUAVA",
+      "price": "115",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/WhatsApp-Image-2023-03-07-at-21.22.41.jpeg"
+    },
+    {
+      "id": 2374,
+      "tipo": "simple",
+      "sku": "SKU-S1J4G0",
+      "name": "VGOD 1K DRY TOBACCO",
+      "price": "130",
+      "categories": "DESCARTÁVEL, VGOD STIG, VGOD STIG > VGOD STIG1K",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/WhatsApp-Image-2023-03-07-at-19.44.05.jpeg, https://mypodss.com/wp-content/uploads/2022/02/vgod_pod_1k_iced_mango_bomb_20mg_ml-1000_puffs.jpg"
+    },
+    {
+      "id": 2376,
+      "tipo": "simple",
+      "sku": "SKU-BW1TCI",
+      "name": "VGOD 1K PURPLE BOMB",
+      "price": "130",
+      "categories": "DESCARTÁVEL, VGOD STIG, VGOD STIG > VGOD STIG1K",
+      "images": "https://mypodss.com/wp-content/uploads/2022/10/WhatsApp-Image-2023-03-07-at-20.03.14.jpeg, https://mypodss.com/wp-content/uploads/2022/02/vgod_pod_1k_iced_mango_bomb_20mg_ml-1000_puffs.jpg"
+    },
+    {
+      "id": 2555,
+      "tipo": "simple",
+      "sku": "SKU-4HAD19",
+      "name": "ELF BAR 4000 BLUERAZZ ICE",
+      "price": "115",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-07-at-20.32.25.jpeg"
+    },
+    {
+      "id": 2557,
+      "tipo": "simple",
+      "sku": "SKU-UY7T6O",
+      "name": "ELF BAR 4000 WATERMELON ICE",
+      "price": "115",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-07-at-20.18.17.jpeg"
+    },
+    {
+      "id": 2559,
+      "tipo": "simple",
+      "sku": "SKU-Z6L5SU",
+      "name": "ELF BAR 4000 STRAWBERRY KIWI",
+      "price": "115",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-07-at-20.41.31.jpeg"
+    },
+    {
+      "id": 2563,
+      "tipo": "simple",
+      "sku": "SKU-UNH08T",
+      "name": "ELF BAR 4000 MANGO PEACH",
+      "price": "115",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-07-at-20.50.46.jpeg"
+    },
+    {
+      "id": 2565,
+      "tipo": "simple",
+      "sku": "SKU-DB2ORE",
+      "name": "ELF BAR 4000 LEMON MINT",
+      "price": "115",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-07-at-20.56.56.jpeg"
+    },
+    {
+      "id": 2567,
+      "tipo": "simple",
+      "sku": "SKU-D6Y4L4",
+      "name": "ELF BAR 4000 STRAWBERRY MANGO",
+      "price": "115",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-07-at-21.02.08.jpeg"
+    },
+    {
+      "id": 2569,
+      "tipo": "simple",
+      "sku": "SKU-4W18X5",
+      "name": "ELF BAR 4000 GREEN APPLE",
+      "price": "115",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-07-at-21.16.01.jpeg"
+    },
+    {
+      "id": 2605,
+      "tipo": "simple",
+      "sku": "SKU-1R6EU7",
+      "name": "ELF BAR BC 5000 SOUR APPLE",
+      "price": "90",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-19-at-13.10.17.jpeg"
+    },
+    {
+      "id": 2608,
+      "tipo": "simple",
+      "sku": "SKU-UVYQEJ",
+      "name": "ELF BAR BC 5000 WATERMELON ICE",
+      "price": "90",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-19-at-13.15.18.jpeg"
+    },
+    {
+      "id": 2611,
+      "tipo": "simple",
+      "sku": "SKU-P1ANHB",
+      "name": "ELF BAR BC 5000 TRIPLE BERRY ICE",
+      "price": "90",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-19-at-13.37.44.jpeg"
+    },
+    {
+      "id": 2613,
+      "tipo": "simple",
+      "sku": "SKU-WYS9ZG",
+      "name": "ELF BAR BC 5000 SAKURA GRAPE",
+      "price": "90",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-19-at-13.46.59.jpeg"
+    },
+    {
+      "id": 2615,
+      "tipo": "simple",
+      "sku": "SKU-I6WHK4",
+      "name": "ELF BAR BC 5000 BLUE RAZZ",
+      "price": "90",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-19-at-14.01.18.jpeg"
+    },
+    {
+      "id": 2617,
+      "tipo": "simple",
+      "sku": "SKU-N40XE9",
+      "name": "ELF BAR BC 5000 CRANBERRY GRAPE",
+      "price": "90",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-04-01-at-20.14.28.jpeg"
+    },
+    {
+      "id": 2637,
+      "tipo": "simple",
+      "sku": "SKU-FIF9BG",
+      "name": "VGOD 1K TROPICAL MANGO",
+      "price": "130",
+      "categories": "DESCARTÁVEL, VGOD STIG, VGOD STIG > VGOD STIG1K",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-27-at-11.20.25.jpeg"
+    },
+    {
+      "id": 2639,
+      "tipo": "simple",
+      "sku": "SKU-DPX6E9",
+      "name": "VGOD 1K BERRY BOMB",
+      "price": "130",
+      "categories": "DESCARTÁVEL, VGOD STIG, VGOD STIG > VGOD STIG1K",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-27-at-11.27.43.jpeg"
+    },
+    {
+      "id": 2642,
+      "tipo": "simple",
+      "sku": "SKU-ASA420",
+      "name": "IGNITE V15 MANGO",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-27-at-23.03.26.jpeg"
+    },
+    {
+      "id": 2653,
+      "tipo": "simple",
+      "sku": "SKU-VBJ49R",
+      "name": "ELF BAR BC 5000 STRAWBERRY BANANA",
+      "price": "90",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/03/WhatsApp-Image-2023-03-19-at-14.00.31.jpeg"
+    },
+    {
+      "id": 2654,
+      "tipo": "simple",
+      "sku": "SKU-JJPH4B",
+      "name": "ELF BAR BC 5000 KIWI PASSION FRUIT GUAVA",
+      "price": "90",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-20.38.53.jpeg"
+    },
+    {
+      "id": 2656,
+      "tipo": "simple",
+      "sku": "SKU-ZTYAMT",
+      "name": "ELF BAR BC 5000 LEMON MINT",
+      "price": "90",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-20.43.16.jpeg"
+    },
+    {
+      "id": 2659,
+      "tipo": "simple",
+      "sku": "SKU-BKOTNT",
+      "name": "ELF BAR BC 5000 MANDARIN LIME",
+      "price": "90",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-20.50.29.jpeg"
+    },
+    {
+      "id": 2661,
+      "tipo": "simple",
+      "sku": "SKU-WR2BOJ",
+      "name": "ELF BAR BC 5000 MANGO PEACH",
+      "price": "90",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-20.54.51.jpeg"
+    },
+    {
+      "id": 2664,
+      "tipo": "simple",
+      "sku": "SKU-HOPQ0N",
+      "name": "ELF BAR BC 5000 PEACH ICE",
+      "price": "90",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-21.17.04.jpeg"
+    },
+    {
+      "id": 2666,
+      "tipo": "simple",
+      "sku": "SKU-MMPJXX",
+      "name": "ELF BAR BC 5000 PEACH MANGO WATERMELON",
+      "price": "90",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-21.22.20.jpeg"
+    },
+    {
+      "id": 2668,
+      "tipo": "simple",
+      "sku": "SKU-7YTY4F",
+      "name": "ELF BAR BC 5000 PINEAPPLE COCONUT ICE",
+      "price": "145",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-21.28.06.jpeg"
+    },
+    {
+      "id": 2670,
+      "tipo": "simple",
+      "sku": "SKU-YS44A9",
+      "name": "ELF BAR BC 5000 RAINBOW CANDY",
+      "price": "145",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-21.41.41.jpeg"
+    },
+    {
+      "id": 2672,
+      "tipo": "simple",
+      "sku": "SKU-FO2RIO",
+      "name": "ELF BAR BC 5000 TROPICAL RAINBOW BLAST",
+      "price": "145",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-21.43.32.jpeg"
+    },
+    {
+      "id": 2674,
+      "tipo": "simple",
+      "sku": "SKU-TQ90NZ",
+      "name": "ELF BAR BC 5000 WATERMELON BUBBLEGUM",
+      "price": "145",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-21.50.51.jpeg"
+    },
+    {
+      "id": 2676,
+      "tipo": "simple",
+      "sku": "SKU-0V6VCF",
+      "name": "IGNITE V15 CHERRY ICE",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-22.10.21.jpeg"
+    },
+    {
+      "id": 2679,
+      "tipo": "simple",
+      "sku": "SKU-UTZI1W",
+      "name": "IGNITE V15 LYCHEE",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-22.22.52.jpeg"
+    },
+    {
+      "id": 2682,
+      "tipo": "simple",
+      "sku": "SKU-SGI0YP",
+      "name": "IGNITE V15 COCUMBER ICE",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-22.13.39.jpeg"
+    },
+    {
+      "id": 2684,
+      "tipo": "simple",
+      "sku": "SKU-349PKB",
+      "name": "IGNITE V15 RASPBERRY ORANGE ICE",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-22.29.28.jpeg"
+    },
+    {
+      "id": 2686,
+      "tipo": "simple",
+      "sku": "SKU-AQ7RJW",
+      "name": "IGNITE V15 STRAWBERRY SHAKE",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-22.36.25.jpeg"
+    },
+    {
+      "id": 2688,
+      "tipo": "simple",
+      "sku": "SKU-R05I8E",
+      "name": "IGNITE V15 CRANBERRY LEMONADE",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-22.40.59.jpeg"
+    },
+    {
+      "id": 2690,
+      "tipo": "simple",
+      "sku": "SKU-FMCP9U",
+      "name": "IGNITE V15 TOBACCO",
+      "price": "110",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-01-at-22.47.37.jpeg"
+    },
+    {
+      "id": 2693,
+      "tipo": "simple",
+      "sku": "SKU-6CSRPP",
+      "name": "IGNITE V25 BLOOD ORANGE ICE",
+      "price": "135",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V25",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-15.25.15.jpeg"
+    },
+    {
+      "id": 2695,
+      "tipo": "simple",
+      "sku": "SKU-VWKXJD",
+      "name": "IGNITE V25 BLUEBERRY RASPBERRY ICE",
+      "price": "135",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V25",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-15.35.26.jpeg"
+    },
+    {
+      "id": 2698,
+      "tipo": "simple",
+      "sku": "SKU-DY5HIL",
+      "name": "IGNITE V25 ICY MINT",
+      "price": "135",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V25",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-15.45.03.jpeg"
+    },
+    {
+      "id": 2701,
+      "tipo": "simple",
+      "sku": "SKU-YZBB5R",
+      "name": "IGNITE V25 PASSION FRUIT LEMON",
+      "price": "135",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V25",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-16.27.16.jpeg"
+    },
+    {
+      "id": 2703,
+      "tipo": "simple",
+      "sku": "SKU-01KX54",
+      "name": "IGNITE V25 VERY BERRIES",
+      "price": "135",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V25",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-16.35.10.jpeg"
+    },
+    {
+      "id": 2706,
+      "tipo": "simple",
+      "sku": "SKU-SGS2VK",
+      "name": "ELF BAR TE 5000 STRAWBERRY ICE",
+      "price": "140",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR TE 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-16.50.45.jpeg"
+    },
+    {
+      "id": 2709,
+      "tipo": "simple",
+      "sku": "SKU-XGAEAQ",
+      "name": "ELF BAR TE 5000 PINEAPPLE MANGO ORANGE",
+      "price": "140",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR TE 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-16.44.51.jpeg"
+    },
+    {
+      "id": 2710,
+      "tipo": "simple",
+      "sku": "SKU-5FIG00",
+      "name": "ELF BAR TE 5000 BLUEBERRY ICE",
+      "price": "140",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR TE 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-17.18.58.jpeg"
+    },
+    {
+      "id": 2712,
+      "tipo": "simple",
+      "sku": "SKU-J92XXH",
+      "name": "ELF BAR TE 5000 COTTON CANDY",
+      "price": "140",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR TE 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-17.23.25.jpeg"
+    },
+    {
+      "id": 2714,
+      "tipo": "simple",
+      "sku": "SKU-E6YVCR",
+      "name": "ELF BAR TE 5000 BLUE RAZZ LEMONADE",
+      "price": "140",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR TE 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-17.27.37.jpeg"
+    },
+    {
+      "id": 2716,
+      "tipo": "simple",
+      "sku": "SKU-QZ3LC2",
+      "name": "ELF BAR TE 5000 BLUE RAZZ ICE",
+      "price": "140",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR TE 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-17.30.38.jpeg"
+    },
+    {
+      "id": 2718,
+      "tipo": "simple",
+      "sku": "SKU-8EJ97R",
+      "name": "ELF BAR TE 5000 APPLE PEACH",
+      "price": "140",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR TE 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-17.35.27.jpeg"
+    },
+    {
+      "id": 2721,
+      "tipo": "simple",
+      "sku": "SKU-QGLIDW",
+      "name": "IGNITE V30 PEACH KIWI",
+      "price": "145",
+      "categories": "DESCARTÁVEL, IGNITE",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-21.45.44.jpeg"
+    },
+    {
+      "id": 2723,
+      "tipo": "simple",
+      "sku": "SKU-985C5O",
+      "name": "IGNITE V30 ALOE GRAPE",
+      "price": "145",
+      "categories": "DESCARTÁVEL, IGNITE",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-21.54.28.jpeg"
+    },
+    {
+      "id": 2725,
+      "tipo": "simple",
+      "sku": "SKU-AULUJN",
+      "name": "IGNITE V30 GUMMY",
+      "price": "145",
+      "categories": "DESCARTÁVEL, IGNITE",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-21.57.36.jpeg"
+    },
+    {
+      "id": 2727,
+      "tipo": "simple",
+      "sku": "SKU-WUB7O1",
+      "name": "IGNITE V30 STRAWBERRY BANANA",
+      "price": "145",
+      "categories": "DESCARTÁVEL, IGNITE",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-22.00.49.jpeg"
+    },
+    {
+      "id": 2729,
+      "tipo": "simple",
+      "sku": "SKU-QQDONK",
+      "name": "IGNITE V30 STRAWBERRY KIWI",
+      "price": "145",
+      "categories": "DESCARTÁVEL, IGNITE",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-22.04.22.jpeg"
+    },
+    {
+      "id": 2731,
+      "tipo": "simple",
+      "sku": "SKU-I0PPKW",
+      "name": "IGNITE V30 STRAWBERRY LEMON",
+      "price": "145",
+      "categories": "DESCARTÁVEL, IGNITE",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-22.05.13.jpeg"
+    },
+    {
+      "id": 2734,
+      "tipo": "simple",
+      "sku": "SKU-5VELSK",
+      "name": "IGNITE V40 GRAPE ICE",
+      "price": "155",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V40",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-02-at-22.29.53.jpeg"
+    },
+    {
+      "id": 2741,
+      "tipo": "simple",
+      "sku": "SKU-AXJ10R",
+      "name": "IGNITE V40 GUAVA ICE",
+      "price": "155",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V40",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-03-at-18.49.19.jpeg"
+    },
+    {
+      "id": 2750,
+      "tipo": "simple",
+      "sku": "SKU-YPU6I7",
+      "name": "IGNITE V40 MIXED BERRIES",
+      "price": "155",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V40",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-06-at-21.15.59.jpeg"
+    },
+    {
+      "id": 2763,
+      "tipo": "simple",
+      "sku": "SKU-M7CL3D",
+      "name": "IGNITE V40 PEACH ICE",
+      "price": "155",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V40",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-06-at-21.19.22.jpeg"
+    },
+    {
+      "id": 2765,
+      "tipo": "simple",
+      "sku": "SKU-A9O85W",
+      "name": "IGNITE V40 PEACH MANGO WATERMELON",
+      "price": "155",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V40",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-06-at-21.20.27.jpeg"
+    },
+    {
+      "id": 2769,
+      "tipo": "simple",
+      "sku": "SKU-6TZ2Y7",
+      "name": "IGNITE V40 PINEAPPLE PEACH LEMONADE",
+      "price": "155",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V40",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-06-at-21.28.01.jpeg"
+    },
+    {
+      "id": 2770,
+      "tipo": "simple",
+      "sku": "SKU-F5JPDR",
+      "name": "IGNITE V40 STRAWBERRY BANANA",
+      "price": "155",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V40",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-06-at-21.42.22.jpeg"
+    },
+    {
+      "id": 2772,
+      "tipo": "simple",
+      "sku": "SKU-SENHCK",
+      "name": "IGNITE V40 STRAWBERRY WATERMELON",
+      "price": "155",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V40",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-06-at-21.46.33.jpeg"
+    },
+    {
+      "id": 2776,
+      "tipo": "simple",
+      "sku": "SKU-UZ8S3G",
+      "name": "IGNITE V40 WATERMELON ICE",
+      "price": "155",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V40",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-06-at-21.54.51.jpeg"
+    },
+    {
+      "id": 2777,
+      "tipo": "simple",
+      "sku": "SKU-2DD7YJ",
+      "name": "IGNITE V40 BLUE RAZZ ICE",
+      "price": "155",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V40",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-06-at-22.02.05.jpeg"
+    },
+    {
+      "id": 2779,
+      "tipo": "simple",
+      "sku": "SKU-F1UVPG",
+      "name": "IGNITE V35 ICY MINT",
+      "price": "135",
+      "categories": "DESCARTÁVEL, IGNITE",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-06-at-22.32.54.jpeg"
+    },
+    {
+      "id": 2781,
+      "tipo": "simple",
+      "sku": "SKU-DNZ99X",
+      "name": "IGNITE V35 BLUE RASPBERRY ICE",
+      "price": "135",
+      "categories": "DESCARTÁVEL, IGNITE",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-06-at-22.41.08.jpeg"
+    },
+    {
+      "id": 2783,
+      "tipo": "simple",
+      "sku": "SKU-I1FTIV",
+      "name": "IGNITE V35 MENTHOL",
+      "price": "135",
+      "categories": "DESCARTÁVEL, IGNITE",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-06-at-22.46.31.jpeg"
+    },
+    {
+      "id": 2785,
+      "tipo": "simple",
+      "sku": "SKU-ZDY3JU",
+      "name": "IGNITE V35 STRAWBERRY APPLE WATERMELON",
+      "price": "135",
+      "categories": "DESCARTÁVEL, IGNITE",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-08-at-16.49.25.jpeg"
+    },
+    {
+      "id": 2789,
+      "tipo": "simple",
+      "sku": "SKU-DBE9RA",
+      "name": "IGNITE V35 GRAPE ICE",
+      "price": "135",
+      "categories": "DESCARTÁVEL, IGNITE",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-08-at-16.54.44.jpeg"
+    },
+    {
+      "id": 2791,
+      "tipo": "simple",
+      "sku": "SKU-ASMYXD",
+      "name": "THE BLACK SHEEP 6000 BERRY BLUE",
+      "price": "130",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 6000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-10-at-13.50.55-1.jpeg"
+    },
+    {
+      "id": 2797,
+      "tipo": "simple",
+      "sku": "SKU-ZO6MXF",
+      "name": "THE BLACK SHEEP 6000 CHERRY DREAM",
+      "price": "130",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 6000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-10-at-16.41.20.jpeg"
+    },
+    {
+      "id": 2799,
+      "tipo": "simple",
+      "sku": "SKU-MAVGDH",
+      "name": "THE BLACK SHEEP 6000 FROSTED BERRIES",
+      "price": "130",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 6000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-10-at-18.01.22.jpeg"
+    },
+    {
+      "id": 2801,
+      "tipo": "simple",
+      "sku": "SKU-3RVS9H",
+      "name": "THE BLACK SHEEP 6000 GRAPE ICE",
+      "price": "130",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 6000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-10-at-18.09.30.jpeg"
+    },
+    {
+      "id": 2803,
+      "tipo": "simple",
+      "sku": "SKU-S8ZDEP",
+      "name": "THE BLACK SHEEP 6000 MINT ICE",
+      "price": "130",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 6000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-13-at-14.55.56.jpeg"
+    },
+    {
+      "id": 2810,
+      "tipo": "simple",
+      "sku": "SKU-6TEYKD",
+      "name": "THE BLACK SHEEP 6000 STRAWBERRY ICE",
+      "price": "130",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 6000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-13-at-14.53.55.jpeg"
+    },
+    {
+      "id": 2821,
+      "tipo": "simple",
+      "sku": "SKU-PR953X",
+      "name": "THE BLACK SHEEP 6000 WATERMELON ICE",
+      "price": "130",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 6000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-13-at-15.00.43.jpeg"
+    },
+    {
+      "id": 2823,
+      "tipo": "simple",
+      "sku": "SKU-ZPLJTY",
+      "name": "THE BLACK SHEEP 6000 BANANA ICE",
+      "price": "130",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 6000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-13-at-15.11.51.jpeg"
+    },
+    {
+      "id": 2825,
+      "tipo": "simple",
+      "sku": "SKU-YORC1C",
+      "name": "THE BLACK SHEEP 1500 BANANA ICE",
+      "price": "250",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 1500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-13-at-20.51.16.jpeg"
+    },
+    {
+      "id": 2828,
+      "tipo": "simple",
+      "sku": "SKU-EJRK64",
+      "name": "THE BLACK SHEEP 1500 STRAWBERRY ICE",
+      "price": "250",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 6000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-13-at-21.26.48.jpeg"
+    },
+    {
+      "id": 2830,
+      "tipo": "simple",
+      "sku": "SKU-30KJ8D",
+      "name": "THE BLACK SHEEP 1500 MINT ICE",
+      "price": "250",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 1500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-13-at-21.31.28.jpeg"
+    },
+    {
+      "id": 2832,
+      "tipo": "simple",
+      "sku": "SKU-SXOBY4",
+      "name": "THE BLACK SHEEP 1500 PINEAPPLE ICE",
+      "price": "250",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 1500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-13-at-21.35.29.jpeg"
+    },
+    {
+      "id": 2834,
+      "tipo": "simple",
+      "sku": "SKU-CXAHS9",
+      "name": "THE BLACK SHEEP 1500 PEACH ICE",
+      "price": "250",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 1500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-14-at-19.17.07.jpeg"
+    },
+    {
+      "id": 2836,
+      "tipo": "simple",
+      "sku": "SKU-1NDOT0",
+      "name": "THE BLACK SHEEP 1500 GRAPE ICE",
+      "price": "250",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 1500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-14-at-19.26.59.jpeg"
+    },
+    {
+      "id": 2838,
+      "tipo": "simple",
+      "sku": "SKU-SIXPVE",
+      "name": "THE BLACK SHEEP 1500 FROSTED BERRIES",
+      "price": "250",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 1500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-14-at-20.47.18.jpeg"
+    },
+    {
+      "id": 2840,
+      "tipo": "simple",
+      "sku": "SKU-YUYN4R",
+      "name": "THE BLACK SHEEP 1500 WATERMELON ICE",
+      "price": "250",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 1500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-14-at-20.47.18.jpeg"
+    },
+    {
+      "id": 2846,
+      "tipo": "simple",
+      "sku": "SKU-5EIGM8",
+      "name": "THEBLACKSHEEP COPA DEL MUNDO 1500 STRAWBERRY ICE",
+      "price": "250",
+      "categories": "THE BLACK SHEEP > COPA DEL MUNDO 1500, DESCARTÁVEL, THE BLACK SHEEP",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-16-at-15.35.45.jpeg"
+    },
+    {
+      "id": 2848,
+      "tipo": "simple",
+      "sku": "SKU-K1UA2L",
+      "name": "THEBLACKSHEEP COPA DEL MUNDO 1500 PINEAPPLE ICE",
+      "price": "250",
+      "categories": "THE BLACK SHEEP > COPA DEL MUNDO 1500, DESCARTÁVEL, THE BLACK SHEEP",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-16-at-15.35.45-1.jpeg"
+    },
+    {
+      "id": 2849,
+      "tipo": "simple",
+      "sku": "SKU-RWPJ7O",
+      "name": "THEBLACKSHEEP COPA DEL MUNDO 1500 FROSTED BERRIES",
+      "price": "250",
+      "categories": "THE BLACK SHEEP > COPA DEL MUNDO 1500, DESCARTÁVEL, THE BLACK SHEEP",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-16-at-20.16.03.jpeg"
+    },
+    {
+      "id": 2850,
+      "tipo": "simple",
+      "sku": "SKU-CZ8R93",
+      "name": "THEBLACKSHEEP COPA DEL MUNDO 1500 BANANA ICE",
+      "price": "250",
+      "categories": "THE BLACK SHEEP > COPA DEL MUNDO 1500, DESCARTÁVEL, THE BLACK SHEEP",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-16-at-15.35.45-3.jpeg"
+    },
+    {
+      "id": 2851,
+      "tipo": "simple",
+      "sku": "SKU-HSVGPM",
+      "name": "THEBLACKSHEEP COPA DEL MUNDO 1500 GRAPE ICE",
+      "price": "250",
+      "categories": "THE BLACK SHEEP > COPA DEL MUNDO 1500, DESCARTÁVEL, THE BLACK SHEEP",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-16-at-15.35.45-4.jpeg"
+    },
+    {
+      "id": 2857,
+      "tipo": "simple",
+      "sku": "SKU-RNZ1YM",
+      "name": "THE BLACK SHEEP 600 PEACH ICE 5%",
+      "price": "50",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 1500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-16-at-20.12.50.jpeg"
+    },
+    {
+      "id": 2859,
+      "tipo": "simple",
+      "sku": "SKU-AYC9NE",
+      "name": "THE BLACK SHEEP 600 BANANA ICE 5%",
+      "price": "50",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 600",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-16-at-19.40.47.jpeg"
+    },
+    {
+      "id": 2861,
+      "tipo": "simple",
+      "sku": "SKU-Y6TUPB",
+      "name": "THE BLACK SHEEP 600 PINEAPPLE ICE 5%",
+      "price": "50",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 600",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-16-at-19.47.58.jpeg"
+    },
+    {
+      "id": 2863,
+      "tipo": "simple",
+      "sku": "SKU-METWNK",
+      "name": "THE BLACK SHEEP 600 MANGO ICE 5%",
+      "price": "50",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 600",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-16-at-20.11.30.jpeg"
+    },
+    {
+      "id": 2890,
+      "tipo": "simple",
+      "sku": "SKU-6BGLBC",
+      "name": "THE BLACK SHEEP 600 WATERMELON ICE 2%",
+      "price": "50",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 600 2%",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-23-at-13.47.46.jpeg"
+    },
+    {
+      "id": 2892,
+      "tipo": "simple",
+      "sku": "SKU-V1ZPIK",
+      "name": "THE BLACK SHEEP 600 STRAWBERRY ICE 2%",
+      "price": "50",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 600 2%",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-23-at-13.58.20.jpeg"
+    },
+    {
+      "id": 2894,
+      "tipo": "simple",
+      "sku": "SKU-KMNVLU",
+      "name": "THE BLACK SHEEP 600 GRAPE ICE 2%",
+      "price": "50",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 600 2%",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-23-at-14.00.05.jpeg"
+    },
+    {
+      "id": 2898,
+      "tipo": "simple",
+      "sku": "SKU-9KR8OV",
+      "name": "THE BLACK SHEEP 600 MINT ICE 2%",
+      "price": "50",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 600 2%",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-23-at-14.03.54.jpeg"
+    },
+    {
+      "id": 2900,
+      "tipo": "simple",
+      "sku": "SKU-YQSBTR",
+      "name": "THE BLACK SHEEP 600 BERRY BLUE 2%",
+      "price": "50",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 600 2%",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-23-at-14.30.26.jpeg"
+    },
+    {
+      "id": 2902,
+      "tipo": "simple",
+      "sku": "SKU-75H9AS",
+      "name": "THE BLACK SHEEP 600 CHERRY DREAM 2%",
+      "price": "50",
+      "categories": "DESCARTÁVEL, THE BLACK SHEEP, THE BLACK SHEEP > THE BLACK SHEEP 600 2%",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-23-at-14.55.22.jpeg"
+    },
+    {
+      "id": 2908,
+      "tipo": "simple",
+      "sku": "SKU-Z79TWM",
+      "name": "ELF BAR 4000 RED MOJITO",
+      "price": "115",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-25-at-17.34.38.jpeg"
+    },
+    {
+      "id": 2910,
+      "tipo": "simple",
+      "sku": "SKU-8U1DAL",
+      "name": "Vapesoul 1000 Blackcurrent Lemonade",
+      "price": "50",
+      "categories": "DESCARTÁVEL, VAPESOUL, VAPESOUL > VAPESOUL 1000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/04/WhatsApp-Image-2023-04-25-at-21.29.49.jpeg"
+    },
+    {
+      "id": 2935,
+      "tipo": "simple",
+      "sku": "SKU-7LOCEI",
+      "name": "Vapesoul 1000 BLUEBERRY ICE",
+      "price": "50",
+      "categories": "VAPESOUL, VAPESOUL > VAPESOUL 1000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-19-at-16.32.06.jpeg"
+    },
+    {
+      "id": 2944,
+      "tipo": "simple",
+      "sku": "SKU-MB6PMG",
+      "name": "IGNITE V50 PEACH RASPBERRY",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-12-at-00.50.03.jpeg"
+    },
+    {
+      "id": 2969,
+      "tipo": "simple",
+      "sku": "SKU-WAZUKP",
+      "name": "IGNITE V50 STRAWBERRY BANANA",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-12-at-12.23.59.jpeg"
+    },
+    {
+      "id": 2971,
+      "tipo": "simple",
+      "sku": "SKU-B20S0E",
+      "name": "IGNITE V50 STRAWBERRY MANGO",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-12-at-12.27.17.jpeg"
+    },
+    {
+      "id": 2973,
+      "tipo": "simple",
+      "sku": "SKU-9KCCT3",
+      "name": "IGNITE V50 WATERMELON BUBBLEGUM",
+      "price": "165",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-12-at-12.28.51.jpeg"
+    },
+    {
+      "id": 2975,
+      "tipo": "simple",
+      "sku": "SKU-FUTEBL",
+      "name": "IGNITE V50 BLUE RASPBERRY ICE",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-12-at-12.35.55.jpeg"
+    },
+    {
+      "id": 2977,
+      "tipo": "simple",
+      "sku": "SKU-12LAVF",
+      "name": "IGNITE V50 GRAPE ICE",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-12-at-12.38.42.jpeg"
+    },
+    {
+      "id": 2979,
+      "tipo": "simple",
+      "sku": "SKU-EYOW5R",
+      "name": "IGNITE V50 GREEN APPLE",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-12-at-12.39.42.jpeg"
+    },
+    {
+      "id": 2981,
+      "tipo": "simple",
+      "sku": "SKU-27VXVD",
+      "name": "IGNITE V50 ALOE GRAPE",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-12-at-12.46.13.jpeg"
+    },
+    {
+      "id": 2983,
+      "tipo": "simple",
+      "sku": "SKU-B0B5NR",
+      "name": "IGNITE V50 BANANA ICE",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-08-17-at-17.57.04.jpeg"
+    },
+    {
+      "id": 2986,
+      "tipo": "simple",
+      "sku": "SKU-WAUJVS",
+      "name": "IGNITE V50 BLUEBERRY ICE",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-14-at-21.56.04.jpeg"
+    },
+    {
+      "id": 2990,
+      "tipo": "simple",
+      "sku": "SKU-UG78C4",
+      "name": "IGNITE V50 ICY MINT",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-14-at-21.54.36.jpeg"
+    },
+    {
+      "id": 2998,
+      "tipo": "simple",
+      "sku": "SKU-7DP1K7",
+      "name": "IGNITE V50 MENTHOL",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-16-at-01.38.04.jpeg"
+    },
+    {
+      "id": 3000,
+      "tipo": "simple",
+      "sku": "SKU-R30M5Z",
+      "name": "IGNITE V50 WATERMELON ICE",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-16-at-01.40.57.jpeg"
+    },
+    {
+      "id": 3007,
+      "tipo": "simple",
+      "sku": "SKU-BB0EG7",
+      "name": "IGNITE V50 STRAWBERRY WATERMELON",
+      "price": "130",
+      "categories": "DESCARTÁVEL, IGNITE, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-16-at-15.29.22.jpeg"
+    },
+    {
+      "id": 3025,
+      "tipo": "simple",
+      "sku": "SKU-RKF2FH",
+      "name": "Vapesoul 1000 BLUEBERRY RASPBERRY",
+      "price": "50",
+      "categories": "VAPESOUL, VAPESOUL > VAPESOUL 1000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-19-at-20.46.08.jpeg"
+    },
+    {
+      "id": 3027,
+      "tipo": "simple",
+      "sku": "SKU-JUNQEU",
+      "name": "Vapesoul 1000 LYCHEE ICE",
+      "price": "50",
+      "categories": "VAPESOUL, VAPESOUL > VAPESOUL 1000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-19-at-21.26.51.jpeg"
+    },
+    {
+      "id": 3029,
+      "tipo": "simple",
+      "sku": "SKU-HFNLBL",
+      "name": "Vapesoul 1000 MIX BERRY",
+      "price": "50",
+      "categories": "VAPESOUL, VAPESOUL > VAPESOUL 1000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-20-at-16.21.25.jpeg"
+    },
+    {
+      "id": 3031,
+      "tipo": "simple",
+      "sku": "SKU-1TXO78",
+      "name": "Vapesoul 1000 STRAWBERRY KIWI",
+      "price": "50",
+      "categories": "VAPESOUL, VAPESOUL > VAPESOUL 1000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-27-at-18.45.21.jpeg"
+    },
+    {
+      "id": 3078,
+      "tipo": "simple",
+      "sku": "SKU-0JZOMP",
+      "name": "Vapesoul Airflow 1200 ALOE GRAPE",
+      "price": "55",
+      "categories": "VAPESOUL, VAPESOUL > VAPESOUL AIRFLOW 1200",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-28-at-15.41.34.jpeg"
+    },
+    {
+      "id": 3081,
+      "tipo": "simple",
+      "sku": "SKU-8OD684",
+      "name": "Vapesoul Airflow 1200 BLACKBERRY",
+      "price": "55",
+      "categories": "VAPESOUL, VAPESOUL > VAPESOUL AIRFLOW 1200",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-28-at-14.55.53.jpeg"
+    },
+    {
+      "id": 3082,
+      "tipo": "simple",
+      "sku": "SKU-SNDWFD",
+      "name": "Vapesoul Airflow 1200 CHERRY",
+      "price": "55",
+      "categories": "VAPESOUL, VAPESOUL > VAPESOUL AIRFLOW 1200",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-28-at-15.44.10.jpeg"
+    },
+    {
+      "id": 3085,
+      "tipo": "simple",
+      "sku": "SKU-EQ0AUM",
+      "name": "Vapesoul Airflow 1200 GRAPE ICE",
+      "price": "55",
+      "categories": "VAPESOUL, VAPESOUL > VAPESOUL AIRFLOW 1200",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-28-at-15.41.34-1.jpeg"
+    },
+    {
+      "id": 3089,
+      "tipo": "simple",
+      "sku": "SKU-088L5J",
+      "name": "Vapesoul Airflow 1200 KIWI BLUEBERRY",
+      "price": "55",
+      "categories": "VAPESOUL, VAPESOUL > VAPESOUL AIRFLOW 1200",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-28-at-17.31.01.jpeg"
+    },
+    {
+      "id": 3091,
+      "tipo": "simple",
+      "sku": "SKU-OLECPF",
+      "name": "Vapesoul Airflow 1200 LOVE 66",
+      "price": "55",
+      "categories": "VAPESOUL, VAPESOUL > VAPESOUL AIRFLOW 1200",
+      "images": "https://mypodss.com/wp-content/uploads/2023/05/WhatsApp-Image-2023-05-28-at-17.38.06.jpeg"
+    },
+    {
+      "id": 3190,
+      "tipo": "simple",
+      "sku": "SKU-K5JN63",
+      "name": "Vapesoul Airflow 1200 WATERMELON ICE",
+      "price": "55",
+      "categories": "VAPESOUL, VAPESOUL > VAPESOUL AIRFLOW 1200",
+      "images": "https://mypodss.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-10-at-15.13.17.jpeg"
+    },
+    {
+      "id": 3253,
+      "tipo": "simple",
+      "sku": "SKU-5MXJVI",
+      "name": "Juul2 Blackcurrant Tobacco",
+      "price": "215",
+      "categories": "JUUL2, POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2023/06/WhatsApp-Image-2023-06-29-at-20.40.50.jpeg"
+    },
+    {
+      "id": 3281,
+      "tipo": "simple",
+      "sku": "SKU-9XBX54",
+      "name": "ELF BAR TE 5000 WATERMELON ICE",
+      "price": "140",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR TE 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-07-at-22.17.14.jpeg"
+    },
+    {
+      "id": 3283,
+      "tipo": "simple",
+      "sku": "SKU-WKLT6N",
+      "name": "ELF BAR TE 5000 STRAWBERRY BANANA",
+      "price": "140",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR TE 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-07-at-22.25.41.jpeg"
+    },
+    {
+      "id": 3285,
+      "tipo": "simple",
+      "sku": "SKU-LAC7A0",
+      "name": "ELF BAR TE 5000 GRAPE",
+      "price": "140",
+      "categories": "DESCARTÁVEL, ELF BAR, ELF BAR > ELF BAR TE 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/07/WhatsApp-Image-2023-07-07-at-22.30.14.jpeg"
+    },
+    {
+      "id": 4829,
+      "tipo": "simple",
+      "sku": "SKU-IR5FGR",
+      "name": "ELF VPR 7000 BLACK ICE",
+      "price": "160",
+      "categories": "ELF VPR, ELF VPR > ELF VPR 7000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/7f468f1d-f6d3-4778-83ce-43ee4ccedc98.png"
+    },
+    {
+      "id": 4832,
+      "tipo": "simple",
+      "sku": "SKU-GPB3PO",
+      "name": "ELF VPR 7000 BLUERAZZ ICE",
+      "price": "160",
+      "categories": "ELF VPR, ELF VPR > ELF VPR 7000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/d8aafced-ef18-45e3-85a8-a2b3e49085f1.png"
+    },
+    {
+      "id": 4834,
+      "tipo": "simple",
+      "sku": "SKU-PACPLQ",
+      "name": "ELF VPR 7000 MIAMI MINT",
+      "price": "160",
+      "categories": "ELF VPR, ELF VPR > ELF VPR 7000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/35a580c4-f625-432e-8bda-53a9f33816a7.png"
+    },
+    {
+      "id": 4836,
+      "tipo": "simple",
+      "sku": "SKU-5ZABXE",
+      "name": "ELF VPR 7000 MIXED BERRY",
+      "price": "160",
+      "categories": "ELF VPR, ELF VPR > ELF VPR 7000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/ec1f20e7-26ec-4435-beb3-1a45598ca41a.png"
+    },
+    {
+      "id": 4838,
+      "tipo": "simple",
+      "sku": "SKU-ZZFVNO",
+      "name": "ELF VPR 7000 KIWI STRAWBERRY",
+      "price": "160",
+      "categories": "ELF VPR, ELF VPR > ELF VPR 7000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/72097b36-40db-4197-b0ac-12f412bfe5d8.png"
+    },
+    {
+      "id": 4840,
+      "tipo": "simple",
+      "sku": "SKU-IBYXF2",
+      "name": "ELF VPR 7000 STRAWBERRY BANANA",
+      "price": "160",
+      "categories": "ELF VPR > ELF VPR 7000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/74d5cd08-d700-424f-af74-21501364ca1c.png"
+    },
+    {
+      "id": 4842,
+      "tipo": "simple",
+      "sku": "SKU-QXPH4G",
+      "name": "ELF VPR 7000 STRAWBERRY WATERMELON",
+      "price": "160",
+      "categories": "ELF VPR, ELF VPR > ELF VPR 7000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/61715d59-217a-455d-96f1-23119a54add4.png"
+    },
+    {
+      "id": 4843,
+      "tipo": "simple",
+      "sku": "SKU-YHDGAF",
+      "name": "ELF VPR 7000 TRIPLE BERRY",
+      "price": "160",
+      "categories": "ELF VPR, ELF VPR > ELF VPR 7000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/2c0c431e-4584-4f14-bf24-95e71c6af2cd.png"
+    },
+    {
+      "id": 4845,
+      "tipo": "simple",
+      "sku": "SKU-3L51B1",
+      "name": "ELF VPR 7000 TROPICAL RAINBOW BLAST",
+      "price": "160",
+      "categories": "ELF VPR, ELF VPR > ELF VPR 7000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/ca5bde8a-3141-4d24-9c85-0da2ed06c64f-1.png"
+    },
+    {
+      "id": 4848,
+      "tipo": "simple",
+      "sku": "SKU-WJE8WZ",
+      "name": "ELF VPR 7000 WATERMELON ICE",
+      "price": "160",
+      "categories": "ELF VPR, ELF VPR > ELF VPR 7000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/a9c900c0-e036-4b2d-8492-f75d88a3ca6e.png"
+    },
+    {
+      "id": 4853,
+      "tipo": "simple",
+      "sku": "SKU-4U77KH",
+      "name": "ELF VPR 7000 LEMON MINT",
+      "price": "160",
+      "categories": "ELF VPR, ELF VPR > ELF VPR 7000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/bf23382c-2770-4978-822b-ebd73ad89fb9.png"
+    },
+    {
+      "id": 4855,
+      "tipo": "simple",
+      "sku": "SKU-6K4C3I",
+      "name": "ELF BAR TE 5000 GRAPE APPLE ICE",
+      "price": "140",
+      "categories": "ELF BAR > ELF BAR TE 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/54c4d142-eb66-4494-b22c-1dbb27cb4c14.png"
+    },
+    {
+      "id": 4857,
+      "tipo": "simple",
+      "sku": "SKU-WETLT4",
+      "name": "ELF BAR 4000 BC COLA",
+      "price": "115",
+      "categories": "ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/COLA.jpg"
+    },
+    {
+      "id": 4859,
+      "tipo": "simple",
+      "sku": "SKU-ORDSDU",
+      "name": "ELF BAR 4000 ENERGY",
+      "price": "115",
+      "categories": "ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/Design-sem-nome-2-1.png"
+    },
+    {
+      "id": 4863,
+      "tipo": "simple",
+      "sku": "SKU-FY79BG",
+      "name": "ELF BAR 4000 CRANBERRY GRAPE",
+      "price": "115",
+      "categories": "ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/5f36fc2f-6301-44a5-b099-b89616092e37.jpg"
+    },
+    {
+      "id": 4865,
+      "tipo": "simple",
+      "sku": "SKU-TGUQYA",
+      "name": "Ignite V15 Lemon Ice",
+      "price": "110",
+      "categories": "IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/V15-LEMON.jpg"
+    },
+    {
+      "id": 4868,
+      "tipo": "simple",
+      "sku": "SKU-HYDGE8",
+      "name": "JUUL APPLE ORCHARD",
+      "price": "200",
+      "categories": "JUUL",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/Design-sem-nome-3-1.png"
+    },
+    {
+      "id": 4870,
+      "tipo": "simple",
+      "sku": "SKU-LOJG1P",
+      "name": "Carregador USB Original Juul",
+      "price": "190",
+      "categories": "DESCARTÁVEL, JUUL",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/3296185e-34c3-47e0-9224-d3aad6c7eafd.jpg"
+    },
+    {
+      "id": 4872,
+      "tipo": "simple",
+      "sku": "SKU-WKH3CK",
+      "name": "IGNITE V50 PEACH MANGO WATERMELON",
+      "price": "130",
+      "categories": "IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/2e30ac95-dcf2-429c-a792-89ea76a36a4c.jpg"
+    },
+    {
+      "id": 4897,
+      "tipo": "simple",
+      "sku": "SKU-LGJ0D4",
+      "name": "REFILL MYTH BANANA ICE",
+      "price": "60",
+      "categories": "REFILL MYTH 50MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/BANANAICE.png"
+    },
+    {
+      "id": 4916,
+      "tipo": "simple",
+      "sku": "SKU-09VQW3",
+      "name": "REFILL MYTH BANANA ICE 100 ML",
+      "price": "70",
+      "categories": "REFILL MYTH 100ML",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/BANANA100ML.png"
+    },
+    {
+      "id": 4918,
+      "tipo": "simple",
+      "sku": "SKU-26X3KY",
+      "name": "REFILL MYTH BANANA ICE 35MG",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/BANANAICE.png"
+    },
+    {
+      "id": 4919,
+      "tipo": "simple",
+      "sku": "SKU-OVCAUI",
+      "name": "REFILL MYTH BANANA MILKSHAKE",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/BANANAMILKSHAKE.png"
+    },
+    {
+      "id": 4921,
+      "tipo": "simple",
+      "sku": "SKU-XBAXC9",
+      "name": "REFILL MYTH CHERRY ICE",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG, REFILL MYTH 50MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/CHERRYICE.png"
+    },
+    {
+      "id": 4923,
+      "tipo": "simple",
+      "sku": "SKU-0OCI03",
+      "name": "REFILL MYTH CHERRY ICE 100 ML",
+      "price": "70",
+      "categories": "REFILL MYTH 100ML",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/CHERRY100.png"
+    },
+    {
+      "id": 4925,
+      "tipo": "simple",
+      "sku": "SKU-U9QPXS",
+      "name": "REFILL MYTH COCONUT STRAWBERRY ICE",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/COCONUT.png"
+    },
+    {
+      "id": 4927,
+      "tipo": "simple",
+      "sku": "SKU-1RMWCI",
+      "name": "REFILL MYTH COCONUT STRAWBERRY ICE 100ML",
+      "price": "70",
+      "categories": "REFILL MYTH 100ML",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/COCO100.png"
+    },
+    {
+      "id": 4929,
+      "tipo": "simple",
+      "sku": "SKU-QXBGYF",
+      "name": "REFILL MYTH CREAMPUFF VANILLA CARAMEL",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_135112669.png"
+    },
+    {
+      "id": 4931,
+      "tipo": "simple",
+      "sku": "SKU-VONA8W",
+      "name": "REFILL MYTH GRAPE APPLE",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG, REFILL MYTH 50MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_135348789.png"
+    },
+    {
+      "id": 4933,
+      "tipo": "simple",
+      "sku": "SKU-CNVM9K",
+      "name": "REFILL MYTH JACK FRUIT PINEAPPLE ICE",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG, REFILL MYTH 50MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_135532390.png"
+    },
+    {
+      "id": 4935,
+      "tipo": "simple",
+      "sku": "SKU-BPMBOU",
+      "name": "REFILL MYTH LEMON ICE",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_135714252.png"
+    },
+    {
+      "id": 4937,
+      "tipo": "simple",
+      "sku": "SKU-5MVTGM",
+      "name": "REFILL MYTH LUSH BERRY ICE",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG, REFILL MYTH 50MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/WhatsApp-Image-2023-10-20-at-19.51.51.jpeg"
+    },
+    {
+      "id": 4939,
+      "tipo": "simple",
+      "sku": "SKU-G5VH8Q",
+      "name": "REFILL MYTH LYCHEE ICE",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG, REFILL MYTH 50MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_135948954.png"
+    },
+    {
+      "id": 4941,
+      "tipo": "simple",
+      "sku": "SKU-RRZ24X",
+      "name": "REFILL MYTH MANGO BLACKCURRANT",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG, REFILL MYTH 50MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_140130032.png"
+    },
+    {
+      "id": 4943,
+      "tipo": "simple",
+      "sku": "SKU-XF6HN6",
+      "name": "REFILL MYTH MANGO PEACH ICE",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG, REFILL MYTH 50MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_140252016.png"
+    },
+    {
+      "id": 4946,
+      "tipo": "simple",
+      "sku": "SKU-1W67KE",
+      "name": "REFILL MYTH MANGO PEACH ICE 100ML",
+      "price": "70",
+      "categories": "REFILL MYTH 100ML",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/92b3901e-013f-4d24-83f7-c8dbd7a3743a.png"
+    },
+    {
+      "id": 4948,
+      "tipo": "simple",
+      "sku": "SKU-QIP2UA",
+      "name": "REFILL MYTH MANGO PINEAPPLE STRAWBERRY ICE",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG, REFILL MYTH 50MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_140522622.png"
+    },
+    {
+      "id": 4950,
+      "tipo": "simple",
+      "sku": "SKU-2QSXAU",
+      "name": "REFILL MYTH ORANGE PINEAPPLE TANGERINE ICE",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG, REFILL MYTH 50MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_141011959.png"
+    },
+    {
+      "id": 4952,
+      "tipo": "simple",
+      "sku": "SKU-0HI6WA",
+      "name": "REFILL MYTH PASSION FRUIT ICE",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG, REFILL MYTH 50MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_141230944.png"
+    },
+    {
+      "id": 4954,
+      "tipo": "simple",
+      "sku": "SKU-19DXZY",
+      "name": "REFILL MYTH PASSION FRUIT ICE 100 ML",
+      "price": "70",
+      "categories": "REFILL MYTH 100ML",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_141400128.png"
+    },
+    {
+      "id": 4956,
+      "tipo": "simple",
+      "sku": "SKU-ISR1F6",
+      "name": "REFILL MYTH PUDDING",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG, REFILL MYTH 50MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_141536818.png"
+    },
+    {
+      "id": 4958,
+      "tipo": "simple",
+      "sku": "SKU-R375FO",
+      "name": "REFILL MYTH PURE TOBACCO",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_141656907.png"
+    },
+    {
+      "id": 4960,
+      "tipo": "simple",
+      "sku": "SKU-19MYI9",
+      "name": "REFILL MYTH TOBACCO CARAMEL",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_141842866.png"
+    },
+    {
+      "id": 4962,
+      "tipo": "simple",
+      "sku": "SKU-8XWZKR",
+      "name": "REFILL MYTH TRIPLE WATERMELON ICE",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_141944741.png"
+    },
+    {
+      "id": 4964,
+      "tipo": "simple",
+      "sku": "SKU-81T94N",
+      "name": "REFILL MYTH WATERMELON HONEYDEW ICE",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_142043036.png"
+    },
+    {
+      "id": 4966,
+      "tipo": "simple",
+      "sku": "SKU-7PAK17",
+      "name": "REFILL MYTH  CHOCOLATE MINT",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/imagem_2023-09-11_142144387.png"
+    },
+    {
+      "id": 5137,
+      "tipo": "bundle, virtual",
+      "sku": "SKU-J6CBXF",
+      "name": "Combo ELFBAR 4000",
+      "price": "345,00",
+      "categories": "ELF BAR, ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/956df38f-b880-4c92-a60b-c9114a4975c6.jpg"
+    },
+    {
+      "id": 5142,
+      "tipo": "bundle, virtual",
+      "sku": "SKU-0KGP0X",
+      "name": "Combo Ignite V50",
+      "price": "495",
+      "categories": "IGNITE, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/782bbdce-9c75-4f19-a87d-1fc94035c28e.jpg"
+    },
+    {
+      "id": 5145,
+      "tipo": "bundle, virtual",
+      "sku": "SKU-5YAT98",
+      "name": "Combo Ignite V15",
+      "price": "330",
+      "categories": "IGNITE, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/812dd519-aaa5-4dec-a9a3-0caaae61119a.jpg"
+    },
+    {
+      "id": 5149,
+      "tipo": "bundle, virtual",
+      "sku": "SKU-I4KZ5O",
+      "name": "Combo ELFBAR 5000",
+      "price": "420",
+      "categories": "ELF BAR, ELF BAR > ELF BAR TE 5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/87a91e1e-5129-4a97-a980-ca7e431668bf.jpg"
+    },
+    {
+      "id": 5151,
+      "tipo": "bundle, virtual",
+      "sku": "SKU-148P0J",
+      "name": "Combo ELFVPR 7000",
+      "price": "480",
+      "categories": "ELF VPR, ELF VPR > ELF VPR 7000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/40d8a6fb-1cb4-4994-9b11-e3876ec7ba77-1.png"
+    },
+    {
+      "id": 5153,
+      "tipo": "bundle, virtual",
+      "sku": "SKU-M1MYVP",
+      "name": "Combo ELFBAR 4k + IgniteV50",
+      "price": "259,99",
+      "categories": "ELF BAR > ELF BAR BC 4000, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/Design-sem-nome-1.png"
+    },
+    {
+      "id": 5157,
+      "tipo": "bundle, virtual",
+      "sku": "SKU-BVG76J",
+      "name": "Combo Elfbar 5k + Ignitev50",
+      "price": "269,99",
+      "categories": "ELF BAR > ELF BAR TE 5000, IGNITE > IGNITE V50",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/Design-sem-nome-2.png"
+    },
+    {
+      "id": 5163,
+      "tipo": "simple",
+      "sku": "SKU-0R3W63",
+      "name": "LOST MARY OS5000 Black Mint",
+      "price": "120",
+      "categories": "LOST MARY OS5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/916985aa-d1bc-455b-9d9a-7e614d03fdf4.jpg"
+    },
+    {
+      "id": 5166,
+      "tipo": "simple",
+      "sku": "SKU-DG1E5Q",
+      "name": "LOST MARY OS5000 Spear Mint",
+      "price": "120",
+      "categories": "LOST MARY OS5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/e73c84d3-bbef-4c07-82d6-a68d33d6c5f5.png"
+    },
+    {
+      "id": 5168,
+      "tipo": "simple",
+      "sku": "SKU-S88LZO",
+      "name": "LOST MARY OS5000 Watermelon Lemon",
+      "price": "120",
+      "categories": "LOST MARY OS5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/b4c2e447-f143-4b63-8bb7-351e5c800212.png"
+    },
+    {
+      "id": 5170,
+      "tipo": "simple",
+      "sku": "SKU-RMAZSX",
+      "name": "LOST MARY OS5000 Strawberry ice",
+      "price": "120",
+      "categories": "LOST MARY OS5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/97dc9fb9-518a-4a44-8f88-051eccf401f1.png"
+    },
+    {
+      "id": 5172,
+      "tipo": "simple",
+      "sku": "SKU-EFCR2H",
+      "name": "LOST MARY OS5000 Juicy Peach",
+      "price": "120",
+      "categories": "LOST MARY OS5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/bbeb80a3-1765-40ca-8a99-83c24c7383b4.jpg"
+    },
+    {
+      "id": 5174,
+      "tipo": "simple",
+      "sku": "SKU-9S78BV",
+      "name": "LOST MARY OS5000 Strawberry Pinacolada",
+      "price": "120",
+      "categories": "LOST MARY OS5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/lost-mary-5000-strawberry-pina-colada.webp"
+    },
+    {
+      "id": 5176,
+      "tipo": "simple",
+      "sku": "SKU-98NTB9",
+      "name": "LOST MARY OS5000 Watermelon",
+      "price": "120",
+      "categories": "LOST MARY OS5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/02c5cf95-8195-4cee-9542-10c153d434a0.jpg"
+    },
+    {
+      "id": 5179,
+      "tipo": "simple",
+      "sku": "SKU-S7ROMG",
+      "name": "LOST MARY OS5000 Mary Dream",
+      "price": "120",
+      "categories": "LOST MARY OS5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/ba63a4ac-e2f9-48a6-9055-9771ec8a7931.jpg"
+    },
+    {
+      "id": 5181,
+      "tipo": "simple",
+      "sku": "SKU-1CMWEN",
+      "name": "LOST MARY OS5000 Mad Blue",
+      "price": "120",
+      "categories": "LOST MARY OS5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/34bbcdfc-e231-4940-9cb5-f3f8dfbbf0b6.jpg"
+    },
+    {
+      "id": 5183,
+      "tipo": "simple",
+      "sku": "SKU-RKU8GG",
+      "name": "LOST MARY OS5000 Blue Razz Ice",
+      "price": "120",
+      "categories": "LOST MARY OS5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/lost-mary-blue-razz.webp"
+    },
+    {
+      "id": 5185,
+      "tipo": "simple",
+      "sku": "SKU-GRF5AW",
+      "name": "LOST MARY OS5000 Blue Cotton Candy",
+      "price": "120",
+      "categories": "LOST MARY OS5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/6dc1c107-ee1f-4870-a8b1-a6e1e7d7c922.png"
+    },
+    {
+      "id": 5187,
+      "tipo": "simple",
+      "sku": "SKU-R89Q9E",
+      "name": "LOST MARY OS5000 Pineapple Mango",
+      "price": "120",
+      "categories": "LOST MARY OS5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/a594d326-7d6e-4574-8466-152dbc41aa77.png"
+    },
+    {
+      "id": 5189,
+      "tipo": "simple",
+      "sku": "SKU-MPQC1B",
+      "name": "LOST MARY OS5000 Peach Mango Watermelon",
+      "price": "120",
+      "categories": "LOST MARY OS5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/3282af0c-ec7a-4ac9-9e60-d3cca77dc724.png"
+    },
+    {
+      "id": 5191,
+      "tipo": "simple",
+      "sku": "SKU-8SKRER",
+      "name": "LOST MARY OS5000 Strawberry Mango",
+      "price": "120",
+      "categories": "LOST MARY OS5000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/4e6ee951-11e8-471b-82ad-d8951c8d3c08.jpg"
+    },
+    {
+      "id": 5262,
+      "tipo": "simple, virtual",
+      "sku": "SKU-XFMP32",
+      "name": "Combo ELFVPR 7k + IgniteV15",
+      "price": "249,99",
+      "categories": "ELF VPR, IGNITE > IGNITE V15",
+      "images": "https://mypodss.com/wp-content/uploads/2023/09/Design-sem-nome-3.png"
+    },
+    {
+      "id": 5462,
+      "tipo": "bundle",
+      "sku": "SKU-TO9RRT",
+      "name": "Atacado",
+      "price": "1",
+      "categories": "ELF BAR > ELF BAR BC 4000",
+      "images": "NaN"
+    },
+    {
+      "id": 5466,
+      "tipo": "simple",
+      "sku": "SKU-WLM511",
+      "name": "Starter kit juul 1 c/2 virginia",
+      "price": "250,00",
+      "categories": "JUUL",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/d4166fec-7c50-4065-a836-f1b2264f033f.jpg"
+    },
+    {
+      "id": 5469,
+      "tipo": "simple",
+      "sku": "SKU-F0RMVH",
+      "name": "Juul 1 Glacier Mint 1.8%",
+      "price": "200,00",
+      "categories": "JUUL",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/e4da2c85-c894-4c4b-a729-f57b739a0d94.jpg"
+    },
+    {
+      "id": 5476,
+      "tipo": "simple",
+      "sku": "SKU-1OJB9T",
+      "name": "Juul Limited Edition Onyx Device Kit",
+      "price": "300,00",
+      "categories": "ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/76403759-9757-4826-ab0a-4c85a7a4b360.png"
+    },
+    {
+      "id": 5478,
+      "tipo": "simple",
+      "sku": "SKU-KLS3SI",
+      "name": "Juul Silver Device",
+      "price": "250,00",
+      "categories": "JUUL",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/5c6d8438-e600-4808-8b83-317ec868de58.jpg"
+    },
+    {
+      "id": 5481,
+      "tipo": "simple",
+      "sku": "SKU-DFSQBO",
+      "name": "Juul Menthol 3%",
+      "price": "240,00",
+      "categories": "JUUL",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/d0d816e8-d023-4db5-b6fa-57b1211bde0c-1.jpg"
+    },
+    {
+      "id": 5497,
+      "tipo": "simple",
+      "sku": "SKU-UPQ41Y",
+      "name": "REFIL MYTH LEMON MINT 30 ML",
+      "price": "60",
+      "categories": "REFILL MYTH 35MG",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/LEMON-MINT.jpeg"
+    },
+    {
+      "id": 5505,
+      "tipo": "simple",
+      "sku": "SKU-JKEBP6",
+      "name": "REFILL MYTH PASSION FRUIT ICE 100 ML",
+      "price": "70",
+      "categories": "REFILL MYTH 100ML",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/PASSION-100.jpeg"
+    },
+    {
+      "id": 5507,
+      "tipo": "simple",
+      "sku": "SKU-YQ8OEK",
+      "name": "REFILL MYTH CHERRY ICE 100 ML",
+      "price": "70",
+      "categories": "REFILL MYTH 100ML",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/CHERRY-100.jpeg"
+    },
+    {
+      "id": 5510,
+      "tipo": "simple",
+      "sku": "SKU-BL1K2O",
+      "name": "REFILL MYTH COCONUT STRAWBERRY ICE 100 ML",
+      "price": "70",
+      "categories": "REFILL MYTH 100ML",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/COCO-100.jpeg"
+    },
+    {
+      "id": 5512,
+      "tipo": "simple",
+      "sku": "SKU-BT4GEN",
+      "name": "REFILL MYTH BANANA ICE 100 ML",
+      "price": "70",
+      "categories": "ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/BANANA.jpeg"
+    },
+    {
+      "id": 5551,
+      "tipo": "simple",
+      "sku": "SKU-J5OQNH",
+      "name": "Lost Mary MO5000 Black Mint",
+      "price": "120",
+      "categories": "LOST MARY M0500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-4.png"
+    },
+    {
+      "id": 5553,
+      "tipo": "simple",
+      "sku": "SKU-9HZN7M",
+      "name": "Lost Mary MO5000 Blue berry raspberry lemon",
+      "price": "120",
+      "categories": "LOST MARY M0500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-5.png"
+    },
+    {
+      "id": 5556,
+      "tipo": "simple",
+      "sku": "SKU-IYVL4A",
+      "name": "Lost Mary MO5000 Cherry Lemon",
+      "price": "120",
+      "categories": "LOST MARY M0500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-6.png"
+    },
+    {
+      "id": 5558,
+      "tipo": "simple",
+      "sku": "SKU-GYNUPI",
+      "name": "Lost Mary MO5000 Citrus Sunrise",
+      "price": "120",
+      "categories": "LOST MARY M0500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-7.png"
+    },
+    {
+      "id": 5564,
+      "tipo": "simple",
+      "sku": "SKU-H0KJ3T",
+      "name": "Lost Mary MO5000 Energize",
+      "price": "120",
+      "categories": "LOST MARY M0500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-8.png"
+    },
+    {
+      "id": 5566,
+      "tipo": "simple",
+      "sku": "SKU-G6J9W5",
+      "name": "Lost Mary MO5000 Ginger Beer",
+      "price": "139",
+      "categories": "LOST MARY M0500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-9.png"
+    },
+    {
+      "id": 5569,
+      "tipo": "simple",
+      "sku": "SKU-LEKBYZ",
+      "name": "Lost Mary MO5000 Grape Jelly",
+      "price": "120",
+      "categories": "LOST MARY M0500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-10.png"
+    },
+    {
+      "id": 5571,
+      "tipo": "simple",
+      "sku": "SKU-42QPV5",
+      "name": "Lost Mary MO5000 Kiwi Fuse",
+      "price": "120",
+      "categories": "LOST MARY M0500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-11.png"
+    },
+    {
+      "id": 5573,
+      "tipo": "simple",
+      "sku": "SKU-MI4L5T",
+      "name": "Lost Mary MO5000 Lemon Sparkling Wine",
+      "price": "120",
+      "categories": "LOST MARY M0500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-12.png"
+    },
+    {
+      "id": 5575,
+      "tipo": "simple",
+      "sku": "SKU-AO78JN",
+      "name": "Lost Mary MO5000 Mango Peach",
+      "price": "120",
+      "categories": "LOST MARY M0500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-13.png"
+    },
+    {
+      "id": 5577,
+      "tipo": "simple",
+      "sku": "SKU-7WLATP",
+      "name": "Lost Mary MO5000 Mango Peach Watermelon",
+      "price": "120",
+      "categories": "LOST MARY M0500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-14.png"
+    },
+    {
+      "id": 5579,
+      "tipo": "simple",
+      "sku": "SKU-SR7UYW",
+      "name": "Lost Mary MO5000 Pineapple Apple Pear",
+      "price": "120",
+      "categories": "LOST MARY M0500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-15.png"
+    },
+    {
+      "id": 5581,
+      "tipo": "simple",
+      "sku": "SKU-X4CT2E",
+      "name": "Lost Mary MO5000 Watermelon cherry",
+      "price": "120",
+      "categories": "LOST MARY M0500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-16.png"
+    },
+    {
+      "id": 5583,
+      "tipo": "simple",
+      "sku": "SKU-1PSBJX",
+      "name": "Lost Mary MO5000 Watermelon Ice",
+      "price": "120",
+      "categories": "LOST MARY M0500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-17.png"
+    },
+    {
+      "id": 5586,
+      "tipo": "simple",
+      "sku": "SKU-Z7XJE1",
+      "name": "Lost Mary MO5000 Yummy",
+      "price": "120",
+      "categories": "LOST MARY M0500",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-18.png"
+    },
+    {
+      "id": 5589,
+      "tipo": "simple",
+      "sku": "SKU-8CVB3N",
+      "name": "Elf Bar BC 10000  Strawberry Kiwi Ice",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-19.png"
+    },
+    {
+      "id": 5591,
+      "tipo": "simple",
+      "sku": "SKU-4P06EI",
+      "name": "Elf Bar BC 10000  Strawberry Ice",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-20.png"
+    },
+    {
+      "id": 5593,
+      "tipo": "simple",
+      "sku": "SKU-HSNH09",
+      "name": "Elf Bar BC 10000 Watermelon",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-21.png"
+    },
+    {
+      "id": 5595,
+      "tipo": "simple",
+      "sku": "SKU-R4I925",
+      "name": "ElfBar BC 10000 Miami Mint",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2023/10/Design-sem-nome-22.png"
+    },
+    {
+      "id": 5646,
+      "tipo": "simple",
+      "sku": "SKU-RPWUFP",
+      "name": "teste",
+      "price": "0,50",
+      "categories": "ELF BAR > ELF BAR BC 4000",
+      "images": "NaN"
+    },
+    {
+      "id": 5714,
+      "tipo": "simple",
+      "sku": "SKU-OGIH5S",
+      "name": "IGNITE V80 - Banana Cherry - 8000 PUFFS",
+      "price": "170",
+      "categories": "IGNITE V80",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-24.png"
+    },
+    {
+      "id": 5716,
+      "tipo": "simple",
+      "sku": "SKU-NLBA5D",
+      "name": "IGNITE V80 - Banana Ice - 8000 PUFFS",
+      "price": "170",
+      "categories": "IGNITE V80",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-25.png"
+    },
+    {
+      "id": 5718,
+      "tipo": "simple",
+      "sku": "SKU-31C6I8",
+      "name": "IGNITE V80 - Blueberry Ice - 8000 PUFFS",
+      "price": "170",
+      "categories": "IGNITE V80",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-26.png"
+    },
+    {
+      "id": 5720,
+      "tipo": "simple",
+      "sku": "SKU-6UAA6R",
+      "name": "IGNITE V80 - Cactus - 8000 PUFFS",
+      "price": "170",
+      "categories": "IGNITE V80",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-27.png"
+    },
+    {
+      "id": 5723,
+      "tipo": "simple",
+      "sku": "SKU-E457UZ",
+      "name": "IGNITE V80 - Green Apple - 8000 PUFFS",
+      "price": "170",
+      "categories": "IGNITE V80",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/2.webp"
+    },
+    {
+      "id": 5726,
+      "tipo": "simple",
+      "sku": "SKU-II1HKH",
+      "name": "IGNITE V80 - Ice Mint - 8000 PUFFS",
+      "price": "170",
+      "categories": "IGNITE V80",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/5.webp"
+    },
+    {
+      "id": 5728,
+      "tipo": "simple",
+      "sku": "SKU-19XZCA",
+      "name": "IGNITE V80 - Menthol - 8000 PUFFS",
+      "price": "170",
+      "categories": "IGNITE V80",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/1.webp"
+    },
+    {
+      "id": 5730,
+      "tipo": "simple",
+      "sku": "SKU-E8XCJM",
+      "name": "IGNITE V80 - Passion Fruit Sour Kiwi - 8000 PUFFS",
+      "price": "170",
+      "categories": "IGNITE V80",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-31.png"
+    },
+    {
+      "id": 5732,
+      "tipo": "simple",
+      "sku": "SKU-8AIXCY",
+      "name": "IGNITE V80 - Strawberry Ice - 8000 PUFFS",
+      "price": "170",
+      "categories": "IGNITE V80",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/4.png"
+    },
+    {
+      "id": 5734,
+      "tipo": "simple",
+      "sku": "SKU-DR2ODD",
+      "name": "IGNITE V80 - Watermelon Ice - 8000 PUFFS",
+      "price": "170",
+      "categories": "IGNITE V80",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-33.png"
+    },
+    {
+      "id": 5736,
+      "tipo": "simple",
+      "sku": "SKU-2J9DM9",
+      "name": "IGNITE V80 - Grapefruit Mint - 8000 PUFFS",
+      "price": "170",
+      "categories": "IGNITE V80",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/3.png"
+    },
+    {
+      "id": 5743,
+      "tipo": "simple",
+      "sku": "SKU-WAQTSH",
+      "name": "Elf Bar - 10000 - Cherry Watermelon",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-35.png"
+    },
+    {
+      "id": 5746,
+      "tipo": "simple",
+      "sku": "SKU-B4C60K",
+      "name": "Elf Bar - 10000 - Strawberry Banana",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-36.png"
+    },
+    {
+      "id": 5748,
+      "tipo": "simple",
+      "sku": "SKU-Y8LNZ2",
+      "name": "Elf Bar - 10000 -  Red Berry Cherry",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-37.png"
+    },
+    {
+      "id": 5750,
+      "tipo": "simple",
+      "sku": "SKU-YLFIZ1",
+      "name": "Elf Bar - 10000 - Strawberry Kiwi",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-38.png"
+    },
+    {
+      "id": 5753,
+      "tipo": "simple",
+      "sku": "SKU-BYNU4C",
+      "name": "Elf Bar - 10000 - Watermelon Ice",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-39.png"
+    },
+    {
+      "id": 5755,
+      "tipo": "simple",
+      "sku": "SKU-YL4GUC",
+      "name": "Elf Bar - 10000 - Strawberry Ice",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-40.png"
+    },
+    {
+      "id": 5757,
+      "tipo": "simple",
+      "sku": "SKU-TAUKHW",
+      "name": "Elf Bar - 10000 - Blueberry Mint",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-41.png"
+    },
+    {
+      "id": 5759,
+      "tipo": "simple",
+      "sku": "SKU-8X1AH0",
+      "name": "Elf Bar - 10000 - Americano - Ice",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-41.png"
+    },
+    {
+      "id": 5760,
+      "tipo": "simple",
+      "sku": "SKU-AD4R9P",
+      "name": "Elf Bar - 10000 - Pinneapple Ice",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-43.png"
+    },
+    {
+      "id": 5762,
+      "tipo": "simple",
+      "sku": "SKU-RL9V8P",
+      "name": "Elf Bar - 10000 - Grape - Cherry",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-44.png"
+    },
+    {
+      "id": 5765,
+      "tipo": "simple",
+      "sku": "SKU-XJ9KU8",
+      "name": "Elf Bar - 10000 - Lemon -    Lime",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-45.png"
+    },
+    {
+      "id": 5767,
+      "tipo": "simple",
+      "sku": "SKU-2IB5IC",
+      "name": "Elf Bar - 10000 - Peach -    Ice",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-46.png"
+    },
+    {
+      "id": 5769,
+      "tipo": "simple",
+      "sku": "SKU-CO4P8V",
+      "name": "Elf Bar - 10000  -     Blueberry",
+      "price": "210",
+      "categories": "ELF BAR > ELF BAR BC 10000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-47.png"
+    },
+    {
+      "id": 5775,
+      "tipo": "simple",
+      "sku": "SKU-P0YXX4",
+      "name": "Elf   -      World        - Mint",
+      "price": "140",
+      "categories": "ELF WORLD",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-48.png"
+    },
+    {
+      "id": 5777,
+      "tipo": "simple",
+      "sku": "SKU-IFR6MS",
+      "name": "Elf - World - Strawberry Ice",
+      "price": "140",
+      "categories": "ELF WORLD",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-49.png"
+    },
+    {
+      "id": 5779,
+      "tipo": "simple",
+      "sku": "SKU-335EYI",
+      "name": "Elf - World - MIxed Berryes",
+      "price": "140",
+      "categories": "ELF WORLD",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-50.png"
+    },
+    {
+      "id": 5781,
+      "tipo": "simple",
+      "sku": "SKU-T5C3LO",
+      "name": "Elf - World - Blue Razz",
+      "price": "140",
+      "categories": "ELF WORLD",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-51.png"
+    },
+    {
+      "id": 5783,
+      "tipo": "simple",
+      "sku": "SKU-6JLGW0",
+      "name": "Elf - World - Sakura Grape",
+      "price": "140",
+      "categories": "ELF WORLD",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-52.png"
+    },
+    {
+      "id": 5785,
+      "tipo": "simple",
+      "sku": "SKU-99D5B5",
+      "name": "Elf - World - Candy -     Rainbow",
+      "price": "140",
+      "categories": "ELF WORLD",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-53.png"
+    },
+    {
+      "id": 5788,
+      "tipo": "simple",
+      "sku": "SKU-85J3LX",
+      "name": "Elf - World - Dragon Fruit - Berry",
+      "price": "140",
+      "categories": "ELF WORLD",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-54.png"
+    },
+    {
+      "id": 5790,
+      "tipo": "simple",
+      "sku": "SKU-NGYRZ7",
+      "name": "Elf - World -    Peach -    Mango",
+      "price": "140",
+      "categories": "ELF WORLD",
+      "images": "https://mypodss.com/wp-content/uploads/2024/04/Design-sem-nome-55.png"
+    },
+    {
+      "id": 5844,
+      "tipo": "simple",
+      "sku": "SKU-KSV6V4",
+      "name": "OXBAR G8000",
+      "price": "NaN",
+      "categories": "NaN",
+      "images": "NaN"
+    },
+    {
+      "id": 5845,
+      "tipo": "simple",
+      "sku": "SKU-9YWDZ4",
+      "name": "OXBAR G8000 AVOCADO NANA",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/23.png"
+    },
+    {
+      "id": 5848,
+      "tipo": "simple",
+      "sku": "SKU-QJIJXP",
+      "name": "AUTO-DRAFT",
+      "price": "NaN",
+      "categories": "NaN",
+      "images": "NaN"
+    },
+    {
+      "id": 5856,
+      "tipo": "simple",
+      "sku": "SKU-UKZSZM",
+      "name": "OXBAR G8000 DOUBLE APPLE",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/24.png"
+    },
+    {
+      "id": 5860,
+      "tipo": "simple",
+      "sku": "SKU-7OWYOD",
+      "name": "OXBAR G8000 FANTA STRAWBERRY",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/25.png"
+    },
+    {
+      "id": 5864,
+      "tipo": "simple",
+      "sku": "SKU-J8QDOD",
+      "name": "OXBAR G8000 KIWI PASSION KICK",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/1.png"
+    },
+    {
+      "id": 5867,
+      "tipo": "simple",
+      "sku": "SKU-47KQH1",
+      "name": "OXBAR G8000 MAD BLUE",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/4.png"
+    },
+    {
+      "id": 5870,
+      "tipo": "simple",
+      "sku": "SKU-NUCYIZ",
+      "name": "OXBAR G8000 SEA SALT LEMON",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/5.png"
+    },
+    {
+      "id": 5873,
+      "tipo": "simple",
+      "sku": "SKU-2NCNCO",
+      "name": "OXBAR G8000 MANGO PEACH",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/6.png"
+    },
+    {
+      "id": 5876,
+      "tipo": "simple",
+      "sku": "SKU-OJ8TGV",
+      "name": "OXBAR G8000 RAINBOW DROP",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/7.png"
+    },
+    {
+      "id": 5879,
+      "tipo": "simple",
+      "sku": "SKU-56MJHX",
+      "name": "OXBAR G8000 PEACH ICE",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/8.png"
+    },
+    {
+      "id": 5882,
+      "tipo": "simple",
+      "sku": "SKU-QL804F",
+      "name": "OXBAR G8000 SUNSET WATERMELON",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/9.png"
+    },
+    {
+      "id": 5885,
+      "tipo": "simple",
+      "sku": "SKU-3F0CMP",
+      "name": "OXBAR G8000 VIRGINIA TOBACCO",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/10.png"
+    },
+    {
+      "id": 5888,
+      "tipo": "simple",
+      "sku": "SKU-07M6D6",
+      "name": "OXBAR G8000 TRIPLE MELON BLAST",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/11.png"
+    },
+    {
+      "id": 5891,
+      "tipo": "simple",
+      "sku": "SKU-DI6B4O",
+      "name": "OXBAR G8000 CRANBERRY GRAPE",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/12.png"
+    },
+    {
+      "id": 5894,
+      "tipo": "simple",
+      "sku": "SKU-AP09WN",
+      "name": "OXBAR G8000 CLEAR",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/13.png"
+    },
+    {
+      "id": 5897,
+      "tipo": "simple",
+      "sku": "SKU-9FWAQW",
+      "name": "OXBAR G8000 SAKURA GRAPE",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/14.png"
+    },
+    {
+      "id": 5900,
+      "tipo": "simple",
+      "sku": "SKU-79DW0D",
+      "name": "OXBAR G8000 STRAWNANA",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/15.png"
+    },
+    {
+      "id": 5903,
+      "tipo": "simple",
+      "sku": "SKU-WO39QB",
+      "name": "OXBAR G8000 COOL MINT",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/16.png"
+    },
+    {
+      "id": 5906,
+      "tipo": "simple",
+      "sku": "SKU-IFFOS2",
+      "name": "OXBAR G8000 FRUIT PARADISE",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/17.png"
+    },
+    {
+      "id": 5909,
+      "tipo": "simple",
+      "sku": "SKU-J6UXWI",
+      "name": "OXBAR G8000 LEMON MINT",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/18.png"
+    },
+    {
+      "id": 5912,
+      "tipo": "simple",
+      "sku": "SKU-RS4ZR3",
+      "name": "OXBAR G8000 TOBACCO TRIO",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/19.png"
+    },
+    {
+      "id": 5915,
+      "tipo": "simple",
+      "sku": "SKU-VVRZRV",
+      "name": "OXBAR G8000 PEACH BLUE RAZZ",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/20.png"
+    },
+    {
+      "id": 5918,
+      "tipo": "simple",
+      "sku": "SKU-ZF261Y",
+      "name": "OXBAR G8000 CRANBERRY LEMON ICE",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/21.png"
+    },
+    {
+      "id": 5921,
+      "tipo": "simple",
+      "sku": "SKU-2BOLD3",
+      "name": "OXBAR G8000 STRAWBERRY WATERMELON",
+      "price": "110,00",
+      "categories": "OXBAR G8000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/22.png"
+    },
+    {
+      "id": 5924,
+      "tipo": "simple",
+      "sku": "SKU-TWLPLL",
+      "name": "HELWIT POUCH DE NICOTINA 7MG 2/4 MINT 24 SACHÊS",
+      "price": "130",
+      "categories": "POUCH DE NICOTINA",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/1-1.webp"
+    },
+    {
+      "id": 6054,
+      "tipo": "simple",
+      "sku": "SKU-ZDIY24",
+      "name": "HELWIT POUCH DE NICOTINA 7MG 2/4 COLA 24 SACHÊS",
+      "price": "130",
+      "categories": "POUCH DE NICOTINA",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/2.webp"
+    },
+    {
+      "id": 6061,
+      "tipo": "simple",
+      "sku": "SKU-2RN66I",
+      "name": "HELWIT POUCH DE NICOTINA 7MG 2/4 VIOLET 24 SACHÊS",
+      "price": "130",
+      "categories": "POUCH DE NICOTINA",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/6-1.webp"
+    },
+    {
+      "id": 6065,
+      "tipo": "simple",
+      "sku": "SKU-W4CMD5",
+      "name": "HELWIT POUCH DE NICOTINA 9MG 3/4 BLUEBERRY 24 SACHÊS",
+      "price": "130",
+      "categories": "POUCH DE NICOTINA",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/3.webp"
+    },
+    {
+      "id": 6068,
+      "tipo": "simple",
+      "sku": "SKU-W91OOL",
+      "name": "HELWIT POUCH DE NICOTINA 9MG 3/4 MOCHA 24 SACHÊS",
+      "price": "130",
+      "categories": "POUCH DE NICOTINA",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/4-1.webp"
+    },
+    {
+      "id": 6071,
+      "tipo": "simple",
+      "sku": "SKU-Y6F4I3",
+      "name": "HELWIT POUCH DE NICOTINA 9MG 3/4 ORANGE 24 SACHÊS",
+      "price": "130",
+      "categories": "POUCH DE NICOTINA",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/5-1.webp"
+    },
+    {
+      "id": 6074,
+      "tipo": "simple",
+      "sku": "SKU-QYVF8P",
+      "name": "HELWIT CONCEPT POUCH DE NICOTINA 9MG 3/4 PEAR 24 SACHÊS",
+      "price": "130",
+      "categories": "POUCH DE NICOTINA",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/8-1.webp"
+    },
+    {
+      "id": 6077,
+      "tipo": "simple",
+      "sku": "SKU-KVYB02",
+      "name": "HELWIT CONCEPT POUCH DE NICOTINA 7MG 2/4 BANANA 24 SACHÊS",
+      "price": "130",
+      "categories": "POUCH DE NICOTINA",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/7-1.webp"
+    },
+    {
+      "id": 6081,
+      "tipo": "simple",
+      "sku": "SKU-2VOBNV",
+      "name": "HELWIT POUCH DE NICOTINA 12MG 4/4 SALMIAK 24 SACHÊS",
+      "price": "130",
+      "categories": "POUCH DE NICOTINA",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/9-1.webp"
+    },
+    {
+      "id": 6175,
+      "tipo": "simple",
+      "sku": "SKU-JHHDPF",
+      "name": "SMOK NFIX - DISPOSITIVO DE VAPORAÇÃO COMPACTO",
+      "price": "195",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-60.png"
+    },
+    {
+      "id": 6178,
+      "tipo": "simple",
+      "sku": "SKU-32J1PP",
+      "name": "SMOK NFIX MATE - DISPOSITIVO DE VAPORAÇÃO COMPACTO",
+      "price": "265",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-61.png"
+    },
+    {
+      "id": 6181,
+      "tipo": "simple",
+      "sku": "SKU-FVFQFK",
+      "name": "SMOK NORD PRO - DISPOSITIVO DE VAPORAÇÃO COMPACTO",
+      "price": "230",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-62.png"
+    },
+    {
+      "id": 6184,
+      "tipo": "simple",
+      "sku": "SKU-QQB1JV",
+      "name": "SMOK NOVO 3 - DISPOSITIVO DE VAPORAÇÃO COMPACTO",
+      "price": "205",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-63.png"
+    },
+    {
+      "id": 6188,
+      "tipo": "simple",
+      "sku": "SKU-5JS3ER",
+      "name": "SMOK NOVO 4 - DISPOSITIVO DE VAPORAÇÃO COMPACTO",
+      "price": "275",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-64.png"
+    },
+    {
+      "id": 6191,
+      "tipo": "simple",
+      "sku": "SKU-CM6RJ5",
+      "name": "SMOK NOVO X - DISPOSITIVO DE VAPORAÇÃO COMPACTO",
+      "price": "255",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-65.png"
+    },
+    {
+      "id": 6194,
+      "tipo": "simple",
+      "sku": "SKU-G09FGU",
+      "name": "UWELL CALIBURN 2 - DISPOSITIVO DE VAPING AVANÇADO",
+      "price": "245",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-66.png"
+    },
+    {
+      "id": 6197,
+      "tipo": "simple",
+      "sku": "SKU-8EWCZT",
+      "name": "UWELL CALIBURN A2 - DISPOSITIVO DE VAPING AVANÇADO",
+      "price": "125",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-67.png"
+    },
+    {
+      "id": 6200,
+      "tipo": "simple",
+      "sku": "SKU-90OUSV",
+      "name": "UWELL CALIBURN A2S - DISPOSITIVO DE VAPING AVANÇADO",
+      "price": "105",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-67-1.png"
+    },
+    {
+      "id": 6203,
+      "tipo": "simple",
+      "sku": "SKU-W1LIC2",
+      "name": "UWELL CALIBURN A3S - DISPOSITIVO DE VAPING AVANÇADO",
+      "price": "255",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-69.png"
+    },
+    {
+      "id": 6206,
+      "tipo": "simple",
+      "sku": "SKU-JIWX3I",
+      "name": "UWELL CALIBURN G - DISPOSITIVO DE VAPING AVANÇADO",
+      "price": "185",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-70.png"
+    },
+    {
+      "id": 6209,
+      "tipo": "simple",
+      "sku": "SKU-XVP42O",
+      "name": "UWELL CALIBURN G2 - DISPOSITIVO DE VAPING AVANÇADO",
+      "price": "245",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-71.png"
+    },
+    {
+      "id": 6212,
+      "tipo": "simple",
+      "sku": "SKU-O6LZBH",
+      "name": "UWELL CALIBURN KOKO - DISPOSITIVO DE VAPING",
+      "price": "245",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-72.png"
+    },
+    {
+      "id": 6215,
+      "tipo": "simple",
+      "sku": "SKU-3J0TW8",
+      "name": "UWELL CALIBURN KALMIA - DISPOSITIVO DE VAPING",
+      "price": "155",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-73.png"
+    },
+    {
+      "id": 6218,
+      "tipo": "simple",
+      "sku": "SKU-41LEFF",
+      "name": "UWELL CALIBURN KOKO PRIME - DISPOSITIVO DE VAPING",
+      "price": "195",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-74.png"
+    },
+    {
+      "id": 6221,
+      "tipo": "simple",
+      "sku": "SKU-WT3984",
+      "name": "VAPORESSO BARR - EXPERIÊNCIA DE VAPING SUPERIOR",
+      "price": "115",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-75.png"
+    },
+    {
+      "id": 6224,
+      "tipo": "simple",
+      "sku": "SKU-TWYG6H",
+      "name": "VAPORESSO OSMALL - EXPERIÊNCIA DE VAPING SUPERIOR",
+      "price": "100",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-76.png"
+    },
+    {
+      "id": 6227,
+      "tipo": "simple",
+      "sku": "SKU-BGYJEW",
+      "name": "VAPORESSO XROX 2 - EXPERIÊNCIA DE VAPING SUPERIOR",
+      "price": "135",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-77.png"
+    },
+    {
+      "id": 6230,
+      "tipo": "simple",
+      "sku": "SKU-6IDKFD",
+      "name": "VAPORESSO XROX 3 - EXPERIÊNCIA DE VAPING SUPERIOR",
+      "price": "235",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-78.png"
+    },
+    {
+      "id": 6233,
+      "tipo": "simple",
+      "sku": "SKU-CMZSGG",
+      "name": "VAPORESSO XROX NANO - EXPERIÊNCIA DE VAPING SUPERIOR",
+      "price": "205",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/Design-sem-nome-79.png"
+    },
+    {
+      "id": 6236,
+      "tipo": "simple",
+      "sku": "SKU-NVSXRR",
+      "name": "VAPORESSO DRAG NANO - EXPERIÊNCIA DE VAPING SUPERIOR",
+      "price": "320",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/PRODUTOS.png"
+    },
+    {
+      "id": 6239,
+      "tipo": "simple",
+      "sku": "SKU-RZ9JIQ",
+      "name": "OXVA XILIN  - EXPERIMENTE O MELHOR",
+      "price": "185",
+      "categories": "POD SYSTEM",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/PRODUTOS-1.png"
+    },
+    {
+      "id": 6290,
+      "tipo": "simple",
+      "sku": "SKU-SIKYYV",
+      "name": "IGNITE 15000 ICY MINT",
+      "price": "199,99",
+      "categories": "IGNITE, IGNITE > IGNITE 15000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/07/Design-sem-nome.png"
+    },
+    {
+      "id": 6292,
+      "tipo": "simple",
+      "sku": "SKU-JW1SB1",
+      "name": "IGNITE 15000 - MENTOL",
+      "price": "199,99",
+      "categories": "IGNITE, IGNITE > IGNITE 15000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/07/Design-sem-nome-1.png"
+    },
+    {
+      "id": 6294,
+      "tipo": "simple",
+      "sku": "SKU-NB2QXC",
+      "name": "IGNITE 15000 - GREEN APPLE",
+      "price": "199,99",
+      "categories": "IGNITE, IGNITE > IGNITE 15000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/07/Design-sem-nome-2.png"
+    },
+    {
+      "id": 6296,
+      "tipo": "simple",
+      "sku": "SKU-TZEHGS",
+      "name": "IGNITE 15000 DRAGON FRUIT LEMONADE",
+      "price": "199,99",
+      "categories": "IGNITE, IGNITE > IGNITE 15000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/07/Design-sem-nome-3.png"
+    },
+    {
+      "id": 6298,
+      "tipo": "simple",
+      "sku": "SKU-BLBROY",
+      "name": "IGNITE 15000 - CHERRY BANANA",
+      "price": "199,99",
+      "categories": "IGNITE, IGNITE > IGNITE 15000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/07/Design-sem-nome-4.png"
+    },
+    {
+      "id": 6300,
+      "tipo": "simple",
+      "sku": "SKU-54B3FI",
+      "name": "IGNITE 15000 BLUEBERRY ICE",
+      "price": "199,99",
+      "categories": "IGNITE, IGNITE > IGNITE 15000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/07/Design-sem-nome-5.png"
+    },
+    {
+      "id": 6302,
+      "tipo": "simple",
+      "sku": "SKU-W0HPI4",
+      "name": "IGNITE 15000 STRAWBERRY APPLE WATERMELON",
+      "price": "199,99",
+      "categories": "IGNITE, IGNITE > IGNITE 15000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/07/Design-sem-nome-6.png"
+    },
+    {
+      "id": 6304,
+      "tipo": "simple",
+      "sku": "SKU-42PY8X",
+      "name": "IGNITE 15000 PINEAPPLE ICE",
+      "price": "199,99",
+      "categories": "IGNITE, IGNITE > IGNITE 15000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/07/Design-sem-nome-7.png"
+    },
+    {
+      "id": 6306,
+      "tipo": "simple",
+      "sku": "SKU-IGGH64",
+      "name": "IGNITE 15000 STRAWBERRY KIWI",
+      "price": "199,99",
+      "categories": "IGNITE, IGNITE > IGNITE 15000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/07/Design-sem-nome-8.png"
+    },
+    {
+      "id": 6308,
+      "tipo": "simple",
+      "sku": "SKU-RM3Z4I",
+      "name": "IGNITE 15000 BERRY BLAST",
+      "price": "199,99",
+      "categories": "IGNITE, IGNITE > IGNITE 15000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/07/Design-sem-nome-9.png"
+    },
+    {
+      "id": 6310,
+      "tipo": "simple",
+      "sku": "SKU-QDY0LW",
+      "name": "IGNITE 15000 PEPPERMINT & CREAM",
+      "price": "199,99",
+      "categories": "IGNITE, IGNITE > IGNITE 15000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/07/Design-sem-nome-10.png"
+    },
+    {
+      "id": 6629,
+      "tipo": "simple",
+      "sku": "SKU-FAZ56L",
+      "name": "HELWIT CONCEPT POUCH DE NICOTINA 7MG 2/4 BANANA 24 SACHÊS (cópia)",
+      "price": "130",
+      "categories": "POUCH DE NICOTINA",
+      "images": "https://mypodss.com/wp-content/uploads/2024/05/7-1.webp"
+    },
+    {
+      "id": 6768,
+      "tipo": "simple",
+      "sku": "SKU-VCYQTP",
+      "name": "ZYN Citrus 6MG",
+      "price": "130",
+      "categories": "ZYN 6MG",
+      "images": "https://mypodss.com/wp-content/uploads/2024/11/Design-sem-nome-5.jpg, https://mypodss.com/wp-content/uploads/2024/11/Design-sem-nome-5.jpg"
+    },
+    {
+      "id": 6774,
+      "tipo": "simple",
+      "sku": "SKU-5Z4MKD",
+      "name": "AUTO-DRAFT",
+      "price": "NaN",
+      "categories": "NaN",
+      "images": "NaN"
+    },
+    {
+      "id": 6778,
+      "tipo": "simple",
+      "sku": "SKU-E73A8F",
+      "name": "ZYN Chill 6MG",
+      "price": "130",
+      "categories": "ZYN 6MG",
+      "images": "https://mypodss.com/wp-content/uploads/2024/11/Design-sem-nome-4.png"
+    },
+    {
+      "id": 6783,
+      "tipo": "simple",
+      "sku": "SKU-M4SVAY",
+      "name": "ZYN Cinnamon 6MG",
+      "price": "130",
+      "categories": "ZYN 6MG",
+      "images": "https://mypodss.com/wp-content/uploads/2024/11/Design-sem-nome-9.jpg"
+    },
+    {
+      "id": 6786,
+      "tipo": "simple",
+      "sku": "SKU-5CDRSG",
+      "name": "ZYN Coffee 6MG",
+      "price": "130",
+      "categories": "ZYN 6MG",
+      "images": "https://mypodss.com/wp-content/uploads/2024/11/Design-sem-nome-8.jpg"
+    },
+    {
+      "id": 6788,
+      "tipo": "simple",
+      "sku": "SKU-989EXG",
+      "name": "ZYN Cool Mint 6MG",
+      "price": "130",
+      "categories": "ZYN 6MG",
+      "images": "https://mypodss.com/wp-content/uploads/2024/11/Design-sem-nome-10.jpg"
+    },
+    {
+      "id": 6791,
+      "tipo": "simple",
+      "sku": "SKU-S8WNAH",
+      "name": "ZYN Menthol 6MG",
+      "price": "130",
+      "categories": "ZYN 6MG",
+      "images": "https://mypodss.com/wp-content/uploads/2024/11/Design-sem-nome-7.jpg"
+    },
+    {
+      "id": 6793,
+      "tipo": "simple",
+      "sku": "SKU-MFYHSB",
+      "name": "ZYN Peppermint 6MG",
+      "price": "130",
+      "categories": "ZYN 6MG",
+      "images": "https://mypodss.com/wp-content/uploads/2024/11/Design-sem-nome-14.jpg"
+    },
+    {
+      "id": 6796,
+      "tipo": "simple",
+      "sku": "SKU-IG5Z6K",
+      "name": "ZYN Smooth 6MG",
+      "price": "130",
+      "categories": "ZYN 6MG",
+      "images": "https://mypodss.com/wp-content/uploads/2024/11/Design-sem-nome-12.jpg"
+    },
+    {
+      "id": 6799,
+      "tipo": "simple",
+      "sku": "SKU-J1RZ75",
+      "name": "ZYN Spearmint 6MG",
+      "price": "130",
+      "categories": "ZYN 6MG",
+      "images": "https://mypodss.com/wp-content/uploads/2024/11/Design-sem-nome-6.jpg"
+    },
+    {
+      "id": 6801,
+      "tipo": "simple",
+      "sku": "SKU-0R03BH",
+      "name": "ZYN Wintergreen 6MG",
+      "price": "130,00",
+      "categories": "ZYN 6MG",
+      "images": "https://mypodss.com/wp-content/uploads/2024/11/Design-sem-nome-11.jpg"
+    },
+    {
+      "id": 6846,
+      "tipo": "simple",
+      "sku": "SKU-BCVBQI",
+      "name": "NIKBAR POUCH - Menthol 6MG",
+      "price": "130",
+      "categories": "NIKBAR POUCH",
+      "images": "https://mypodss.com/wp-content/uploads/2024/11/17.jpg"
+    },
+    {
+      "id": 6850,
+      "tipo": "simple",
+      "sku": "SKU-BFUD09",
+      "name": "NIKBAR POUCH - Passion fruit 6MG",
+      "price": "130",
+      "categories": "ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/11/13.jpg"
+    },
+    {
+      "id": 6854,
+      "tipo": "simple",
+      "sku": "SKU-FZZIPA",
+      "name": "NIKBAR POUCH - Strawberry 6MG",
+      "price": "130",
+      "categories": "ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/11/14.jpg"
+    },
+    {
+      "id": 6857,
+      "tipo": "simple",
+      "sku": "SKU-YOLRQI",
+      "name": "NIKBAR POUCH - Super Mint 6MG",
+      "price": "130",
+      "categories": "ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/11/16.jpg"
+    },
+    {
+      "id": 6863,
+      "tipo": "simple",
+      "sku": "SKU-49Q5WP",
+      "name": "NIKBAR POUCH - Watermelon 6MG",
+      "price": "130",
+      "categories": "ELF BAR > ELF BAR BC 4000",
+      "images": "https://mypodss.com/wp-content/uploads/2024/11/15.jpg"
+    }
+  ]
+}

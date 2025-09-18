@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "nome": "Pod Menta",
+    "categoria": "Mentolados",
+    "preco": "R$ 25,00",
+    "descricao": "Sabor refrescante de menta",
+    "imagem": "/placeholder.svg?height=300&width=300",
+    "disponivel": true,
+    "destaque": true
+  },
+  {
+    "id": "2",
+    "nome": "Pod Frutas Vermelhas",
+    "categoria": "Frutados",
+    "preco": "R$ 28,00",
+    "descricao": "Mix de frutas vermelhas",
+    "imagem": "/placeholder.svg?height=300&width=300",
+    "disponivel": true,
+    "destaque": false
+  },
+  {
+    "id": "3",
+    "nome": "Pod Tabaco",
+    "categoria": "Tradicionais",
+    "preco": "R$ 30,00",
+    "descricao": "Sabor clássico de tabaco",
+    "imagem": "/placeholder.svg?height=300&width=300",
+    "disponivel": true,
+    "destaque": false
+  },
+  {
+    "id": "4",
+    "nome": "Pod Maçã Verde",
+    "categoria": "Frutados",
+    "preco": "R$ 26,00",
+    "descricao": "Sabor azedinho de maçã verde",
+    "imagem": "/placeholder.svg?height=300&width=300",
+    "disponivel": true,
+    "destaque": true
+  },
+  {
+    "id": "5",
+    "nome": "Pod Café",
+    "categoria": "Tradicionais",
+    "preco": "R$ 32,00",
+    "descricao": "Aroma intenso de café",
+    "imagem": "/placeholder.svg?height=300&width=300",
+    "disponivel": false,
+    "destaque": false
+  },
+  {
+    "id": "6",
+    "nome": "Pod Morango",
+    "categoria": "Frutados",
+    "preco": "R$ 27,00",
+    "descricao": "Doce sabor de morango",
+    "imagem": "/placeholder.svg?height=300&width=300",
+    "disponivel": true,
+    "destaque": false
+  },
+  {
+    "id": "7",
+    "nome": "Pod Eucalipto",
+    "categoria": "Mentolados",
+    "preco": "R$ 29,00",
+    "descricao": "Refrescante eucalipto",
+    "imagem": "/placeholder.svg?height=300&width=300",
+    "disponivel": true,
+    "destaque": false
+  },
+  {
+    "id": "8",
+    "nome": "Pod Uva",
+    "categoria": "Frutados",
+    "preco": "R$ 28,00",
+    "descricao": "Sabor doce de uva",
+    "imagem": "/placeholder.svg?height=300&width=300",
+    "disponivel": true,
+    "destaque": true
+  }
+]
