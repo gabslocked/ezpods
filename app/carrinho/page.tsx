@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
-import { useCart } from "@/hooks/use-cart"
+import { useCart } from "@/hooks/use-cart-v2"
 import { Button } from "@/components/ui/button"
 import { Trash2, ShoppingBag, ArrowLeft, AlertTriangle, Plus, Minus } from "lucide-react"
 import type { Product } from "@/lib/types"
@@ -50,14 +50,15 @@ export default function CartPage() {
     )
   }
 
-  const total = items.reduce((acc, item) => acc + Number(item.preco || item.price || 0) * (item.quantity || 1), 0)
+  const total = items.reduce((acc, item) => acc + item.totalPrice, 0)
 
   const handleCheckout = () => {
     const message = `Olá! Gostaria de comprar os seguintes produtos:\n\n${items
       .map((item) => {
-        const flavorsText =
-          item.flavorNames && item.flavorNames.length > 0 ? ` (Sabores: ${item.flavorNames.join(", ")})` : ""
-        return `- ${item.nome || item.name || "Produto"}${flavorsText} (${item.quantity || 1}x) - ${formatPrice(Number(item.preco || item.price || 0))}`
+        const modifiersText = item.selectedModifiers && item.selectedModifiers.length > 0 
+          ? ` (${item.selectedModifiers.map(mod => mod.modifierName).join(", ")})` 
+          : ""
+        return `- ${item.productName}${modifiersText} (${item.quantity}x) - ${formatPrice(item.totalPrice / item.quantity)}`
       })
       .join("\n")}\n\nTotal: ${formatPrice(total)}`
 
@@ -168,13 +169,13 @@ export default function CartPage() {
             <AnimatePresence>
               {items.map((item, index) => (
                 <motion.div
-                  key={`${item.id || ""}-${item.sku || ""}-${index}`}
+                  key={`${item.id}-${index}`}
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, x: -100 }}
                   transition={{ duration: 0.3, delay: index * 0.05 }}
                 >
-                  <CartItem product={item} onRemove={() => removeItem(item.id)} />
+                  <CartItem product={item as any} onRemove={() => removeItem(item.id)} />
                 </motion.div>
               ))}
             </AnimatePresence>
@@ -249,9 +250,10 @@ interface CartItemProps {
 
 function CartItem({ product, onRemove }: CartItemProps) {
   const { updateQuantity } = useCart()
-  const firstImage = product.imagem || (product.images ? product.images.split(",")[0].trim() : "")
-  const quantity = product.quantity || 1
-  const cartItemId = product.cartItemId || product.id
+  const item = product as any
+  const firstImage = item.productImage || ""
+  const quantity = item.quantity || 1
+  const cartItemId = item.id
 
   return (
     <div className="flex flex-col sm:flex-row gap-4 p-6 border border-gray-400/30 rounded-xl bg-gradient-to-br from-gray-100/10 via-gray-200/5 to-gray-300/10 backdrop-blur-md hover:border-gray-400/50 transition-all duration-300 shadow-2xl hover:shadow-3xl">
@@ -268,21 +270,21 @@ function CartItem({ product, onRemove }: CartItemProps) {
       </div>
 
       <div className="flex-grow text-center sm:text-left">
-        <h3 className="font-semibold text-white text-lg">{product.nome || product.name || "Produto sem nome"}</h3>
-        {(product.categoria || product.categories) && (
-          <p className="text-sm text-gray-300 mt-1">{product.categoria || product.categories}</p>
-        )}
-
-        {product.flavorNames && product.flavorNames.length > 0 && (
+        <h3 className="font-semibold text-white text-lg">{item.productName || "Produto sem nome"}</h3>
+        
+        {item.selectedModifiers && item.selectedModifiers.length > 0 && (
           <div className="mt-3">
-            <p className="text-xs text-gray-400 mb-2">Sabores selecionados:</p>
+            <p className="text-xs text-gray-400 mb-2">Opções selecionadas:</p>
             <div className="flex flex-wrap gap-2">
-              {product.flavorNames.map((flavorName, index) => (
+              {item.selectedModifiers.map((modifier: any, index: number) => (
                 <span
                   key={index}
-                  className="px-3 py-1 bg-gradient-to-r from-gray-100/20 to-gray-200/10 backdrop-blur-sm text-gray-200 text-xs rounded-full border border-gray-400/30 shadow-sm"
+                  className="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-purple-500/15 backdrop-blur-sm text-gray-100 text-xs rounded-md border border-blue-400/30 shadow-sm"
                 >
-                  {flavorName}
+                  {modifier.modifierName}
+                  {modifier.modifierPrice > 0 && (
+                    <span className="text-blue-300 ml-1">+{formatPrice(modifier.modifierPrice)}</span>
+                  )}
                 </span>
               ))}
             </div>
@@ -313,15 +315,12 @@ function CartItem({ product, onRemove }: CartItemProps) {
 
       <div className="flex flex-row sm:flex-col justify-between sm:items-end items-center w-full sm:w-auto mt-3 sm:mt-0">
         <div className="text-right">
-          {product.originalPrice && Number(product.originalPrice) > Number(product.preco || product.price || 0) && (
-            <p className="text-sm text-gray-400 line-through">{formatPrice(Number(product.originalPrice))}</p>
-          )}
-          <p className="font-bold text-gray-300 text-lg">{formatPrice(Number(product.preco || product.price || 0))}</p>
+          <p className="font-bold text-gray-300 text-lg">{formatPrice(item.totalPrice / quantity)}</p>
         </div>
         <p className="text-sm text-gray-400 mx-2 sm:mx-0 sm:mb-2">
           Total:{" "}
           <span className="text-white font-semibold">
-            {formatPrice(Number(product.preco || product.price || 0) * quantity)}
+            {formatPrice(item.totalPrice)}
           </span>
         </p>
         <Button
