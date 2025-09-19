@@ -1,26 +1,43 @@
 export interface Product {
   id: string
-  nome: string
+  name: string
+  description?: string
+  position: number
+  visible: boolean
+  images: Array<{ image_url: string }>
+  product_variants: Array<{
+    id: string
+    price: number
+    original_price: number
+    stock: number
+  }>
+  modifier_categories: Array<{
+    id: string
+    name: string
+    min_modifiers: number
+    max_modifiers: number
+    required: boolean
+    modifiers: Array<{
+      id: string
+      name: string
+      price: number
+      position: number
+    }>
+  }>
+  // Legacy compatibility fields
+  nome?: string
   descricao?: string
-  categoria: string
-  preco: number
-  imagem: string
-  codigo: string
+  categoria?: string
+  preco?: number
+  imagem?: string
+  codigo?: string
   ativo?: boolean
   mostrarNoCatalogo?: boolean
-  // Campos de compatibilidade para componentes existentes
-  name?: string
   price?: string | number
   categories?: string
-  images?: string
   sku?: string
-  // New fields for OlaClick API
-  position?: number
-  visible?: boolean
   stock?: number
   originalPrice?: number
-  variants?: ProductVariant[]
-  modifierCategories?: ModifierCategory[]
 }
 
 export interface ProductVariant {

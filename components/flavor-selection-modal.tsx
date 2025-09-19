@@ -7,7 +7,38 @@ import { Badge } from "@/components/ui/badge"
 import { Checkbox } from "@/components/ui/checkbox"
 import { ShoppingCart, Plus, Minus } from "lucide-react"
 import { formatPrice } from "@/lib/utils"
-import type { Product } from "@/lib/types"
+import { useCart } from "@/hooks/use-cart-v2"
+
+// Based on API structure
+interface Modifier {
+  id: string
+  name: string
+  price: number
+  position: number
+}
+
+interface ModifierCategory {
+  id: string
+  name: string
+  min_modifiers: number
+  max_modifiers: number
+  required: boolean
+  modifiers: Modifier[]
+}
+
+interface Product {
+  id: string
+  name: string
+  description?: string
+  images: Array<{ image_url: string }>
+  product_variants: Array<{
+    id: string
+    price: number
+    original_price: number
+    stock: number
+  }>
+  modifier_categories: ModifierCategory[]
+}
 
 interface FlavorSelectionModalProps {
   isOpen: boolean
@@ -22,23 +53,25 @@ export default function FlavorSelectionModal({ isOpen, onClose, product, onAddTo
 
   // Get flavor modifier category (assuming it's the first one or find by name)
   const flavorCategory =
-    product.modifierCategories?.find(
+    product.modifier_categories?.find(
       (cat) => cat.name.toLowerCase().includes("sabor") || cat.name.toLowerCase().includes("flavor"),
-    ) || product.modifierCategories?.[0]
+    ) || product.modifier_categories?.[0]
 
-  const isOutOfStock = product.stock !== undefined && product.stock <= 0
+  const isOutOfStock = (product as any).stock !== undefined && (product as any).stock <= 0
 
-  const handleFlavorToggle = (flavorId: string) => {
+  const handleFlavorToggle = (flavorId: string, event?: React.MouseEvent) => {
+    // Prevent event bubbling if called from div click
+    if (event) {
+      event.preventDefault()
+      event.stopPropagation()
+    }
+    
     setSelectedFlavors((prev) => {
       if (prev.includes(flavorId)) {
         return prev.filter((id) => id !== flavorId)
       } else {
-        // Check if we can add more flavors based on maxModifiers
-        if (flavorCategory && prev.length >= flavorCategory.maxModifiers) {
-          // If single selection, replace the current selection
-          if (flavorCategory.maxModifiers === 1) {
-            return [flavorId]
-          }
+        // Always allow multiple selections up to the max limit
+        if (flavorCategory && prev.length >= flavorCategory.max_modifiers) {
           return prev // Don't add if at max limit
         }
         return [...prev, flavorId]
@@ -64,7 +97,7 @@ export default function FlavorSelectionModal({ isOpen, onClose, product, onAddTo
   }
 
   const canAddToCart =
-    !isOutOfStock && (!flavorCategory?.required || selectedFlavors.length >= (flavorCategory?.minModifiers || 1))
+    !isOutOfStock && (!flavorCategory?.required || selectedFlavors.length >= (flavorCategory?.min_modifiers || 1))
 
   // Calculate total price (base price + flavor costs)
   const flavorCosts = selectedFlavors.reduce((total, flavorId) => {
@@ -72,8 +105,8 @@ export default function FlavorSelectionModal({ isOpen, onClose, product, onAddTo
     return total + (flavor?.price || 0)
   }, 0)
 
-  const basePrice = Number(product.preco || product.price || 0)
-  const originalPrice = product.originalPrice || basePrice
+  const basePrice = Number((product as any).preco || (product as any).price || product.product_variants?.[0]?.price || 0)
+  const originalPrice = (product as any).originalPrice || basePrice
   const totalPrice = (basePrice + flavorCosts) * quantity
   const totalOriginalPrice = (originalPrice + flavorCosts) * quantity
 
@@ -81,7 +114,7 @@ export default function FlavorSelectionModal({ isOpen, onClose, product, onAddTo
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-md bg-gradient-to-br from-gray-900 to-black border border-gray-700 text-white">
         <DialogHeader>
-          <DialogTitle className="text-xl font-bold text-white">{product.nome || product.name}</DialogTitle>
+          <DialogTitle className="text-xl font-bold text-white">{(product as any).nome || product.name}</DialogTitle>
         </DialogHeader>
 
         <div className="space-y-6">
@@ -104,7 +137,7 @@ export default function FlavorSelectionModal({ isOpen, onClose, product, onAddTo
               <div className="flex items-center justify-between">
                 <h3 className="font-semibold text-white">{flavorCategory.name}</h3>
                 <Badge variant="outline" className="text-gray-300 border-gray-600">
-                  {flavorCategory.maxModifiers === 1 ? "Escolha 1" : `Máx. ${flavorCategory.maxModifiers}`}
+                  {flavorCategory.max_modifiers === 1 ? "Escolha 1" : `Escolha até ${flavorCategory.max_modifiers}`}
                 </Badge>
               </div>
 
@@ -117,12 +150,18 @@ export default function FlavorSelectionModal({ isOpen, onClose, product, onAddTo
                         ? "bg-gradient-to-r from-gray-700 to-gray-800 border-gray-500"
                         : "bg-gray-800/50 border-gray-700 hover:bg-gray-700/50"
                     }`}
-                    onClick={() => handleFlavorToggle(flavor.id)}
+                    onClick={(e) => handleFlavorToggle(flavor.id, e)}
                   >
                     <Checkbox
                       checked={selectedFlavors.includes(flavor.id)}
-                      onChange={() => handleFlavorToggle(flavor.id)}
-                      className="border-gray-500"
+                      onCheckedChange={(checked) => {
+                        // Only toggle if the checked state actually differs from current state
+                        const isCurrentlySelected = selectedFlavors.includes(flavor.id)
+                        if (checked !== isCurrentlySelected) {
+                          handleFlavorToggle(flavor.id)
+                        }
+                      }}
+                      className="border-gray-500 pointer-events-none"
                     />
                     <div className="flex-1">
                       <p className="font-medium text-white">{flavor.name}</p>
@@ -133,7 +172,7 @@ export default function FlavorSelectionModal({ isOpen, onClose, product, onAddTo
               </div>
 
               {flavorCategory.required && selectedFlavors.length === 0 && (
-                <p className="text-sm text-red-400">* Selecione pelo menos {flavorCategory.minModifiers} sabor(es)</p>
+                <p className="text-sm text-red-400">* Selecione pelo menos {flavorCategory.min_modifiers} sabor(es)</p>
               )}
             </div>
           )}

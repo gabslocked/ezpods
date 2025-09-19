@@ -1,11 +1,11 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { useCart } from "@/hooks/use-cart"
+import { useCart } from "@/hooks/use-cart-v2"
 import Image from "next/image"
 
 export default function WhatsAppFloat() {
-  const { isOpen } = useCart()
+  const { isCartOpen } = useCart()
   const [isVisible, setIsVisible] = useState(false)
 
   useEffect(() => {
@@ -26,7 +26,7 @@ export default function WhatsAppFloat() {
     <button
       onClick={handleWhatsAppClick}
       className={`fixed bottom-6 z-50 transition-all duration-300 ease-in-out ${
-        isOpen ? "right-80" : "right-6"
+        isCartOpen ? "right-80" : "right-6"
       } group hover:scale-110 active:scale-95`}
       aria-label="Contato via WhatsApp"
     >
@@ -35,8 +35,8 @@ export default function WhatsAppFloat() {
 
         <div className="relative bg-gradient-to-r from-gray-200 to-gray-300 hover:from-gray-100 hover:to-gray-200 rounded-full p-4 shadow-lg transition-all duration-300 border border-gray-400/50">
           <Image
-            src="/whatsapp-icon.png"
-            alt="WhatsApp"
+            src="/zap.png"
+            alt="Zap"
             width={32}
             height={32}
             className="w-8 h-8 filter brightness-0"

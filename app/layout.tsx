@@ -60,8 +60,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR" className="dark">
-      <body className={`${montserrat.className} bg-black min-h-screen flex flex-col`}>
+    <html lang="pt-BR" className="dark" suppressHydrationWarning>
+      <body className={`${montserrat.className} bg-black min-h-screen flex flex-col`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <Providers>
             <AgeVerification />

@@ -31,8 +31,8 @@ export default function SearchBar({ defaultValue = "" }: SearchBarProps) {
   return (
     <motion.form
       onSubmit={handleSearch}
-      className={`flex w-full relative overflow-hidden rounded-md border transition-all duration-300 ${
-        isFocused ? "border-gray-400/50 shadow-[0_0_0_1px_rgba(156,163,175,0.3)]" : "border-[#1A1450]/30"
+      className={`flex w-full relative overflow-hidden rounded-md border transition-all duration-300 shadow-[0_2px_8px_rgba(192,192,192,0.15)] ${
+        isFocused ? "border-gray-400/50 shadow-[0_2px_12px_rgba(192,192,192,0.25)]" : "border-[#1A1450]/30"
       }`}
       initial={{ y: 20, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
@@ -60,10 +60,10 @@ export default function SearchBar({ defaultValue = "" }: SearchBarProps) {
       </div>
       <Button
         type="submit"
-        className="bg-gradient-to-r from-gray-200 to-gray-300 hover:from-gray-100 hover:to-gray-200 text-gray-800 font-medium transition-all duration-300 ml-2 border border-gray-400/50 shadow-lg hover:shadow-xl"
+        className="bg-gradient-to-r from-gray-200 to-gray-300 hover:from-gray-100 hover:to-gray-200 text-gray-800 font-medium transition-all duration-300 border-l border-gray-400/50"
       >
-        <Search className="h-4 w-4 mr-2" />
-        Buscar
+        <Search className="h-4 w-4 sm:mr-2" />
+        <span className="hidden sm:inline">Buscar</span>
       </Button>
     </motion.form>
   )

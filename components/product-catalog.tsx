@@ -5,8 +5,8 @@ import Image from "next/image"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ShoppingCart, Heart, Check, Loader2 } from "lucide-react"
-import { useCart } from "@/hooks/use-cart"
+import { ShoppingCart, Heart, Check, Loader2, Plus, Minus } from "lucide-react"
+import { useCart } from "@/hooks/use-cart-v2"
 import { useFavorites } from "@/hooks/use-favorites"
 import type { Product } from "@/lib/types"
 import { motion, AnimatePresence } from "framer-motion"
@@ -224,18 +224,21 @@ function ProductCard({ product, onAddToCart }: ProductCardProps) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [isFlavorModalOpen, setIsFlavorModalOpen] = useState(false)
   const [buttonState, setButtonState] = useState<"idle" | "loading" | "success">("idle")
+  const [quantity, setQuantity] = useState(1)
   const { toggleFavorite, isFavorite } = useFavorites()
   const { addItem, toggleCart } = useCart()
   const isMobile = useMobile()
 
   const images = product.imagem
     ? [product.imagem]
-    : product.images
-      ? product.images.split(",").map((img) => img.trim())
-      : []
+    : product.images && Array.isArray(product.images)
+      ? product.images.map((img: any) => img.image_url || img).filter(Boolean)
+      : typeof (product as any).images === 'string'
+        ? (product as any).images.split(",").map((img: string) => img.trim())
+        : []
   const isFavorited = product.id ? isFavorite(product.id) : false
 
-  const hasModifiers = product.modifierCategories && product.modifierCategories.length > 0
+  const hasModifiers = product.modifier_categories && product.modifier_categories.length > 0
 
   const isOutOfStock = product.stock !== undefined && product.stock <= 0
   const isLowStock = product.stock !== undefined && product.stock > 0 && product.stock <= 5
@@ -256,11 +259,12 @@ function ProductCard({ product, onAddToCart }: ProductCardProps) {
     } else {
       setButtonState("loading")
       setTimeout(() => {
-        addItem(product)
+        addItem(product, [], quantity)
         toggleCart(true)
         setButtonState("success")
         setTimeout(() => {
           setButtonState("idle")
+          setQuantity(1) // Reset quantity after adding
         }, 1500)
       }, 600)
     }
@@ -269,7 +273,17 @@ function ProductCard({ product, onAddToCart }: ProductCardProps) {
   const handleFlavorAddToCart = (selectedFlavors: string[], quantity: number) => {
     setButtonState("loading")
     setTimeout(() => {
-      addItem(product, selectedFlavors, quantity)
+      // Convert flavor IDs to proper modifier structure
+      const flavorCategory = product.modifier_categories?.find(
+        cat => cat.name.toLowerCase().includes("sabor") || cat.name.toLowerCase().includes("flavor")
+      ) || product.modifier_categories?.[0]
+      
+      const selectedModifiers = selectedFlavors.map(flavorId => ({
+        categoryId: flavorCategory?.id || '',
+        modifierId: flavorId
+      }))
+      
+      addItem(product, selectedModifiers, quantity)
       toggleCart(true)
       setButtonState("success")
       setTimeout(() => {
@@ -322,20 +336,19 @@ function ProductCard({ product, onAddToCart }: ProductCardProps) {
             </div>
           )}
 
-          {product.categoria && (
-            <div className="absolute top-2 left-2 bg-gradient-to-r from-gray-700 to-gray-900 text-white text-xs font-bold px-2 py-1 rounded shadow-lg">
-              {product.categoria}
-            </div>
-          )}
-
-          {isOutOfStock && (
-            <div className="absolute top-2 right-2 bg-gradient-to-r from-red-600 to-red-700 text-white text-xs font-bold px-2 py-1 rounded shadow-lg">
-              Esgotado
-            </div>
-          )}
-          {isLowStock && !isOutOfStock && (
-            <div className="absolute top-2 right-2 bg-gradient-to-r from-orange-600 to-orange-700 text-white text-xs font-bold px-2 py-1 rounded shadow-lg">
-              Últimas unidades
+          {/* Only stock status badges - no category */}
+          {(isOutOfStock || isLowStock) && (
+            <div className="absolute top-2 right-2">
+              {isOutOfStock && (
+                <div className="bg-gradient-to-r from-red-600 to-red-700 text-white text-xs font-bold px-2 py-1 rounded shadow-lg">
+                  Esgotado
+                </div>
+              )}
+              {isLowStock && !isOutOfStock && (
+                <div className="bg-gradient-to-r from-orange-600 to-orange-700 text-white text-xs font-bold px-2 py-1 rounded shadow-lg">
+                  Últimas unidades
+                </div>
+              )}
             </div>
           )}
 
@@ -361,41 +374,33 @@ function ProductCard({ product, onAddToCart }: ProductCardProps) {
           </AnimatePresence>
         </div>
 
-        <CardContent className="p-4 flex-grow">
-          <h3 className="font-medium text-gray-900 line-clamp-2 text-lg">
+        <CardContent className="p-2 sm:p-3 flex-grow">
+          <h3 className="font-medium text-gray-900 line-clamp-2 text-sm sm:text-base leading-tight mb-1 sm:mb-2">
             {product.nome || product.name || "Produto sem nome"}
           </h3>
 
-          <div className="mt-3 space-y-1">
-            {hasDiscount && <p className="text-sm text-gray-600 line-through">{formatPrice(originalPrice)}</p>}
-            <div className="flex items-center gap-2">
-              <p className="text-xl font-bold text-gray-900">{formatPrice(basePrice)}</p>
+          <div className="space-y-1">
+            {hasDiscount && <p className="text-xs text-gray-600 line-through">{formatPrice(originalPrice)}</p>}
+            <div className="flex items-center gap-2 flex-wrap">
+              <p className="text-base sm:text-lg font-bold text-gray-900">{formatPrice(basePrice)}</p>
               {hasDiscount && (
-                <Badge className="bg-gradient-to-r from-green-600 to-green-700 text-white text-xs">
+                <Badge className="bg-gradient-to-r from-green-600 to-green-700 text-white text-xs shrink-0">
                   -{Math.round(((originalPrice - basePrice) / originalPrice) * 100)}%
                 </Badge>
               )}
             </div>
           </div>
 
-          {hasModifiers && !isOutOfStock && (
-            <div className="mt-2">
-              <Badge variant="outline" className="text-xs text-gray-600 border-gray-400">
-                Personalizável
-              </Badge>
-            </div>
-          )}
-
           {product.stock !== undefined && product.stock > 0 && (
-            <div className="mt-2">
-              <p className="text-xs text-gray-600">
+            <div className="mt-1">
+              <span className="text-xs text-gray-600">
                 {product.stock <= 10 ? `${product.stock} em estoque` : "Em estoque"}
-              </p>
+              </span>
             </div>
           )}
         </CardContent>
 
-        <CardFooter className="p-4 pt-0 flex gap-2">
+        <CardFooter className="p-2 sm:p-3 pt-0 flex gap-2">
           <Button
             className={`w-full font-medium transition-all relative overflow-hidden group border shadow-lg ${
               isOutOfStock
@@ -455,7 +460,7 @@ function ProductCard({ product, onAddToCart }: ProductCardProps) {
         isOpen={isFlavorModalOpen}
         onClose={() => setIsFlavorModalOpen(false)}
         product={product}
-        onAddToCart={handleFlavorAddToCart}
+        onAddToCart={(product, selectedFlavors, quantity) => handleFlavorAddToCart(selectedFlavors, quantity)}
       />
     </>
   )

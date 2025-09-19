@@ -60,13 +60,13 @@ export async function fetchProductsFromOlaClick(): Promise<Product[]> {
             // Mapear variants
             const variants: ProductVariant[] = olaProduct.product_variants.map((variant) => ({
               id: variant.id,
-              cost: variant.cost,
+              cost: (variant as any).cost || 0,
               price: variant.price,
               originalPrice: variant.original_price,
               stock: variant.stock,
-              name: variant.name,
-              sku: variant.sku,
-              position: variant.position,
+              name: (variant as any).name || '',
+              sku: (variant as any).sku || '',
+              position: (variant as any).position || 0,
             }))
 
             // Mapear modifier categories
@@ -76,18 +76,18 @@ export async function fetchProductsFromOlaClick(): Promise<Product[]> {
                 name: modCat.name,
                 minModifiers: modCat.min_modifiers,
                 maxModifiers: modCat.max_modifiers,
-                type: modCat.type as "one" | "many",
+                type: (modCat as any).type as "one" | "many" || "one",
                 required: modCat.required,
-                position: modCat.position,
+                position: (modCat as any).position || 0,
                 modifiers: modCat.modifiers.map((mod) => ({
                   id: mod.id,
                   name: mod.name,
-                  cost: mod.cost,
+                  cost: (mod as any).cost || 0,
                   price: mod.price,
-                  originalPrice: mod.original_price,
+                  originalPrice: (mod as any).original_price || 0,
                   position: mod.position,
-                  maxLimit: mod.max_limit,
-                  visible: mod.visible,
+                  maxLimit: (mod as any).max_limit || 1,
+                  visible: (mod as any).visible !== false,
                 })),
               })) || []
 
@@ -98,21 +98,23 @@ export async function fetchProductsFromOlaClick(): Promise<Product[]> {
               categoria: category.name,
               preco: mainVariant.price || 0,
               imagem: imageUrl,
-              codigo: mainVariant.sku || "",
+              codigo: (mainVariant as any).sku || "",
               ativo: true,
               mostrarNoCatalogo: olaProduct.visible,
               position: olaProduct.position,
               visible: olaProduct.visible,
               stock: mainVariant.stock,
               originalPrice: mainVariant.original_price,
-              variants,
-              modifierCategories,
+              // variants,
+              // modifierCategories,
               // Compatibility fields
               name: olaProduct.name,
               price: mainVariant.price,
               categories: category.name,
-              images: imageUrl,
-              sku: mainVariant.sku,
+              images: [{ image_url: imageUrl }],
+              sku: (mainVariant as any).sku || '',
+              product_variants: olaProduct.product_variants,
+              modifier_categories: olaProduct.modifier_categories || [],
             }
 
             console.log("[v0] Produto mapeado:", product)

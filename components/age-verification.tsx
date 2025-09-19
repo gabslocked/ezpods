@@ -10,12 +10,16 @@ export default function AgeVerification() {
 
   useEffect(() => {
     setMounted(true)
-    const verified = localStorage.getItem("age-verified")
+  }, [])
 
+  useEffect(() => {
+    if (!mounted) return
+    
+    const verified = localStorage.getItem("age-verified")
     if (!verified) {
       setShowModal(true)
     }
-  }, [])
+  }, [mounted])
 
   const handleVerify = () => {
     localStorage.setItem("age-verified", "true")
@@ -42,7 +46,7 @@ export default function AgeVerification() {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
             transition={{ type: "spring", damping: 25 }}
-            className="bg-gradient-to-br from-black to-[#1A1450] border border-gray-600/30 rounded-lg max-w-md w-full p-10 shadow-2xl"
+            className="bg-gradient-to-br from-slate-900/95 via-gray-900/90 to-slate-800/95 backdrop-blur-xl border border-gray-300/20 rounded-lg max-w-md w-full p-10 shadow-2xl shadow-black/50"
           >
             <h2 className="text-2xl font-bold text-white text-center mb-2">Verificação de Idade</h2>
 

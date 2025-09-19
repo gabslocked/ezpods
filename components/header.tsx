@@ -4,7 +4,7 @@ import { useState, useEffect } from "react"
 import Link from "next/link"
 import { ShoppingCart, Search, Menu, ChevronDown, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { useCart } from "@/hooks/use-cart"
+import { useCart } from "@/hooks/use-cart-v2"
 import { useFavorites } from "@/hooks/use-favorites"
 import { motion, AnimatePresence } from "framer-motion"
 import { usePathname } from "next/navigation"
@@ -13,9 +13,9 @@ export default function Header() {
   const [categories, setCategories] = useState<string[]>([])
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isCategoryOpen, setIsCategoryOpen] = useState(false)
-  const { items } = useCart()
+  const { items, totalItems, toggleCart } = useCart()
   const { items: favorites } = useFavorites()
-  const itemCount = items.length
+  const itemCount = totalItems
   const favoritesCount = favorites.length
   const pathname = usePathname()
 
@@ -126,20 +126,19 @@ export default function Header() {
               </Button>
             </Link>
 
-            <Link href="/carrinho" className="relative">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="text-white hover:text-gray-300 transition-all duration-300 hover:scale-110 hover:bg-gray-800/50 rounded-full"
-              >
-                <ShoppingCart className="h-6 w-6 cart-icon" />
-                {itemCount > 0 && (
-                  <span className="absolute -top-2 -right-2 bg-gradient-to-r from-gray-600 to-gray-500 text-white text-xs font-bold rounded-full h-6 w-6 flex items-center justify-center shadow-lg animate-pulse">
-                    {itemCount}
-                  </span>
-                )}
-              </Button>
-            </Link>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="text-white hover:text-gray-300 transition-all duration-300 hover:scale-110 hover:bg-gray-800/50 rounded-full relative"
+              onClick={() => toggleCart(true)}
+            >
+              <ShoppingCart className="h-6 w-6 cart-icon" />
+              {itemCount > 0 && (
+                <span className="absolute -top-2 -right-2 bg-gradient-to-r from-gray-600 to-gray-500 text-white text-xs font-bold rounded-full h-6 w-6 flex items-center justify-center shadow-lg animate-pulse">
+                  {itemCount}
+                </span>
+              )}
+            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -159,20 +158,19 @@ export default function Header() {
               </Button>
             </Link>
 
-            <Link href="/carrinho" className="relative mr-2">
-              <Button
-                variant="ghost"
-                size="icon"
-                className="text-white hover:text-gray-300 transition-all duration-300 hover:scale-110 hover:bg-gray-800/50 rounded-full"
-              >
-                <ShoppingCart className="h-5 w-5 cart-icon" />
-                {itemCount > 0 && (
-                  <span className="absolute -top-2 -right-2 bg-gradient-to-r from-gray-600 to-gray-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center shadow-lg">
-                    {itemCount}
-                  </span>
-                )}
-              </Button>
-            </Link>
+            <Button
+              variant="ghost"
+              size="icon"
+              className="text-white hover:text-gray-300 transition-all duration-300 hover:scale-110 hover:bg-gray-800/50 rounded-full relative mr-2"
+              onClick={() => toggleCart(true)}
+            >
+              <ShoppingCart className="h-5 w-5 cart-icon" />
+              {itemCount > 0 && (
+                <span className="absolute -top-2 -right-2 bg-gradient-to-r from-gray-600 to-gray-500 text-white text-xs font-bold rounded-full h-5 w-5 flex items-center justify-center shadow-lg">
+                  {itemCount}
+                </span>
+              )}
+            </Button>
 
             <Button
               variant="ghost"

@@ -47,7 +47,14 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     try {
       const savedCart = localStorage.getItem("cart")
       if (savedCart) {
-        setItems(JSON.parse(savedCart))
+        const parsedCart = JSON.parse(savedCart)
+        // Validate and sanitize cart items
+        const validatedCart = parsedCart.map((item: any) => ({
+          ...item,
+          quantity: Math.max(1, Math.floor(Number(item.quantity)) || 1),
+          cartItemId: item.cartItemId || `${item.id || item.sku}-${Date.now()}`
+        }))
+        setItems(validatedCart)
       }
     } catch (error) {
       console.error("Failed to load cart from localStorage:", error)
@@ -59,9 +66,17 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
     try {
       localStorage.setItem("cart", JSON.stringify(items))
 
-      // Calculate totals
-      const itemCount = items.reduce((acc, item) => acc + item.quantity, 0)
-      const price = items.reduce((acc, item) => acc + Number(item.preco || item.price || 0) * item.quantity, 0)
+      // Calculate totals with proper validation
+      const itemCount = items.reduce((acc, item) => {
+        const quantity = Number(item.quantity) || 0
+        return acc + quantity
+      }, 0)
+      
+      const price = items.reduce((acc, item) => {
+        const itemPrice = Number(item.preco || item.price || 0)
+        const quantity = Number(item.quantity) || 0
+        return acc + (itemPrice * quantity)
+      }, 0)
 
       setTotalItems(itemCount)
       setTotalPrice(price)
@@ -113,8 +128,15 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   const updateQuantity = (cartItemId: string, quantity: number) => {
     if (!cartItemId) return
 
+    // Ensure quantity is a valid number
+    const validQuantity = Math.max(1, Math.floor(Number(quantity)) || 1)
+
     setItems((prev) =>
-      prev.map((item) => (item.cartItemId === cartItemId ? { ...item, quantity: Math.max(1, quantity) } : item)),
+      prev.map((item) => 
+        item.cartItemId === cartItemId 
+          ? { ...item, quantity: validQuantity } 
+          : item
+      ),
     )
   }
 
