@@ -7,9 +7,9 @@ Adicione estas variáveis ao seu arquivo `.env`:
 DATABASE_URL=postgresql://user:password@host:5432/database
 
 # Tuna Payment Gateway
-TUNA_API_KEY=your_tuna_api_key_here
-TUNA_APP_TOKEN=your_tuna_app_token_here
-TUNA_API_URL=https://sandbox.tuna.uy/api  # Use https://api.tuna.uy/api em produção
+TUNA_ACCOUNT=olaclick-technologias-ltda  # Nome da sua conta na Tuna
+TUNA_APP_TOKEN=your_tuna_app_token_here  # UUID obtido no console da Tuna
+TUNA_API_URL=https://api.tuna.uy/api  # Use https://sandbox.tuna.uy/api para testes
 TUNA_WEBHOOK_SECRET=your_webhook_secret_key
 
 # WhatsApp Business
@@ -28,9 +28,10 @@ NEXT_PUBLIC_SITE_URL=https://ezpods.vercel.app  # Ou seu domínio
    - Acesse: https://console.tuna.uy
    - Crie uma conta
 
-2. **Obter API Keys**:
-   - No console da Tuna, vá em "Settings" > "API Keys"
-   - Copie o `API Key` e `App Token`
+2. **Obter App Token**:
+   - No console da Tuna, vá em "Settings" > "API Keys" ou "Developers"
+   - Copie o `App Token` (formato UUID)
+   - O `Account Name` é: `olaclick-technologias-ltda`
 
 3. **Configurar Webhook**:
    - No console, vá em "Settings" > "Webhooks"

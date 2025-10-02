@@ -38,8 +38,8 @@ export interface TunaWebhookPayload {
   metadata?: Record<string, any>
 }
 
-const TUNA_API_URL = process.env.TUNA_API_URL || 'https://sandbox.tuna.uy/api'
-const TUNA_API_KEY = process.env.TUNA_API_KEY
+const TUNA_API_URL = process.env.TUNA_API_URL || 'https://api.tuna.uy/api'
+const TUNA_ACCOUNT = process.env.TUNA_ACCOUNT || 'olaclick-technologias-ltda'
 const TUNA_APP_TOKEN = process.env.TUNA_APP_TOKEN
 
 /**
@@ -48,8 +48,8 @@ const TUNA_APP_TOKEN = process.env.TUNA_APP_TOKEN
 export async function createPaymentLink(
   data: TunaPaymentLinkRequest
 ): Promise<TunaPaymentLinkResponse> {
-  if (!TUNA_API_KEY || !TUNA_APP_TOKEN) {
-    throw new Error('Tuna API credentials not configured')
+  if (!TUNA_ACCOUNT || !TUNA_APP_TOKEN) {
+    throw new Error('Tuna API credentials not configured. Please set TUNA_ACCOUNT and TUNA_APP_TOKEN in .env')
   }
 
   try {
@@ -57,8 +57,8 @@ export async function createPaymentLink(
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'x-api-key': TUNA_API_KEY,
-        'x-app-token': TUNA_APP_TOKEN,
+        'x-tuna-account': TUNA_ACCOUNT,
+        'x-tuna-apptoken': TUNA_APP_TOKEN,
       },
       body: JSON.stringify(data),
     })
@@ -81,7 +81,7 @@ export async function createPaymentLink(
  * Consulta status de um pagamento na Tuna
  */
 export async function getPaymentStatus(paymentId: string): Promise<any> {
-  if (!TUNA_API_KEY || !TUNA_APP_TOKEN) {
+  if (!TUNA_ACCOUNT || !TUNA_APP_TOKEN) {
     throw new Error('Tuna API credentials not configured')
   }
 
@@ -89,8 +89,8 @@ export async function getPaymentStatus(paymentId: string): Promise<any> {
     const response = await fetch(`${TUNA_API_URL}/Payment/${paymentId}`, {
       method: 'GET',
       headers: {
-        'x-api-key': TUNA_API_KEY,
-        'x-app-token': TUNA_APP_TOKEN,
+        'x-tuna-account': TUNA_ACCOUNT,
+        'x-tuna-apptoken': TUNA_APP_TOKEN,
       },
     })
 
