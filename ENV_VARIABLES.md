@@ -9,7 +9,7 @@ DATABASE_URL=postgresql://user:password@host:5432/database
 # Tuna Payment Gateway
 TUNA_ACCOUNT=olaclick-technologias-ltda  # Nome da sua conta na Tuna
 TUNA_APP_TOKEN=your_tuna_app_token_here  # UUID obtido no console da Tuna
-TUNA_API_URL=https://api.tuna.uy/api  # Use https://sandbox.tuna.uy/api para testes
+TUNA_API_URL=https://token.tunagateway.com  # Use https://token.tuna-demo.uy para testes
 TUNA_WEBHOOK_SECRET=your_webhook_secret_key
 
 # WhatsApp Business

@@ -38,7 +38,7 @@ export interface TunaWebhookPayload {
   metadata?: Record<string, any>
 }
 
-const TUNA_API_URL = process.env.TUNA_API_URL || 'https://api.tuna.uy/api'
+const TUNA_API_URL = process.env.TUNA_API_URL || 'https://token.tunagateway.com'
 const TUNA_ACCOUNT = process.env.TUNA_ACCOUNT || 'olaclick-technologias-ltda'
 const TUNA_APP_TOKEN = process.env.TUNA_APP_TOKEN
 

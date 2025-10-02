@@ -36,8 +36,8 @@ DATABASE_URL=postgresql://user:password@host:5432/database
 # Tuna Payment Gateway
 TUNA_ACCOUNT=olaclick-technologias-ltda
 TUNA_APP_TOKEN=SEU_APP_TOKEN_AQUI  # Obter no console da Tuna
-TUNA_API_URL=https://api.tuna.uy/api  # Produção
-# TUNA_API_URL=https://sandbox.tuna.uy/api  # Sandbox para testes
+TUNA_API_URL=https://token.tunagateway.com  # Produção
+# TUNA_API_URL=https://token.tuna-demo.uy  # Sandbox para testes
 
 # Webhook Secret (gerar no console da Tuna)
 TUNA_WEBHOOK_SECRET=seu_webhook_secret_aqui
@@ -57,7 +57,20 @@ NEXT_PUBLIC_SITE_URL=https://ezpods.vercel.app
 ### 3.1 Criar Nova Sessão
 
 ```bash
-curl -X POST https://api.tuna.uy/api/Token/NewSession \
+# Teste com credenciais de sandbox primeiro:
+curl -X POST https://token.tuna-demo.uy/api/Token/NewSession \
+  -H "Content-Type: application/json" \
+  -H "x-tuna-account: demo" \
+  -H "x-tuna-apptoken: a3823a59-66bb-49e2-95eb-b47c447ec7a7" \
+  -d '{
+    "customer": {
+      "iD": "cliente-teste-123",
+      "email": "cliente@teste.com"
+    }
+  }'
+
+# Depois teste com suas credenciais:
+curl -X POST https://token.tunagateway.com/api/Token/NewSession \
   -H "Content-Type: application/json" \
   -H "x-tuna-account: olaclick-technologias-ltda" \
   -H "x-tuna-apptoken: SEU_APP_TOKEN_AQUI" \
@@ -82,7 +95,7 @@ curl -X POST https://api.tuna.uy/api/Token/NewSession \
 
 ```bash
 # Substitua SESSION_ID pelo sessionId retornado acima
-curl -X POST https://api.tuna.uy/api/Token/Generate \
+curl -X POST https://token.tunagateway.com/api/Token/Generate \
   -H "Content-Type: application/json" \
   -H "x-tuna-account: olaclick-technologias-ltda" \
   -H "x-tuna-apptoken: SEU_APP_TOKEN_AQUI" \
@@ -113,7 +126,7 @@ curl -X POST https://api.tuna.uy/api/Token/Generate \
 ### 3.3 Criar Payment Link (Principal)
 
 ```bash
-curl -X POST https://api.tuna.uy/api/Payment/Link/Create \
+curl -X POST https://token.tunagateway.com/api/Payment/Link/Create \
   -H "Content-Type: application/json" \
   -H "x-tuna-account: olaclick-technologias-ltda" \
   -H "x-tuna-apptoken: SEU_APP_TOKEN_AQUI" \
