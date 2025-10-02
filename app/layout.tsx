@@ -15,7 +15,10 @@ const montserrat = Montserrat({
   weight: ["300", "400", "500", "600", "700"],
 })
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ezpods.vercel.app'
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "EzPods - Pod SP | Vape São Paulo | Pod Perto de Mim",
   description:
     "EzPods - Loja de Pod em São Paulo. Vape, Pod, Elfbar, Ignite com entrega rápida. Pod perto de mim, pod entrega SP, vape São Paulo. Os melhores pods e vapes de SP.",
@@ -38,7 +41,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: "EzPods - Pod SP | Vape São Paulo",
     description: "Os melhores pods e vapes de São Paulo com entrega rápida. Elfbar, Ignite e muito mais!",
-    images: ["/ezpods-logo.png"],
+    url: siteUrl,
+    siteName: "EzPods",
+    images: [
+      {
+        url: "/preview.jpg",
+        width: 800,
+        height: 800,
+        alt: "EzPods - Loja de Pod e Vape em São Paulo",
+      }
+    ],
     locale: "pt_BR",
     type: "website",
   },
@@ -46,13 +58,26 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "EzPods - Pod SP | Vape São Paulo",
     description: "Os melhores pods e vapes de São Paulo com entrega rápida.",
-    images: ["/ezpods-logo.png"],
+    images: ["/preview.jpg"],
+    creator: "@ezpods",
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
-  generator: "v0.app",
+  verification: {
+    google: 'google-site-verification-code',
+  },
+  alternates: {
+    canonical: siteUrl,
+  },
 }
 
 export default function RootLayout({
