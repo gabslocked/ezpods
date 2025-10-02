@@ -1,0 +1,12 @@
+{
+  "name": "directus-setup",
+  "version": "1.0.0",
+  "description": "Setup script for Directus with OlaClick data",
+  "main": "setup-directus.js",
+  "scripts": {
+    "setup": "node setup-directus.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}

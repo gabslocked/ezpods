@@ -6,6 +6,7 @@ import Header from "@/components/header"
 import Footer from "@/components/footer"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Providers } from "./providers"
+import { AuthProvider } from "@/hooks/use-auth"
 import AgeVerification from "@/components/age-verification"
 import WhatsAppFloat from "@/components/whatsapp-float"
 
@@ -64,20 +65,22 @@ export default function RootLayout({
       <body className={`${montserrat.className} bg-black min-h-screen flex flex-col`} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
           <Providers>
-            <AgeVerification />
-            <div className="silver-spots-container">
-              <div className="silver-spot silver-spot-1"></div>
-              <div className="silver-spot silver-spot-2"></div>
-              <div className="silver-spot silver-spot-3"></div>
-              <div className="silver-spot silver-spot-4"></div>
-              <div className="silver-spot silver-spot-5"></div>
-            </div>
-            <div className="flex flex-col min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 relative z-10">
-              <Header />
-              <main className="flex-grow">{children}</main>
-              <Footer />
-              <WhatsAppFloat />
-            </div>
+            <AuthProvider>
+              <AgeVerification />
+              <div className="silver-spots-container">
+                <div className="silver-spot silver-spot-1"></div>
+                <div className="silver-spot silver-spot-2"></div>
+                <div className="silver-spot silver-spot-3"></div>
+                <div className="silver-spot silver-spot-4"></div>
+                <div className="silver-spot silver-spot-5"></div>
+              </div>
+              <div className="flex flex-col min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 relative z-10">
+                <Header />
+                <main className="flex-grow">{children}</main>
+                <Footer />
+                <WhatsAppFloat />
+              </div>
+            </AuthProvider>
           </Providers>
         </ThemeProvider>
       </body>

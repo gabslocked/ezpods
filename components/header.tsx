@@ -2,10 +2,12 @@
 
 import { useState, useEffect } from "react"
 import Link from "next/link"
-import { ShoppingCart, Search, Menu, ChevronDown, Heart } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ShoppingCart, Heart, Menu, X, User, ChevronDown, Search } from "lucide-react"
 import { useCart } from "@/hooks/use-cart-v2"
 import { useFavorites } from "@/hooks/use-favorites"
+import { useAuth } from "@/hooks/use-auth"
+import CartDrawerV2 from "./cart-drawer-v2"
 import { motion, AnimatePresence } from "framer-motion"
 import { usePathname } from "next/navigation"
 
@@ -15,6 +17,7 @@ export default function Header() {
   const [isCategoryOpen, setIsCategoryOpen] = useState(false)
   const { items, totalItems, toggleCart } = useCart()
   const { items: favorites } = useFavorites()
+  const { user } = useAuth()
   const itemCount = totalItems
   const favoritesCount = favorites.length
   const pathname = usePathname()
@@ -139,6 +142,29 @@ export default function Header() {
                 </span>
               )}
             </Button>
+
+            {user ? (
+              <Link href="/conta">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="text-white hover:text-gray-300 transition-all duration-300 hover:scale-110 hover:bg-gray-800/50 rounded-full"
+                  title={`Olá, ${user.name}`}
+                >
+                  <User className="h-6 w-6" />
+                </Button>
+              </Link>
+            ) : (
+              <Link href="/login">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="text-white hover:text-gray-300 transition-all duration-300 hover:scale-110 hover:bg-gray-800/50 rounded-full"
+                >
+                  <User className="h-6 w-6" />
+                </Button>
+              </Link>
+            )}
           </div>
 
           {/* Mobile Menu Button */}
@@ -172,6 +198,29 @@ export default function Header() {
               )}
             </Button>
 
+            {user ? (
+              <Link href="/conta" className="mr-2">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="text-white hover:text-gray-300 transition-all duration-300 hover:scale-110 hover:bg-gray-800/50 rounded-full"
+                  title={`Olá, ${user.name}`}
+                >
+                  <User className="h-5 w-5" />
+                </Button>
+              </Link>
+            ) : (
+              <Link href="/login" className="mr-2">
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className="text-white hover:text-gray-300 transition-all duration-300 hover:scale-110 hover:bg-gray-800/50 rounded-full"
+                >
+                  <User className="h-5 w-5" />
+                </Button>
+              </Link>
+            )}
+
             <Button
               variant="ghost"
               size="icon"
@@ -201,6 +250,14 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(false)}
               >
                 <Search className="h-5 w-5 mr-3" /> Pesquisar
+              </Link>
+
+              <Link
+                href="/login"
+                className="flex items-center text-white hover:text-gray-300 py-3 transition-all duration-300 hover:translate-x-2"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                <User className="h-5 w-5 mr-3" /> Login
               </Link>
 
               <div className="py-3">
