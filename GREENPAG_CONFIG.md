@@ -12,7 +12,7 @@ GREENPAG_PUBLIC_KEY=pk_9f2fbb4446976d80f551208a8fa77becdbcc85febd60bd60
 GREENPAG_SECRET_KEY=sk_a05efa4eda0ab48f4512c775dc37b7509bf18fa67b1196d124a196c38aa9a5ec
 
 # URL do Site (para webhooks)
-NEXT_PUBLIC_SITE_URL=https://ezpods.vercel.app
+NEXT_PUBLIC_SITE_URL=https://ezpods.com.br
 ```
 
 ## Como Configurar

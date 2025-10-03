@@ -15,7 +15,7 @@ const montserrat = Montserrat({
   weight: ["300", "400", "500", "600", "700"],
 })
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ezpods.vercel.app'
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ezpods.com.br'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
