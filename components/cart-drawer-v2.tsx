@@ -28,16 +28,11 @@ export default function CartDrawerV2() {
   }
 
   const handleCheckout = () => {
-    const message = `Olá! Gostaria de comprar os seguintes produtos:\n\n${items
-      .map((item) => {
-        const modifiersText = item.selectedModifiers.length > 0 
-          ? ` (${item.selectedModifiers.map(m => m.modifierName).join(", ")})` 
-          : ""
-        return `- ${item.productName}${modifiersText} (${item.quantity}x) - ${formatPrice(item.totalPrice)}`
-      })
-      .join("\n")}\n\nTotal: ${formatPrice(totalPrice)}`
-
-    window.open(`https://wa.me/5511933580273?text=${encodeURIComponent(message)}`, "_blank")
+    // Salva o carrinho no localStorage antes de redirecionar
+    localStorage.setItem('cart', JSON.stringify(items))
+    
+    // Redireciona para a página de checkout
+    window.location.href = '/checkout'
   }
 
   return (
