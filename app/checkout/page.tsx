@@ -58,7 +58,9 @@ export default function CheckoutPage() {
           
           if (data.status === 'paid') {
             setStep('success')
+            // Limpa AMBOS os carrinhos após confirmação do pagamento
             localStorage.removeItem('cart')
+            localStorage.removeItem('ezpods-cart')
             clearInterval(interval)
           }
         } catch (error) {

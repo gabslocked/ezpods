@@ -29,7 +29,11 @@ export default function CartDrawerV2() {
 
   const handleCheckout = () => {
     // Salva o carrinho no localStorage antes de redirecionar
+    // Mantém o carrinho original (ezpods-cart) intacto
     localStorage.setItem('cart', JSON.stringify(items))
+    
+    // NÃO fecha o carrinho nem limpa os itens
+    // O carrinho só será limpo após confirmação do pagamento
     
     // Redireciona para a página de checkout
     window.location.href = '/checkout'
