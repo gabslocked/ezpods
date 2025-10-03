@@ -10,14 +10,18 @@ import { CheckCircle2, Clock, Copy, QrCode, ArrowLeft, Loader2 } from "lucide-re
 import Image from "next/image"
 import { maskCEP, maskPhone, maskDocument, unmask, isValidDocument } from "@/lib/utils/masks"
 import { fetchAddressByCEP } from "@/lib/utils/cep"
+import { useAuth } from "@/hooks/use-auth"
 
 export default function CheckoutPage() {
   const router = useRouter()
   const searchParams = useSearchParams()
+  const { user } = useAuth()
   
   const [step, setStep] = useState<'form' | 'payment' | 'success'>('form')
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
+  const [savedAddresses, setSavedAddresses] = useState<any[]>([])
+  const [selectedAddressId, setSelectedAddressId] = useState<string>('')
   
   // Dados do cliente
   const [customerData, setCustomerData] = useState({
@@ -65,6 +69,64 @@ export default function CheckoutPage() {
 
     loadCart()
   }, [router])
+
+  // Carrega dados do usuário e endereços salvos
+  useEffect(() => {
+    if (user) {
+      // Preenche dados do usuário
+      setCustomerData(prev => ({
+        ...prev,
+        name: user.name || prev.name,
+        email: user.email || prev.email,
+        document: user.document || prev.document,
+        phone: user.phone || prev.phone,
+      }))
+
+      // Carrega endereços salvos
+      fetchSavedAddresses()
+    }
+  }, [user])
+
+  const fetchSavedAddresses = async () => {
+    try {
+      const response = await fetch('/api/user/addresses')
+      const data = await response.json()
+
+      if (response.ok && data.addresses) {
+        setSavedAddresses(data.addresses)
+        
+        // Se tiver endereço padrão, seleciona automaticamente
+        const defaultAddress = data.addresses.find((addr: any) => addr.is_default)
+        if (defaultAddress) {
+          selectAddress(defaultAddress)
+        }
+      }
+    } catch (error) {
+      console.error('Erro ao carregar endereços:', error)
+    }
+  }
+
+  const selectAddress = (address: any) => {
+    setSelectedAddressId(address.id)
+    setCustomerData(prev => ({
+      ...prev,
+      cep: address.cep || prev.cep,
+      address: address.street || prev.address,
+      number: address.number || prev.number,
+      complement: address.complement || prev.complement,
+      neighborhood: address.neighborhood || prev.neighborhood,
+      city: address.city || prev.city,
+      state: address.state || prev.state,
+    }))
+
+    // Calcula frete com o novo CEP
+    if (address.cep) {
+      const cleanCEP = unmask(address.cep)
+      if (cleanCEP.length === 8) {
+        calculateShipping(cleanCEP)
+      }
+    }
+  }
 
   useEffect(() => {
     // Verifica status do pagamento a cada 5 segundos
@@ -486,6 +548,40 @@ export default function CheckoutPage() {
 
                 <div className="border-t border-gray-600 pt-4">
                   <h3 className="text-white font-semibold mb-4">Endereço de Entrega</h3>
+                  
+                  {/* Seletor de Endereços Salvos */}
+                  {user && savedAddresses.length > 0 && (
+                    <div className="mb-4 p-4 bg-gray-900/50 rounded-lg border border-gray-700">
+                      <Label className="text-gray-300 mb-3 block">Endereços Salvos</Label>
+                      <div className="space-y-2">
+                        {savedAddresses.map((addr) => (
+                          <button
+                            key={addr.id}
+                            type="button"
+                            onClick={() => selectAddress(addr)}
+                            className={`w-full text-left p-3 rounded-lg border transition-all ${
+                              selectedAddressId === addr.id
+                                ? 'border-green-500 bg-green-500/10'
+                                : 'border-gray-600 hover:border-gray-500 bg-gray-800/50'
+                            }`}
+                          >
+                            <div className="text-white font-medium text-sm">
+                              {addr.street}, {addr.number}
+                              {addr.is_default && (
+                                <span className="ml-2 text-xs text-green-400">(Padrão)</span>
+                              )}
+                            </div>
+                            <div className="text-gray-400 text-xs">
+                              {addr.neighborhood}, {addr.city} - {addr.state} • CEP: {addr.cep}
+                            </div>
+                          </button>
+                        ))}
+                      </div>
+                      <div className="text-xs text-gray-400 mt-2">
+                        Ou preencha um novo endereço abaixo
+                      </div>
+                    </div>
+                  )}
                   
                   <div className="space-y-4">
                     <div>

@@ -7,7 +7,8 @@ import { ShoppingCart, Heart, Menu, X, User, ChevronDown, Search } from "lucide-
 import { useCart } from "@/hooks/use-cart-v2"
 import { useFavorites } from "@/hooks/use-favorites"
 import { useAuth } from "@/hooks/use-auth"
-import CartDrawerV2 from "./cart-drawer-v2"
+import CartDrawerV2 from './cart-drawer-v2'
+import { UserAvatarMenu } from './user-avatar-menu'
 import { motion, AnimatePresence } from "framer-motion"
 import { usePathname } from "next/navigation"
 
@@ -199,16 +200,9 @@ export default function Header() {
             </Button>
 
             {user ? (
-              <Link href="/conta" className="mr-2">
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="text-white hover:text-gray-300 transition-all duration-300 hover:scale-110 hover:bg-gray-800/50 rounded-full"
-                  title={`Olá, ${user.name}`}
-                >
-                  <User className="h-5 w-5" />
-                </Button>
-              </Link>
+              <div className="mr-2">
+                <UserAvatarMenu user={user} />
+              </div>
             ) : (
               <Link href="/login" className="mr-2">
                 <Button

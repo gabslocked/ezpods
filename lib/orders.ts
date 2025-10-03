@@ -35,6 +35,7 @@ export interface CreateOrderData {
     sku?: string
     quantity: number
     unit_price: number
+    cost_price?: number
     total_price: number
     image_url?: string
   }>
@@ -96,8 +97,8 @@ export async function createOrder(data: CreateOrderData): Promise<string> {
         `INSERT INTO order_items (
           order_id, product_id, variant_id,
           product_name, variant_name, sku,
-          quantity, unit_price, total_price, product_image_url
-        ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10)`,
+          quantity, unit_price, cost_price, total_price, product_image_url
+        ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11)`,
         [
           orderId,
           item.product_id,
@@ -107,11 +108,11 @@ export async function createOrder(data: CreateOrderData): Promise<string> {
           item.sku || null,
           item.quantity,
           item.unit_price,
+          item.cost_price || 0,
           item.total_price,
           item.image_url || null
         ]
       )
-
       // Atualiza estoque se houver variant_id
       if (item.variant_id) {
         const stockResult = await client.query(

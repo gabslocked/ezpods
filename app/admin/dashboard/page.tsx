@@ -285,6 +285,53 @@ export default function AdminDashboardPage() {
         </Card>
       </div>
 
+      {/* Lucro e Taxa de Plataforma */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <Card className="bg-gradient-to-br from-green-500/20 to-green-600/10 border-green-500/30">
+          <CardHeader>
+            <CardTitle className="text-white text-sm">Faturamento do Mês</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="text-3xl font-bold text-white mb-1">
+              R$ {dashboard.profit.total_revenue.toFixed(2)}
+            </div>
+            <div className="text-xs text-gray-400">
+              Custo: R$ {dashboard.profit.total_cost.toFixed(2)}
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gradient-to-br from-blue-500/20 to-blue-600/10 border-blue-500/30">
+          <CardHeader>
+            <CardTitle className="text-white text-sm">Lucro Bruto</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="text-3xl font-bold text-white mb-1">
+              R$ {dashboard.profit.gross_profit.toFixed(2)}
+            </div>
+            <div className="text-xs text-gray-400">
+              Margem: {dashboard.profit.total_revenue > 0 
+                ? ((dashboard.profit.gross_profit / dashboard.profit.total_revenue) * 100).toFixed(1)
+                : 0}%
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-gradient-to-br from-purple-500/20 to-purple-600/10 border-purple-500/30">
+          <CardHeader>
+            <CardTitle className="text-white text-sm">Lucro Líquido</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <div className="text-3xl font-bold text-white mb-1">
+              R$ {dashboard.profit.net_profit.toFixed(2)}
+            </div>
+            <div className="text-xs text-red-400">
+              Taxa Plataforma (10%): -R$ {dashboard.profit.platform_fee.toFixed(2)}
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
       {/* Taxa de Conversão */}
       <Card className="bg-gradient-to-br from-green-500/10 to-blue-500/10 border-green-500/30">
         <CardContent className="pt-6">
