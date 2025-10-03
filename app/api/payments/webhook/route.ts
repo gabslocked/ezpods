@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { validateWebhookSignature, parseWebhook } from '@/lib/greenpag'
+import { savePaymentStatus } from '@/lib/payment-store'
 
 // Configuração para desabilitar o body parser e ler o raw body
 export const runtime = 'nodejs'
@@ -46,14 +47,23 @@ export async function POST(request: NextRequest) {
     switch (webhookData.event) {
       case 'payment.received':
         console.log(`Pagamento recebido: ${webhookData.transaction_id}`)
-        // TODO: Atualizar status do pedido no banco de dados para "processando"
-        // await updateOrderStatus(webhookData.external_id, 'processing')
+        savePaymentStatus({
+          transaction_id: webhookData.transaction_id,
+          status: 'pending',
+          amount: webhookData.amount,
+          external_id: webhookData.external_id,
+        })
         break
 
       case 'payment.confirmed':
         console.log(`Pagamento confirmado: ${webhookData.transaction_id}`)
-        // TODO: Atualizar status do pedido no banco de dados para "pago"
-        // await updateOrderStatus(webhookData.external_id, 'paid')
+        savePaymentStatus({
+          transaction_id: webhookData.transaction_id,
+          status: 'paid',
+          amount: webhookData.amount,
+          paid_at: webhookData.paid_at,
+          external_id: webhookData.external_id,
+        })
         // TODO: Enviar email de confirmação
         // await sendConfirmationEmail(webhookData.external_id)
         // TODO: Processar pedido (separar produtos, etc)
@@ -61,14 +71,22 @@ export async function POST(request: NextRequest) {
 
       case 'payment.failed':
         console.log(`Pagamento falhou: ${webhookData.transaction_id}`)
-        // TODO: Atualizar status do pedido no banco de dados para "falhou"
-        // await updateOrderStatus(webhookData.external_id, 'failed')
+        savePaymentStatus({
+          transaction_id: webhookData.transaction_id,
+          status: 'failed',
+          amount: webhookData.amount,
+          external_id: webhookData.external_id,
+        })
         break
 
       case 'payment.expired':
         console.log(`Pagamento expirou: ${webhookData.transaction_id}`)
-        // TODO: Atualizar status do pedido no banco de dados para "expirado"
-        // await updateOrderStatus(webhookData.external_id, 'expired')
+        savePaymentStatus({
+          transaction_id: webhookData.transaction_id,
+          status: 'expired',
+          amount: webhookData.amount,
+          external_id: webhookData.external_id,
+        })
         break
 
       default:

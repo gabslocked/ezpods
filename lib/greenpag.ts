@@ -97,6 +97,44 @@ export async function createPayment(data: GreenPagPaymentRequest): Promise<Green
 }
 
 /**
+ * Consulta o status de um pagamento no GreenPag
+ */
+export async function getPaymentStatus(transactionId: string): Promise<any> {
+  try {
+    const response = await fetch(`${GREENPAG_API_URL}/payments/${transactionId}`, {
+      method: 'GET',
+      headers: {
+        'X-Public-Key': PUBLIC_KEY,
+        'X-Secret-Key': SECRET_KEY,
+        'Content-Type': 'application/json',
+      },
+    })
+
+    if (!response.ok) {
+      const errorData = await response.json().catch(() => ({}))
+      throw new Error(`GreenPag API Error: ${response.status} - ${JSON.stringify(errorData)}`)
+    }
+
+    const result = await response.json()
+    
+    // Retorna o status do pagamento
+    if (result.success && result.data) {
+      return {
+        transaction_id: result.data.transaction_id,
+        status: result.data.status,
+        amount: result.data.amount,
+        paid_at: result.data.paid_at,
+      }
+    }
+    
+    return result
+  } catch (error) {
+    console.error('Error getting payment status:', error)
+    throw error
+  }
+}
+
+/**
  * Valida a assinatura de um webhook do GreenPag usando HMAC-SHA256
  */
 export function validateWebhookSignature(payload: string, signature: string): boolean {

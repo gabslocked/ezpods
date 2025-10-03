@@ -1,8 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server'
-
-// Esta é uma implementação simplificada
-// Em produção, você deve consultar o banco de dados onde salvou o status do pedido
-// ou fazer uma consulta à API do GreenPag se eles oferecerem esse endpoint
+import { getPaymentStatus } from '@/lib/payment-store'
 
 export async function GET(
   request: NextRequest,
@@ -18,15 +15,27 @@ export async function GET(
       )
     }
 
-    // TODO: Consultar o banco de dados para obter o status do pagamento
-    // const order = await getOrderByTransactionId(transactionId)
-    
-    // Por enquanto, retorna um status de exemplo
-    // Em produção, isso deve vir do banco de dados atualizado pelo webhook
+    console.log('Consultando status do pagamento:', transactionId)
+
+    // Consulta o status no armazenamento em memória
+    const paymentStatus = getPaymentStatus(transactionId)
+
+    if (!paymentStatus) {
+      return NextResponse.json({
+        transaction_id: transactionId,
+        status: 'pending',
+        message: 'Aguardando pagamento',
+      })
+    }
+
+    console.log('Status retornado:', paymentStatus)
+
     return NextResponse.json({
-      transaction_id: transactionId,
-      status: 'pending', // pending, processing, paid, failed, expired
-      message: 'Aguardando pagamento',
+      transaction_id: paymentStatus.transaction_id,
+      status: paymentStatus.status, // pending, paid, failed, expired
+      amount: paymentStatus.amount,
+      paid_at: paymentStatus.paid_at,
+      message: paymentStatus.status === 'paid' ? 'Pagamento confirmado' : 'Aguardando pagamento',
     })
   } catch (error: any) {
     console.error('Error checking payment status:', error)

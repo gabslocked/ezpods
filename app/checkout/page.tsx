@@ -226,6 +226,36 @@ export default function CheckoutPage() {
                   <li>Confirme o pagamento</li>
                 </ol>
               </div>
+
+              {/* Botão de simulação para desenvolvimento */}
+              {process.env.NODE_ENV === 'development' && (
+                <div className="bg-yellow-500/10 border border-yellow-500/30 p-4 rounded-lg">
+                  <p className="text-yellow-400 text-sm mb-3">
+                    🧪 <strong>Modo Desenvolvimento:</strong> Se você já pagou e o status não atualizou, clique no botão abaixo:
+                  </p>
+                  <Button
+                    onClick={async () => {
+                      try {
+                        const response = await fetch('/api/payments/simulate-webhook', {
+                          method: 'POST',
+                          headers: { 'Content-Type': 'application/json' },
+                          body: JSON.stringify({ transaction_id: paymentData?.transaction_id })
+                        })
+                        const data = await response.json()
+                        if (data.success) {
+                          alert('✅ Pagamento simulado! Aguarde 5 segundos...')
+                        }
+                      } catch (error) {
+                        console.error('Erro ao simular:', error)
+                      }
+                    }}
+                    variant="outline"
+                    className="w-full border-yellow-500/50 text-yellow-400 hover:bg-yellow-500/10"
+                  >
+                    Simular Confirmação de Pagamento
+                  </Button>
+                </div>
+              )}
             </CardContent>
           </Card>
         </div>

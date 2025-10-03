@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createPayment, isValidDocument, formatDocument } from '@/lib/greenpag'
+import { savePaymentStatus } from '@/lib/payment-store'
 
 export async function POST(request: NextRequest) {
   try {
@@ -73,6 +74,14 @@ export async function POST(request: NextRequest) {
 
     console.log('=== RESPOSTA GREENPAG ===')
     console.log('Payment response:', JSON.stringify(payment, null, 2))
+
+    // Salva o status inicial do pagamento
+    savePaymentStatus({
+      transaction_id: payment.transaction_id,
+      status: 'pending',
+      amount: payment.amount,
+      external_id: externalId,
+    })
 
     // Salva o pedido no banco de dados (opcional - você pode implementar depois)
     // await saveOrder({ externalId, items, customer, totalAmount, transactionId: payment.transaction_id })
