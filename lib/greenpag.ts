@@ -74,6 +74,21 @@ export async function createPayment(data: GreenPagPaymentRequest): Promise<Green
     }
 
     const result = await response.json()
+    
+    // A API retorna { success: true, data: {...} }
+    if (result.success && result.data) {
+      return {
+        success: true,
+        transaction_id: result.data.transaction_id,
+        qr_code: result.data.qr_code,
+        qr_code_base64: result.data.qr_code_image, // A API retorna qr_code_image, não qr_code_base64
+        pix_key: result.data.qr_code,
+        amount: result.data.amount,
+        expires_at: result.data.expires_at || result.data.created_at,
+        status: result.data.status,
+      }
+    }
+    
     return result
   } catch (error) {
     console.error('Error creating GreenPag payment:', error)

@@ -57,7 +57,7 @@ export default function CarrinhoPage() {
   }
 
   const calculateTotal = () => {
-    return cartItems.reduce((total, item) => total + (item.price * item.quantity), 0)
+    return cartItems.reduce((total, item) => total + ((item.price || 0) * (item.quantity || 1)), 0)
   }
 
   const handleCheckout = () => {
@@ -148,7 +148,7 @@ export default function CarrinhoPage() {
                       <div className="flex-1">
                         <h3 className="text-lg font-semibold text-white">{item.name}</h3>
                         <p className="text-green-400 font-bold">
-                          R$ {item.price.toFixed(2)}
+                          R$ {(item.price || 0).toFixed(2)}
                         </p>
                       </div>
 
@@ -176,7 +176,7 @@ export default function CarrinhoPage() {
 
                       <div className="text-right">
                         <p className="text-white font-bold">
-                          R$ {(item.price * item.quantity).toFixed(2)}
+                          R$ {((item.price || 0) * (item.quantity || 1)).toFixed(2)}
                         </p>
                       </div>
 

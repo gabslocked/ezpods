@@ -51,6 +51,12 @@ export async function POST(request: NextRequest) {
     const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ezpods.vercel.app'
     const callbackUrl = `${siteUrl}/api/payments/webhook`
 
+    console.log('=== CRIANDO PAGAMENTO GREENPAG ===')
+    console.log('Total:', totalAmount)
+    console.log('Cliente:', customer.name)
+    console.log('Documento:', formatDocument(customer.document))
+    console.log('Callback URL:', callbackUrl)
+
     // Cria o pagamento no GreenPag
     const payment = await createPayment({
       amount: totalAmount,
@@ -64,6 +70,9 @@ export async function POST(request: NextRequest) {
       callback_url: callbackUrl,
       utm: utm || undefined,
     })
+
+    console.log('=== RESPOSTA GREENPAG ===')
+    console.log('Payment response:', JSON.stringify(payment, null, 2))
 
     // Salva o pedido no banco de dados (opcional - você pode implementar depois)
     // await saveOrder({ externalId, items, customer, totalAmount, transactionId: payment.transaction_id })

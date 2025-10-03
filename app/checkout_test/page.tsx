@@ -1,17 +1,15 @@
 "use client"
 
 import React, { useState, useEffect } from "react"
-import { useRouter, useSearchParams } from "next/navigation"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { CheckCircle2, Clock, Copy, QrCode, ArrowLeft, Loader2 } from "lucide-react"
-import Image from "next/image"
 
-export default function CheckoutPage() {
+export default function CheckoutTestPage() {
   const router = useRouter()
-  const searchParams = useSearchParams()
   
   const [step, setStep] = useState<'form' | 'payment' | 'success'>('form')
   const [isLoading, setIsLoading] = useState(false)
@@ -26,27 +24,7 @@ export default function CheckoutPage() {
   
   // Dados do pagamento
   const [paymentData, setPaymentData] = useState<any>(null)
-  const [cartItems, setCartItems] = useState<any[]>([])
   const [copied, setCopied] = useState(false)
-
-  useEffect(() => {
-    // Carrega itens do carrinho
-    const loadCart = () => {
-      try {
-        const savedCart = localStorage.getItem('cart')
-        if (savedCart) {
-          setCartItems(JSON.parse(savedCart))
-        } else {
-          router.push('/carrinho')
-        }
-      } catch (error) {
-        console.error('Error loading cart:', error)
-        router.push('/carrinho')
-      }
-    }
-
-    loadCart()
-  }, [router])
 
   useEffect(() => {
     // Verifica status do pagamento a cada 5 segundos
@@ -58,7 +36,6 @@ export default function CheckoutPage() {
           
           if (data.status === 'paid') {
             setStep('success')
-            localStorage.removeItem('cart')
             clearInterval(interval)
           }
         } catch (error) {
@@ -69,14 +46,6 @@ export default function CheckoutPage() {
       return () => clearInterval(interval)
     }
   }, [step, paymentData])
-
-  // Calcula o total do carrinho
-  const calculateTotal = () => {
-    return cartItems.reduce((sum, item) => {
-      const price = item.totalPrice || (item.price || 0) * (item.quantity || 1)
-      return sum + price
-    }, 0)
-  }
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target
@@ -89,13 +58,22 @@ export default function CheckoutPage() {
     setError(null)
 
     try {
+      // Cria um item de teste de R$ 1,00
+      const testItems = [{
+        id: 'test-item',
+        name: 'Teste de Pagamento',
+        price: 1.00,
+        quantity: 1,
+        totalPrice: 1.00,
+      }]
+
       const response = await fetch('/api/payments/create', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          items: cartItems,
+          items: testItems,
           customer: customerData,
         }),
       })
@@ -132,7 +110,7 @@ export default function CheckoutPage() {
             <CheckCircle2 className="h-16 w-16 text-green-400 mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-white mb-2">Pagamento Confirmado!</h2>
             <p className="text-gray-400 mb-6">
-              Seu pedido foi confirmado e está sendo processado.
+              Seu pagamento de teste foi confirmado com sucesso!
             </p>
             <Button
               onClick={() => router.push('/')}
@@ -160,7 +138,7 @@ export default function CheckoutPage() {
               >
                 <ArrowLeft className="h-5 w-5" />
               </Button>
-              <h1 className="text-2xl font-bold text-white">Pagamento PIX</h1>
+              <h1 className="text-2xl font-bold text-white">Pagamento PIX - TESTE R$ 1,00</h1>
             </div>
           </div>
         </header>
@@ -195,6 +173,9 @@ export default function CheckoutPage() {
                   <Clock className="h-5 w-5" />
                   <span>Aguardando pagamento...</span>
                 </div>
+                <p className="text-sm text-gray-400">
+                  ⚠️ Este é um pagamento de TESTE
+                </p>
               </div>
 
               {/* Código PIX Copia e Cola */}
@@ -223,7 +204,7 @@ export default function CheckoutPage() {
                   <li>Abra o app do seu banco</li>
                   <li>Escolha pagar via PIX</li>
                   <li>Escaneie o QR Code ou cole o código</li>
-                  <li>Confirme o pagamento</li>
+                  <li>Confirme o pagamento de R$ 1,00</li>
                 </ol>
               </div>
             </CardContent>
@@ -241,12 +222,12 @@ export default function CheckoutPage() {
             <Button
               variant="ghost"
               size="icon"
-              onClick={() => router.push('/carrinho')}
+              onClick={() => router.push('/')}
               className="text-white hover:text-gray-300"
             >
               <ArrowLeft className="h-5 w-5" />
             </Button>
-            <h1 className="text-2xl font-bold text-white">Finalizar Compra</h1>
+            <h1 className="text-2xl font-bold text-white">Checkout TESTE - R$ 1,00</h1>
           </div>
         </div>
       </header>
@@ -259,22 +240,35 @@ export default function CheckoutPage() {
         )}
 
         <div className="grid gap-6">
+          {/* Aviso de Teste */}
+          <Card className="bg-yellow-500/10 border-yellow-500/30">
+            <CardContent className="pt-6">
+              <div className="flex items-start space-x-3">
+                <div className="text-yellow-400 text-2xl">⚠️</div>
+                <div>
+                  <h3 className="text-yellow-400 font-bold mb-2">Pagamento de Teste</h3>
+                  <p className="text-gray-300 text-sm">
+                    Este é um checkout de teste com valor fixo de <strong>R$ 1,00</strong> para você testar o fluxo de pagamento PIX via GreenPag.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
           {/* Resumo do Pedido */}
           <Card className="bg-gray-800/50 border-gray-600/30">
             <CardHeader>
-              <CardTitle className="text-white">Resumo do Pedido</CardTitle>
+              <CardTitle className="text-white">Resumo do Teste</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
-              {cartItems.map((item, index) => (
-                <div key={index} className="flex justify-between text-gray-300">
-                  <span>{item.name || item.productName} x{item.quantity || 1}</span>
-                  <span>R$ {(item.totalPrice || (item.price || 0) * (item.quantity || 1)).toFixed(2)}</span>
-                </div>
-              ))}
+              <div className="flex justify-between text-gray-300">
+                <span>Teste de Pagamento x1</span>
+                <span>R$ 1,00</span>
+              </div>
               <div className="border-t border-gray-600 pt-4">
                 <div className="flex justify-between text-white font-bold text-lg">
                   <span>Total</span>
-                  <span>R$ {calculateTotal().toFixed(2)}</span>
+                  <span>R$ 1,00</span>
                 </div>
               </div>
             </CardContent>
@@ -329,15 +323,15 @@ export default function CheckoutPage() {
                 <Button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400 text-white font-bold py-3"
+                  className="w-full bg-gradient-to-r from-yellow-600 to-yellow-500 hover:from-yellow-500 hover:to-yellow-400 text-white font-bold py-3"
                 >
                   {isLoading ? (
                     <>
                       <Loader2 className="mr-2 h-5 w-5 animate-spin" />
-                      Gerando PIX...
+                      Gerando PIX de Teste...
                     </>
                   ) : (
-                    'Gerar PIX'
+                    'Gerar PIX de R$ 1,00'
                   )}
                 </Button>
               </form>
