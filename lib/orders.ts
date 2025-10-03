@@ -1,5 +1,6 @@
 import { Pool } from 'pg'
 import { randomUUID } from 'crypto'
+import { sendWhatsAppNotification, createOrderCreatedNotification } from './webhooks/n8n'
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
@@ -142,6 +143,16 @@ export async function createOrder(data: CreateOrderData): Promise<string> {
     await client.query('COMMIT')
 
     console.log(`✅ Pedido criado: ${orderId} (Transaction: ${data.transaction_id})`)
+    
+    // Envia notificação WhatsApp via n8n (não bloqueia se falhar)
+    if (data.customer.phone) {
+      const order = await getOrderByTransactionId(data.transaction_id)
+      if (order) {
+        sendWhatsAppNotification(createOrderCreatedNotification(order))
+          .catch(err => console.error('Erro ao enviar notificação WhatsApp:', err))
+      }
+    }
+    
     return orderId
   } catch (error) {
     await client.query('ROLLBACK')

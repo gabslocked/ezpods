@@ -1,7 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { validateWebhookSignature, parseWebhook } from '@/lib/greenpag'
 import { savePaymentStatus } from '@/lib/payment-store'
-import { updateOrderStatus } from '@/lib/orders'
+import { updateOrderStatus, getOrderByTransactionId } from '@/lib/orders'
+import { sendWhatsAppNotification, createOrderPaidNotification } from '@/lib/webhooks/n8n'
 
 // Configuração para desabilitar o body parser e ler o raw body
 export const runtime = 'nodejs'
@@ -70,13 +71,17 @@ export async function POST(request: NextRequest) {
         try {
           await updateOrderStatus(webhookData.transaction_id, 'paid')
           console.log(`✅ Pedido marcado como pago: ${webhookData.transaction_id}`)
+          
+          // Envia notificação WhatsApp via n8n
+          const order = await getOrderByTransactionId(webhookData.transaction_id)
+          if (order && order.customer_phone) {
+            sendWhatsAppNotification(createOrderPaidNotification(order))
+              .catch(err => console.error('Erro ao enviar notificação WhatsApp:', err))
+          }
         } catch (error) {
           console.error('Erro ao atualizar status do pedido:', error)
           // Não falha o webhook se o pedido não existir ainda
         }
-        
-        // TODO: Enviar email de confirmação
-        // await sendConfirmationEmail(webhookData.external_id)
         break
 
       case 'payment.failed':

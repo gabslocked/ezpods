@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { getOrderByTransactionId, updateOrderStatus } from '@/lib/orders'
 import jwt from 'jsonwebtoken'
 import { Pool } from 'pg'
+import { sendWhatsAppNotification, createOrderShippedNotification } from '@/lib/webhooks/n8n'
 
 const pool = new Pool({
   connectionString: process.env.DATABASE_URL,
@@ -107,6 +108,19 @@ export async function PATCH(
     }
 
     await updateOrderStatus(id, status)
+
+    // Envia notificação WhatsApp se o status for "shipped"
+    if (status === 'shipped') {
+      try {
+        const order = await getOrderByTransactionId(id)
+        if (order && order.customer_phone) {
+          sendWhatsAppNotification(createOrderShippedNotification(order))
+            .catch(err => console.error('Erro ao enviar notificação WhatsApp:', err))
+        }
+      } catch (error) {
+        console.error('Erro ao buscar pedido para notificação:', error)
+      }
+    }
 
     return NextResponse.json({ success: true })
   } catch (error: any) {
