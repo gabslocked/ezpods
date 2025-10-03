@@ -3,7 +3,8 @@ import { WAREHOUSE_COORDINATES, geocodeCEP, getAddressFromCEP, isValidCEP } from
 import { calculateRoute, calculateStraightLineDistance } from './osrm'
 
 // Configurações de frete
-const PRICE_PER_KM = 1.70 // R$ 1,70 por km
+const PRICE_PER_KM = 1.85 // R$ 1,85 por km
+const MIN_SHIPPING_COST = 10.00 // Taxa mínima de R$ 10,00
 const FREE_SHIPPING_THRESHOLD = 300.00 // Frete grátis acima de R$ 300
 const AVERAGE_SPEED_KM_H = 30 // Velocidade média em km/h para estimativa
 
@@ -47,6 +48,11 @@ export async function calculateShipping(
 
     // Calcula custo do frete
     let shippingCost = distanceKm * PRICE_PER_KM
+    
+    // Aplica taxa mínima
+    if (shippingCost < MIN_SHIPPING_COST) {
+      shippingCost = MIN_SHIPPING_COST
+    }
 
     // Verifica se tem frete grátis
     const freeShipping = request.cart_total >= FREE_SHIPPING_THRESHOLD
