@@ -32,6 +32,10 @@ export default function CartDrawerV2() {
     // Mantém o carrinho original (ezpods-cart) intacto
     localStorage.setItem('cart', JSON.stringify(items))
     
+    // Cria backup do carrinho para restaurar se pagamento falhar/expirar
+    localStorage.setItem('cart-backup', JSON.stringify(items))
+    localStorage.setItem('ezpods-cart-backup', localStorage.getItem('ezpods-cart') || '[]')
+    
     // NÃO fecha o carrinho nem limpa os itens
     // O carrinho só será limpo após confirmação do pagamento
     
