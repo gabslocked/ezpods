@@ -22,12 +22,21 @@ export default function CheckoutPage() {
     name: '',
     document: '',
     email: '',
+    phone: '',
+    cep: '',
+    address: '',
+    number: '',
+    complement: '',
+    notes: '',
   })
   
-  // Dados do pagamento
+  // Dados do pagamento e frete
   const [paymentData, setPaymentData] = useState<any>(null)
   const [cartItems, setCartItems] = useState<any[]>([])
   const [copied, setCopied] = useState(false)
+  const [shippingData, setShippingData] = useState<any>(null)
+  const [isCalculatingShipping, setIsCalculatingShipping] = useState(false)
+  const [shippingError, setShippingError] = useState<string | null>(null)
 
   useEffect(() => {
     // Carrega itens do carrinho
@@ -86,6 +95,52 @@ export default function CheckoutPage() {
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target
     setCustomerData(prev => ({ ...prev, [name]: value }))
+    
+    // Calcula frete automaticamente quando CEP tiver 8 dígitos
+    if (name === 'cep') {
+      const cleanCEP = value.replace(/\D/g, '')
+      if (cleanCEP.length === 8) {
+        calculateShipping(cleanCEP)
+      } else {
+        setShippingData(null)
+        setShippingError(null)
+      }
+    }
+  }
+
+  const calculateShipping = async (cep: string) => {
+    setIsCalculatingShipping(true)
+    setShippingError(null)
+    
+    try {
+      const cartTotal = calculateTotal()
+      
+      const response = await fetch('/api/shipping/calculate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          cep,
+          cart_total: cartTotal,
+        }),
+      })
+
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Erro ao calcular frete')
+      }
+
+      setShippingData(data)
+      console.log('Frete calculado:', data)
+    } catch (error: any) {
+      console.error('Error calculating shipping:', error)
+      setShippingError(error.message || 'Erro ao calcular frete')
+      setShippingData(null)
+    } finally {
+      setIsCalculatingShipping(false)
+    }
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -94,6 +149,11 @@ export default function CheckoutPage() {
     setError(null)
 
     try {
+      // Valida se o frete foi calculado (se CEP foi fornecido)
+      if (customerData.cep && !shippingData) {
+        throw new Error('Por favor, aguarde o cálculo do frete')
+      }
+
       const response = await fetch('/api/payments/create', {
         method: 'POST',
         headers: {
@@ -102,6 +162,7 @@ export default function CheckoutPage() {
         body: JSON.stringify({
           items: cartItems,
           customer: customerData,
+          shipping: shippingData,
         }),
       })
 
@@ -277,10 +338,49 @@ export default function CheckoutPage() {
                   <span>R$ {(item.totalPrice || (item.price || 0) * (item.quantity || 1)).toFixed(2)}</span>
                 </div>
               ))}
-              <div className="border-t border-gray-600 pt-4">
-                <div className="flex justify-between text-white font-bold text-lg">
-                  <span>Total</span>
+              <div className="border-t border-gray-600 pt-4 space-y-2">
+                <div className="flex justify-between text-gray-300">
+                  <span>Subtotal</span>
                   <span>R$ {calculateTotal().toFixed(2)}</span>
+                </div>
+                
+                {shippingData && (
+                  <>
+                    <div className="flex justify-between text-gray-300">
+                      <span>Frete ({shippingData.distance_km}km)</span>
+                      <span className={shippingData.free_shipping ? 'text-green-400 font-bold' : ''}>
+                        {shippingData.free_shipping ? 'GRÁTIS' : `R$ ${shippingData.shipping_cost.toFixed(2)}`}
+                      </span>
+                    </div>
+                    {!shippingData.free_shipping && shippingData.free_shipping_remaining > 0 && (
+                      <div className="text-xs text-yellow-400">
+                        💡 Falta R$ {shippingData.free_shipping_remaining.toFixed(2)} para frete grátis!
+                      </div>
+                    )}
+                    <div className="text-xs text-gray-400">
+                      ⏱️ Tempo estimado: {shippingData.estimated_time_minutes} minutos
+                    </div>
+                  </>
+                )}
+                
+                {isCalculatingShipping && (
+                  <div className="flex items-center space-x-2 text-blue-400 text-sm">
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                    <span>Calculando frete...</span>
+                  </div>
+                )}
+                
+                {shippingError && (
+                  <div className="text-xs text-red-400">
+                    ⚠️ {shippingError}
+                  </div>
+                )}
+                
+                <div className="border-t border-gray-600 pt-2">
+                  <div className="flex justify-between text-white font-bold text-lg">
+                    <span>Total</span>
+                    <span>R$ {(calculateTotal() + (shippingData?.shipping_cost || 0)).toFixed(2)}</span>
+                  </div>
                 </div>
               </div>
             </CardContent>
@@ -330,6 +430,104 @@ export default function CheckoutPage() {
                     className="bg-gray-900 text-white border-gray-600"
                     placeholder="seu@email.com"
                   />
+                </div>
+
+                <div>
+                  <Label htmlFor="phone" className="text-gray-300">Telefone (opcional)</Label>
+                  <Input
+                    id="phone"
+                    name="phone"
+                    type="tel"
+                    value={customerData.phone}
+                    onChange={handleInputChange}
+                    className="bg-gray-900 text-white border-gray-600"
+                    placeholder="(11) 99999-9999"
+                  />
+                </div>
+
+                <div className="border-t border-gray-600 pt-4">
+                  <h3 className="text-white font-semibold mb-4">Endereço de Entrega</h3>
+                  
+                  <div className="space-y-4">
+                    <div>
+                      <Label htmlFor="cep" className="text-gray-300">CEP *</Label>
+                      <Input
+                        id="cep"
+                        name="cep"
+                        value={customerData.cep}
+                        onChange={handleInputChange}
+                        required
+                        className="bg-gray-900 text-white border-gray-600"
+                        placeholder="00000-000"
+                        maxLength={9}
+                      />
+                      {isCalculatingShipping && (
+                        <p className="text-xs text-blue-400 mt-1 flex items-center">
+                          <Loader2 className="h-3 w-3 animate-spin mr-1" />
+                          Calculando frete...
+                        </p>
+                      )}
+                      {shippingData && (
+                        <p className="text-xs text-green-400 mt-1">
+                          ✓ {shippingData.delivery_address}
+                        </p>
+                      )}
+                      {shippingError && (
+                        <p className="text-xs text-red-400 mt-1">
+                          ⚠️ {shippingError}
+                        </p>
+                      )}
+                    </div>
+
+                    <div className="grid grid-cols-3 gap-2">
+                      <div className="col-span-2">
+                        <Label htmlFor="address" className="text-gray-300">Endereço</Label>
+                        <Input
+                          id="address"
+                          name="address"
+                          value={customerData.address}
+                          onChange={handleInputChange}
+                          className="bg-gray-900 text-white border-gray-600"
+                          placeholder="Rua, Avenida..."
+                        />
+                      </div>
+                      <div>
+                        <Label htmlFor="number" className="text-gray-300">Número</Label>
+                        <Input
+                          id="number"
+                          name="number"
+                          value={customerData.number}
+                          onChange={handleInputChange}
+                          className="bg-gray-900 text-white border-gray-600"
+                          placeholder="123"
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <Label htmlFor="complement" className="text-gray-300">Complemento (opcional)</Label>
+                      <Input
+                        id="complement"
+                        name="complement"
+                        value={customerData.complement}
+                        onChange={handleInputChange}
+                        className="bg-gray-900 text-white border-gray-600"
+                        placeholder="Apto, Bloco..."
+                      />
+                    </div>
+
+                    <div>
+                      <Label htmlFor="notes" className="text-gray-300">Observações (opcional)</Label>
+                      <Input
+                        id="notes"
+                        name="notes"
+                        value={customerData.notes}
+                        onChange={handleInputChange}
+                        className="bg-gray-900 text-white border-gray-600"
+                        placeholder="Ponto de referência, instruções..."
+                      />
+                    </div>
+                  </div>
                 </div>
 
                 <Button

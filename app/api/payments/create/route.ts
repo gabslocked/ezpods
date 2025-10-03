@@ -1,11 +1,12 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { createPayment, isValidDocument, formatDocument } from '@/lib/greenpag'
 import { savePaymentStatus } from '@/lib/payment-store'
+import { createOrder } from '@/lib/orders'
 
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { items, customer, utm } = body
+    const { items, customer, shipping, utm } = body
 
     // Validação dos dados
     if (!items || !Array.isArray(items) || items.length === 0) {
@@ -83,8 +84,51 @@ export async function POST(request: NextRequest) {
       external_id: externalId,
     })
 
-    // Salva o pedido no banco de dados (opcional - você pode implementar depois)
-    // await saveOrder({ externalId, items, customer, totalAmount, transactionId: payment.transaction_id })
+    // Salva o pedido no banco de dados
+    try {
+      const shippingCost = shipping?.cost || 0
+      const orderId = await createOrder({
+        transaction_id: payment.transaction_id,
+        external_id: externalId,
+        customer: {
+          name: customer.name,
+          document: formatDocument(customer.document),
+          email: customer.email,
+          phone: customer.phone,
+          cep: customer.cep || shipping?.cep,
+          address: customer.address || shipping?.address,
+          number: customer.number,
+          complement: customer.complement,
+          neighborhood: customer.neighborhood || shipping?.neighborhood,
+          city: customer.city || shipping?.city,
+          state: customer.state || shipping?.state,
+        },
+        shipping: {
+          distance_km: shipping?.distance_km || 0,
+          cost: shippingCost,
+          time_minutes: shipping?.estimated_time_minutes || 0,
+        },
+        items: items.map((item: any) => ({
+          product_id: item.productId || item.id,
+          variant_id: item.variantId || item.variant_id,
+          product_name: item.name || item.productName,
+          variant_name: item.variantName || item.variant_name,
+          sku: item.sku,
+          quantity: item.quantity,
+          unit_price: item.price || item.unit_price,
+          total_price: item.totalPrice || (item.price * item.quantity),
+          image_url: item.image || item.productImage,
+        })),
+        subtotal: totalAmount,
+        total: totalAmount + shippingCost,
+        delivery_notes: customer.notes,
+      })
+      
+      console.log(`✅ Pedido criado no banco: ${orderId}`)
+    } catch (error) {
+      console.error('Erro ao salvar pedido no banco:', error)
+      // Não falha a criação do pagamento se houver erro ao salvar o pedido
+    }
 
     return NextResponse.json({
       success: true,

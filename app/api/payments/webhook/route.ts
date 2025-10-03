@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { validateWebhookSignature, parseWebhook } from '@/lib/greenpag'
 import { savePaymentStatus } from '@/lib/payment-store'
+import { updateOrderStatus } from '@/lib/orders'
 
 // Configuração para desabilitar o body parser e ler o raw body
 export const runtime = 'nodejs'
@@ -64,9 +65,18 @@ export async function POST(request: NextRequest) {
           paid_at: webhookData.paid_at,
           external_id: webhookData.external_id,
         })
+        
+        // Atualiza status do pedido no banco de dados
+        try {
+          await updateOrderStatus(webhookData.transaction_id, 'paid')
+          console.log(`✅ Pedido marcado como pago: ${webhookData.transaction_id}`)
+        } catch (error) {
+          console.error('Erro ao atualizar status do pedido:', error)
+          // Não falha o webhook se o pedido não existir ainda
+        }
+        
         // TODO: Enviar email de confirmação
         // await sendConfirmationEmail(webhookData.external_id)
-        // TODO: Processar pedido (separar produtos, etc)
         break
 
       case 'payment.failed':
@@ -77,6 +87,13 @@ export async function POST(request: NextRequest) {
           amount: webhookData.amount,
           external_id: webhookData.external_id,
         })
+        
+        // Atualiza status do pedido
+        try {
+          await updateOrderStatus(webhookData.transaction_id, 'failed')
+        } catch (error) {
+          console.error('Erro ao atualizar status do pedido:', error)
+        }
         break
 
       case 'payment.expired':
