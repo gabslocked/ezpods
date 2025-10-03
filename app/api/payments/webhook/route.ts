@@ -1,6 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { validateWebhookSignature, parseWebhook } from '@/lib/greenpag'
 
+// Configuração para desabilitar o body parser e ler o raw body
+export const runtime = 'nodejs'
+export const dynamic = 'force-dynamic'
+
 export async function POST(request: NextRequest) {
   try {
     // Lê o corpo da requisição como texto
@@ -85,11 +89,4 @@ export async function POST(request: NextRequest) {
       { status: 500 }
     )
   }
-}
-
-// Desabilita o body parser do Next.js para ler o raw body
-export const config = {
-  api: {
-    bodyParser: false,
-  },
 }
