@@ -271,7 +271,7 @@ export default function CheckoutPage() {
             <Button
               variant="ghost"
               size="icon"
-              onClick={() => router.push('/carrinho')}
+              onClick={() => router.push('/')}
               className="text-white hover:text-gray-300"
             >
               <ArrowLeft className="h-5 w-5" />

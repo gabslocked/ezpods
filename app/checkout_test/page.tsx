@@ -250,7 +250,16 @@ export default function CheckoutTestPage() {
             <Button
               variant="ghost"
               size="icon"
-              onClick={() => router.push('/')}
+              onClick={() => {
+                router.push('/')
+                // Opcional: abrir o carrinho automaticamente após voltar
+                setTimeout(() => {
+                  const cartButton = document.querySelector('[data-cart-button]')
+                  if (cartButton) {
+                    (cartButton as HTMLElement).click()
+                  }
+                }, 500)
+              }}
               className="text-white hover:text-gray-300"
             >
               <ArrowLeft className="h-5 w-5" />
