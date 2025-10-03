@@ -8,6 +8,8 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { CheckCircle2, Clock, Copy, QrCode, ArrowLeft, Loader2 } from "lucide-react"
 import Image from "next/image"
+import { maskCEP, maskPhone, maskDocument, unmask, isValidDocument } from "@/lib/utils/masks"
+import { fetchAddressByCEP } from "@/lib/utils/cep"
 
 export default function CheckoutPage() {
   const router = useRouter()
@@ -27,6 +29,9 @@ export default function CheckoutPage() {
     address: '',
     number: '',
     complement: '',
+    neighborhood: '',
+    city: '',
+    state: '',
     notes: '',
   })
   
@@ -37,6 +42,7 @@ export default function CheckoutPage() {
   const [shippingData, setShippingData] = useState<any>(null)
   const [isCalculatingShipping, setIsCalculatingShipping] = useState(false)
   const [shippingError, setShippingError] = useState<string | null>(null)
+  const [addressAutofilled, setAddressAutofilled] = useState(false)
 
   useEffect(() => {
     // Carrega itens do carrinho
@@ -92,14 +98,42 @@ export default function CheckoutPage() {
     }, 0)
   }
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target
-    setCustomerData(prev => ({ ...prev, [name]: value }))
-    
-    // Calcula frete automaticamente quando CEP tiver 8 dígitos
+    let maskedValue = value
+
+    // Aplica máscaras
     if (name === 'cep') {
-      const cleanCEP = value.replace(/\D/g, '')
+      maskedValue = maskCEP(value)
+    } else if (name === 'phone') {
+      maskedValue = maskPhone(value)
+    } else if (name === 'document') {
+      maskedValue = maskDocument(value)
+    }
+
+    setCustomerData(prev => ({ ...prev, [name]: maskedValue }))
+    
+    // Autocomplete de endereço ao digitar CEP
+    if (name === 'cep') {
+      const cleanCEP = unmask(maskedValue)
+      
       if (cleanCEP.length === 8) {
+        // Busca endereço
+        const addressData = await fetchAddressByCEP(cleanCEP)
+        
+        if (addressData) {
+          setCustomerData(prev => ({
+            ...prev,
+            address: addressData.logradouro || prev.address,
+            neighborhood: addressData.bairro || prev.neighborhood,
+            city: addressData.localidade || prev.city,
+            state: addressData.uf || prev.state,
+          }))
+          setAddressAutofilled(true)
+          setTimeout(() => setAddressAutofilled(false), 3000)
+        }
+        
+        // Calcula frete
         calculateShipping(cleanCEP)
       } else {
         setShippingData(null)
@@ -149,6 +183,11 @@ export default function CheckoutPage() {
     setError(null)
 
     try {
+      // Valida CPF/CNPJ
+      if (!isValidDocument(customerData.document)) {
+        throw new Error('CPF/CNPJ inválido')
+      }
+
       // Valida se o frete foi calculado (se CEP foi fornecido)
       if (customerData.cep && !shippingData) {
         throw new Error('Por favor, aguarde o cálculo do frete')
@@ -465,6 +504,11 @@ export default function CheckoutPage() {
                         <p className="text-xs text-blue-400 mt-1 flex items-center">
                           <Loader2 className="h-3 w-3 animate-spin mr-1" />
                           Calculando frete...
+                        </p>
+                      )}
+                      {addressAutofilled && (
+                        <p className="text-xs text-blue-400 mt-1 animate-pulse">
+                          ✓ Endereço preenchido automaticamente
                         </p>
                       )}
                       {shippingData && (
