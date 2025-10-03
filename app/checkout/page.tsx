@@ -35,13 +35,16 @@ export default function CheckoutPage() {
       try {
         const savedCart = localStorage.getItem('cart')
         if (savedCart) {
-          setCartItems(JSON.parse(savedCart))
+          const items = JSON.parse(savedCart)
+          console.log('[Checkout] Loaded cart items:', items.length)
+          setCartItems(items)
         } else {
-          router.push('/carrinho')
+          console.log('[Checkout] No cart found, redirecting to home')
+          router.push('/')
         }
       } catch (error) {
-        console.error('Error loading cart:', error)
-        router.push('/carrinho')
+        console.error('[Checkout] Error loading cart:', error)
+        router.push('/')
       }
     }
 
