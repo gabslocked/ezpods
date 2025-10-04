@@ -46,24 +46,26 @@ export function AdminSidebar() {
       </div>
 
       {/* User Info */}
-      <div className="p-4 border-b border-gray-800">
-        <div className="flex items-center space-x-3">
-          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center">
-            <span className="text-white font-semibold text-sm">
-              {user?.name?.charAt(0).toUpperCase()}
-            </span>
-          </div>
-          <div className="flex-1 min-w-0">
-            <div className="text-white font-medium text-sm truncate">
-              {user?.name}
+      {user && (
+        <div className="p-4 border-b border-gray-800">
+          <div className="flex items-center space-x-3">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center flex-shrink-0">
+              <span className="text-white font-semibold text-sm">
+                {user.name?.charAt(0).toUpperCase() || 'A'}
+              </span>
             </div>
-            <div className="text-gray-400 text-xs truncate">
-              {user?.email}
+            <div className="flex-1 min-w-0">
+              <div className="text-white font-medium text-sm truncate">
+                {user.name || 'Admin'}
+              </div>
+              <div className="text-gray-400 text-xs truncate">
+                {user.email}
+              </div>
             </div>
+            <ChevronDown className="h-4 w-4 text-gray-400 flex-shrink-0" />
           </div>
-          <ChevronDown className="h-4 w-4 text-gray-400" />
         </div>
-      </div>
+      )}
 
       {/* Navigation */}
       <nav className="flex-1 overflow-y-auto p-4 space-y-1">
