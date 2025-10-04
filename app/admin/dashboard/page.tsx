@@ -20,10 +20,11 @@ export default function AdminDashboardPage() {
   const [dashboard, setDashboard] = useState<any>(null)
   const [isLoading, setIsLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [dateRange, setDateRange] = useState<'today' | 'week' | 'month' | '3months'>('month')
 
   useEffect(() => {
     fetchDashboard()
-  }, [])
+  }, [dateRange])
 
   const fetchDashboard = async () => {
     try {
@@ -75,10 +76,56 @@ export default function AdminDashboardPage() {
   }))
 
   return (
-    <div className="p-8 space-y-8">
-      <div>
-        <h1 className="text-3xl font-bold text-white mb-2">Dashboard</h1>
-        <p className="text-gray-400">Visão geral das suas vendas e métricas</p>
+    <div className="p-4 md:p-8 space-y-6 md:space-y-8">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <div>
+          <h1 className="text-2xl md:text-3xl font-bold text-white mb-2">Dashboard</h1>
+          <p className="text-gray-400">Visão geral das suas vendas e métricas</p>
+        </div>
+        
+        {/* Date Range Filter */}
+        <div className="flex gap-2 flex-wrap">
+          <button
+            onClick={() => setDateRange('today')}
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+              dateRange === 'today'
+                ? 'bg-green-500 text-white'
+                : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
+            }`}
+          >
+            Hoje
+          </button>
+          <button
+            onClick={() => setDateRange('week')}
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+              dateRange === 'week'
+                ? 'bg-green-500 text-white'
+                : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
+            }`}
+          >
+            7 Dias
+          </button>
+          <button
+            onClick={() => setDateRange('month')}
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+              dateRange === 'month'
+                ? 'bg-green-500 text-white'
+                : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
+            }`}
+          >
+            30 Dias
+          </button>
+          <button
+            onClick={() => setDateRange('3months')}
+            className={`px-4 py-2 rounded-lg text-sm font-medium transition-all ${
+              dateRange === '3months'
+                ? 'bg-green-500 text-white'
+                : 'bg-gray-800 text-gray-400 hover:bg-gray-700'
+            }`}
+          >
+            90 Dias
+          </button>
+        </div>
       </div>
 
       {/* Cards de Métricas */}

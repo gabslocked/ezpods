@@ -3,8 +3,7 @@ import type { Metadata } from "next"
 import { Montserrat } from "next/font/google"
 import "./globals.css"
 import "leaflet/dist/leaflet.css"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
+import { LayoutWrapper } from "@/components/layout-wrapper"
 import { ThemeProvider } from "@/components/theme-provider"
 import { Providers } from "./providers"
 import { AuthProvider } from "@/hooks/use-auth"
@@ -20,47 +19,41 @@ const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://ezpods.com.br'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "EzPods - Pod SP | Vape São Paulo | Pod Perto de Mim",
-  description:
-    "EzPods - Loja de Pod em São Paulo. Vape, Pod, Elfbar, Ignite com entrega rápida. Pod perto de mim, pod entrega SP, vape São Paulo. Os melhores pods e vapes de SP.",
-  keywords: [
-    "pod sp",
-    "pod são paulo",
-    "vape",
-    "pod perto de mim",
-    "pod entrega",
-    "elfbar",
-    "ignite",
-    "vape são paulo",
-    "pod delivery",
-    "cigarro eletrônico",
-    "pod descartável",
-    "vape shop sp",
-    "pod loja",
-    "ezpods",
-  ],
+  title: {
+    default: 'EzPods - Pods Descartáveis Premium',
+    template: '%s | EzPods'
+  },
+  description: 'Descubra os melhores pods descartáveis do mercado. Variedade de sabores, qualidade premium e entrega rápida.',
+  keywords: ['pods', 'vape', 'descartável', 'ezpods', 'sabores', 'premium'],
+  authors: [{ name: 'EzPods' }],
+  creator: 'EzPods',
+  publisher: 'EzPods',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
   openGraph: {
-    title: "EzPods - Pod SP | Vape São Paulo",
-    description: "Os melhores pods e vapes de São Paulo com entrega rápida. Elfbar, Ignite e muito mais!",
+    type: 'website',
+    locale: 'pt_BR',
     url: siteUrl,
-    siteName: "EzPods",
+    siteName: 'EzPods',
+    title: 'EzPods - Pods Descartáveis Premium',
+    description: 'Descubra os melhores pods descartáveis do mercado',
     images: [
       {
-        url: "/preview.jpg",
-        width: 800,
-        height: 800,
-        alt: "EzPods - Loja de Pod e Vape em São Paulo",
-      }
+        url: `${siteUrl}/og-image.jpg`,
+        width: 1200,
+        height: 630,
+        alt: 'EzPods',
+      },
     ],
-    locale: "pt_BR",
-    type: "website",
   },
   twitter: {
-    card: "summary_large_image",
-    title: "EzPods - Pod SP | Vape São Paulo",
-    description: "Os melhores pods e vapes de São Paulo com entrega rápida.",
-    images: ["/preview.jpg"],
-    creator: "@ezpods",
+    card: 'summary_large_image',
+    title: 'EzPods - Pods Descartáveis Premium',
+    description: 'Descubra os melhores pods descartáveis do mercado',
+    images: [`${siteUrl}/og-image.jpg`],
   },
   robots: {
     index: true,
@@ -89,26 +82,17 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="dark" suppressHydrationWarning>
       <body className={`${montserrat.className} bg-black min-h-screen flex flex-col`} suppressHydrationWarning>
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+        <AuthProvider>
           <Providers>
-            <AuthProvider>
+            <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false} disableTransitionOnChange>
               <AgeVerification />
-              <div className="silver-spots-container">
-                <div className="silver-spot silver-spot-1"></div>
-                <div className="silver-spot silver-spot-2"></div>
-                <div className="silver-spot silver-spot-3"></div>
-                <div className="silver-spot silver-spot-4"></div>
-                <div className="silver-spot silver-spot-5"></div>
-              </div>
-              <div className="flex flex-col min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-800 relative z-10">
-                <Header />
-                <main className="flex-grow">{children}</main>
-                <Footer />
-                <WhatsAppFloat />
-              </div>
-            </AuthProvider>
+              <LayoutWrapper>
+                {children}
+              </LayoutWrapper>
+              <WhatsAppFloat />
+            </ThemeProvider>
           </Providers>
-        </ThemeProvider>
+        </AuthProvider>
       </body>
     </html>
   )
