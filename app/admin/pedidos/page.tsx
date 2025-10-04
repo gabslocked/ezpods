@@ -25,7 +25,7 @@ export default function AdminPedidosPage() {
   const [error, setError] = useState<string | null>(null)
   const [page, setPage] = useState(1)
   const [totalPages, setTotalPages] = useState(1)
-  const [statusFilter, setStatusFilter] = useState<string>('')
+  const [statusFilter, setStatusFilter] = useState<string>('all')
   const [searchDocument, setSearchDocument] = useState('')
 
   useEffect(() => {
@@ -40,7 +40,7 @@ export default function AdminPedidosPage() {
         limit: '20',
       })
       
-      if (statusFilter) params.append('status', statusFilter)
+      if (statusFilter && statusFilter !== 'all') params.append('status', statusFilter)
       if (searchDocument) params.append('customer_document', searchDocument)
 
       const response = await fetch(`/api/admin/orders?${params}`)
@@ -117,7 +117,7 @@ export default function AdminPedidosPage() {
                   <SelectValue placeholder="Todos os status" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="">Todos</SelectItem>
+                  <SelectItem value="all">Todos</SelectItem>
                   <SelectItem value="pending">Aguardando</SelectItem>
                   <SelectItem value="paid">Pago</SelectItem>
                   <SelectItem value="processing">Processando</SelectItem>

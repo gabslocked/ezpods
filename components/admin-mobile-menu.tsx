@@ -12,10 +12,9 @@ import {
   Users,
   LogOut,
   Menu,
-  X,
-  Settings
+  X
 } from 'lucide-react'
-import { Button } from './ui/button'
+import Image from 'next/image'
 
 export function AdminMobileMenu() {
   const [isOpen, setIsOpen] = useState(false)
@@ -40,53 +39,48 @@ export function AdminMobileMenu() {
   return (
     <div className="lg:hidden">
       {/* Top Bar */}
-      <div className="fixed top-0 left-0 right-0 h-16 bg-gradient-to-r from-gray-900 via-gray-900 to-black border-b border-gray-800/50 flex items-center justify-between px-4 z-50 shadow-xl">
-        <Link href="/admin/dashboard" className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-gradient-to-br from-green-500 to-blue-600 rounded-lg flex items-center justify-center shadow-lg">
-            <span className="text-white font-bold text-lg">EZ</span>
-          </div>
-          <div>
-            <span className="text-white font-bold text-lg">EzPods</span>
-            <span className="text-gray-400 text-xs block -mt-1">Admin</span>
-          </div>
+      <div className="fixed top-0 left-0 right-0 h-16 bg-gradient-to-r from-black via-gray-900 to-black border-b border-gray-600/30 flex items-center justify-between px-4 z-50 shadow-2xl">
+        <Link href="/admin/dashboard">
+          <Image
+            src="/ezpods-logo.png"
+            alt="EzPods Logo"
+            width={120}
+            height={50}
+            className="w-auto h-10"
+          />
         </Link>
 
-        <Button
-          variant="ghost"
-          size="icon"
+        <button
           onClick={() => setIsOpen(!isOpen)}
-          className="text-white hover:bg-gray-800/50"
+          className="p-2 text-white hover:bg-gray-800/50 rounded-lg transition-colors"
         >
           {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </Button>
+        </button>
       </div>
 
       {/* Overlay */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/60 backdrop-blur-sm z-40 mt-16"
+          className="fixed inset-0 bg-black/70 z-40 mt-16"
           onClick={() => setIsOpen(false)}
         />
       )}
 
       {/* Slide Menu */}
       <div
-        className={`fixed top-16 right-0 bottom-0 w-80 bg-gradient-to-b from-gray-900 via-gray-900 to-black border-l border-gray-800/50 z-40 transform transition-transform duration-300 ease-out shadow-2xl ${
+        className={`fixed top-16 right-0 bottom-0 w-80 bg-gradient-to-b from-black via-gray-900 to-black border-l border-gray-600/30 z-40 transform transition-transform duration-300 ease-out shadow-2xl ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
         <div className="flex flex-col h-full">
           {/* User Info */}
           {user && (
-            <div className="p-4 border-b border-gray-800/50">
-              <div className="flex items-center space-x-3 p-3 rounded-xl bg-gray-800/30 border border-gray-700/30">
-                <div className="relative">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-green-500 to-blue-600 flex items-center justify-center flex-shrink-0 ring-2 ring-green-500/20">
-                    <span className="text-white font-semibold text-lg">
-                      {user.name?.charAt(0).toUpperCase() || 'A'}
-                    </span>
-                  </div>
-                  <div className="absolute bottom-0 right-0 w-3 h-3 bg-green-400 rounded-full border-2 border-gray-900"></div>
+            <div className="p-4 border-b border-gray-600/30">
+              <div className="flex items-center space-x-3 p-3 rounded-lg bg-gray-800/50 border border-gray-600/30">
+                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gray-600 to-gray-800 flex items-center justify-center flex-shrink-0 border border-gray-500/30">
+                  <span className="text-white font-semibold text-lg">
+                    {user.name?.charAt(0).toUpperCase() || 'A'}
+                  </span>
                 </div>
                 <div className="flex-1 min-w-0">
                   <div className="text-white font-medium truncate">
@@ -101,10 +95,7 @@ export function AdminMobileMenu() {
           )}
 
           {/* Navigation */}
-          <nav className="flex-1 overflow-y-auto p-4 space-y-2">
-            <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3 px-3">
-              Menu Principal
-            </div>
+          <nav className="flex-1 overflow-y-auto p-4 space-y-1">
             {menuItems.map((item) => {
               const Icon = item.icon
               const isActive = pathname === item.href || pathname?.startsWith(item.href + '/')
@@ -114,45 +105,28 @@ export function AdminMobileMenu() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className={`group flex items-center space-x-3 px-4 py-3 rounded-xl transition-all duration-200 ${
+                  className={`flex items-center space-x-3 px-4 py-3 rounded-lg transition-colors ${
                     isActive
-                      ? 'bg-gradient-to-r from-green-500/20 to-blue-500/20 text-white border border-green-500/30 shadow-lg'
-                      : 'text-gray-400 hover:bg-gray-800/50 hover:text-white hover:border hover:border-gray-700/50'
+                      ? 'bg-gray-800/80 text-white border border-gray-600/50'
+                      : 'text-gray-400 hover:bg-gray-800/50 hover:text-gray-200'
                   }`}
                 >
-                  <div className={`p-2 rounded-lg transition-all ${
-                    isActive 
-                      ? 'bg-gradient-to-br from-green-500 to-blue-600 shadow-lg' 
-                      : 'bg-gray-800/50 group-hover:bg-gray-700/50'
-                  }`}>
-                    <Icon className="h-5 w-5" />
-                  </div>
-                  <span className="font-medium flex-1">{item.label}</span>
-                  {isActive && (
-                    <div className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
-                  )}
+                  <Icon className="h-5 w-5 flex-shrink-0" />
+                  <span className="font-medium">{item.label}</span>
                 </Link>
               )
             })}
           </nav>
 
-          {/* Bottom Actions */}
-          <div className="p-4 border-t border-gray-800/50 space-y-2">
-            <Button
-              variant="ghost"
-              className="w-full justify-start text-gray-400 hover:text-white hover:bg-gray-800/50 border border-gray-700/30"
-            >
-              <Settings className="h-5 w-5 mr-3" />
-              Configurações
-            </Button>
-            <Button
+          {/* Logout Button */}
+          <div className="p-4 border-t border-gray-600/30">
+            <button
               onClick={handleLogout}
-              variant="ghost"
-              className="w-full justify-start text-red-400 hover:text-red-300 hover:bg-red-500/10 border border-red-500/20 hover:border-red-500/40"
+              className="w-full flex items-center justify-center space-x-2 px-4 py-3 rounded-lg bg-gray-800/50 text-gray-300 hover:bg-gray-700/50 hover:text-white border border-gray-600/30 transition-colors"
             >
-              <LogOut className="h-5 w-5 mr-3" />
-              Sair da Conta
-            </Button>
+              <LogOut className="h-4 w-4" />
+              <span className="font-medium">Sair</span>
+            </button>
           </div>
         </div>
       </div>
