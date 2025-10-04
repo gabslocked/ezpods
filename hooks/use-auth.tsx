@@ -8,6 +8,7 @@ interface User {
   email: string
   whatsapp?: string
   email_verified: boolean
+  isAdmin: boolean
 }
 
 interface AuthContextType {

@@ -49,7 +49,7 @@ export async function GET(request: NextRequest) {
     
     try {
       const userQuery = `
-        SELECT id, name, email, whatsapp, email_verified, created_at
+        SELECT id, name, email, whatsapp, email_verified, is_admin, created_at
         FROM users 
         WHERE id = $1
       `
@@ -71,6 +71,7 @@ export async function GET(request: NextRequest) {
         email: user.email,
         whatsapp: user.whatsapp,
         email_verified: user.email_verified,
+        isAdmin: user.is_admin || false,
         created_at: user.created_at
       })
 
