@@ -12,6 +12,7 @@ import {
 } from "lucide-react"
 import { format } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
+import { SalesMap } from '@/components/sales-map'
 
 const COLORS = ['#10b981', '#3b82f6', '#f59e0b', '#ef4444', '#8b5cf6', '#ec4899']
 
@@ -188,102 +189,114 @@ export default function AdminDashboardPage() {
           </CardContent>
         </Card>
 
-        {/* Pedidos por Status */}
+        {/* Pedidos por Status - Melhorado */}
         <Card className="bg-gray-800/50 border-gray-600/30">
           <CardHeader>
-            <CardTitle className="text-white">Pedidos por Status</CardTitle>
+            <CardTitle className="text-white">📊 Pedidos por Status</CardTitle>
           </CardHeader>
           <CardContent>
-            <ResponsiveContainer width="100%" height={300}>
-              <PieChart>
-                <Pie
-                  data={statusData}
-                  cx="50%"
-                  cy="50%"
-                  labelLine={false}
-                  label={(entry) => `${entry.name}: ${entry.value}`}
-                  outerRadius={80}
-                  fill="#8884d8"
-                  dataKey="value"
-                >
-                  {statusData.map((entry: any, index: number) => (
-                    <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
-                  ))}
-                </Pie>
-                <Tooltip 
-                  contentStyle={{ backgroundColor: '#1f2937', border: '1px solid #374151' }}
-                />
-              </PieChart>
-            </ResponsiveContainer>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              {/* Gráfico de Pizza */}
+              <div>
+                <ResponsiveContainer width="100%" height={300}>
+                  <PieChart>
+                    <Pie
+                      data={statusData}
+                      cx="50%"
+                      cy="50%"
+                      labelLine={false}
+                      label={(entry) => `${entry.name}: ${entry.value}`}
+                      outerRadius={100}
+                      fill="#8884d8"
+                      dataKey="value"
+                      strokeWidth={3}
+                      stroke="#1f2937"
+                    >
+                      {statusData.map((entry: any, index: number) => (
+                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                      ))}
+                    </Pie>
+                    <Tooltip 
+                      contentStyle={{ 
+                        backgroundColor: '#1f2937', 
+                        border: '1px solid #374151',
+                        borderRadius: '8px',
+                        color: '#fff'
+                      }}
+                    />
+                  </PieChart>
+                </ResponsiveContainer>
+              </div>
+
+              {/* Lista de Status */}
+              <div className="space-y-3">
+                {statusData.map((status: any, index: number) => (
+                  <div 
+                    key={index}
+                    className="flex items-center justify-between p-3 bg-gray-900/50 rounded-lg border border-gray-700"
+                  >
+                    <div className="flex items-center space-x-3">
+                      <div 
+                        className="w-4 h-4 rounded-full"
+                        style={{ backgroundColor: COLORS[index % COLORS.length] }}
+                      ></div>
+                      <div>
+                        <div className="text-white font-medium capitalize">{status.name}</div>
+                        <div className="text-gray-400 text-sm">{status.value} pedidos</div>
+                      </div>
+                    </div>
+                    <div className="text-white font-semibold">
+                      {((status.value / statusData.reduce((sum: number, s: any) => sum + s.value, 0)) * 100).toFixed(1)}%
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </CardContent>
         </Card>
       </div>
 
-      {/* Top Produtos e Regiões */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        {/* Top Produtos */}
-        <Card className="bg-gray-800/50 border-gray-600/30">
-          <CardHeader>
-            <CardTitle className="text-white flex items-center">
-              <Package className="mr-2 h-5 w-5" />
-              Top 10 Produtos Mais Vendidos
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              {dashboard.top_products.map((product: any, index: number) => (
-                <div key={index} className="flex items-center justify-between">
-                  <div className="flex-1">
-                    <div className="text-white font-medium">
+      {/* Top Produtos */}
+      <Card className="bg-gray-800/50 border-gray-600/30">
+        <CardHeader>
+          <CardTitle className="text-white flex items-center">
+            <Package className="mr-2 h-5 w-5" />
+            🏆 Top 10 Produtos Mais Vendidos
+          </CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+            {dashboard.top_products.map((product: any, index: number) => (
+              <div key={index} className="flex items-center justify-between p-3 bg-gray-900/50 rounded-lg border border-gray-700 hover:border-green-500/50 transition-colors">
+                <div className="flex items-center space-x-3">
+                  <div className="w-8 h-8 rounded-full bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center text-white font-bold text-sm">
+                    {index + 1}
+                  </div>
+                  <div>
+                    <div className="text-white font-medium text-sm">
                       {product.product_name}
                       {product.variant_name && (
-                        <span className="text-gray-400 text-sm ml-2">
+                        <span className="text-gray-400 text-xs ml-1">
                           ({product.variant_name})
                         </span>
                       )}
                     </div>
                     <div className="text-xs text-gray-400">
-                      {product.quantity} unidades • {product.orders} pedidos
+                      {product.quantity} unidades
                     </div>
                   </div>
-                  <div className="text-green-400 font-semibold">
-                    R$ {product.revenue.toFixed(2)}
-                  </div>
                 </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
+                <div className="text-green-400 font-semibold text-sm">
+                  R$ {product.revenue.toFixed(2)}
+                </div>
+              </div>
+            ))}
+          </div>
+        </CardContent>
+      </Card>
 
-        {/* Vendas por Região */}
-        <Card className="bg-gray-800/50 border-gray-600/30">
-          <CardHeader>
-            <CardTitle className="text-white flex items-center">
-              <MapPin className="mr-2 h-5 w-5" />
-              Top 10 Cidades
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="space-y-4">
-              {dashboard.sales_by_region.map((region: any, index: number) => (
-                <div key={index} className="flex items-center justify-between">
-                  <div className="flex-1">
-                    <div className="text-white font-medium">
-                      {region.city} - {region.state}
-                    </div>
-                    <div className="text-xs text-gray-400">
-                      {region.orders} pedidos
-                    </div>
-                  </div>
-                  <div className="text-blue-400 font-semibold">
-                    R$ {region.revenue.toFixed(2)}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </CardContent>
-        </Card>
-      </div>
+      {/* Mapa de Vendas por Região */}
+      <SalesMap data={dashboard.sales_by_region} />
 
       {/* Lucro e Taxa de Plataforma */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
