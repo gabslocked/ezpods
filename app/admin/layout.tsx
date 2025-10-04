@@ -3,11 +3,11 @@
 import React, { useEffect } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 import { useAuth } from '@/hooks/use-auth'
-import { AdminSidebarNew } from '@/components/admin/admin-sidebar-new'
-import { AdminMobileMenuNew } from '@/components/admin/admin-mobile-menu-new'
+import { AdminSidebar } from '@/components/admin-sidebar'
+import { AdminMobileMenu } from '@/components/admin-mobile-menu'
 import { Loader2 } from 'lucide-react'
 
-export default function AdminLayoutNew({
+export default function AdminLayout({
   children,
 }: {
   children: React.ReactNode
@@ -51,20 +51,17 @@ export default function AdminLayoutNew({
   }
 
   return (
-    <div className="min-h-screen bg-gray-950 flex">
+    <div className="min-h-screen bg-gray-950">
       {/* Desktop Sidebar */}
-      <AdminSidebarNew />
+      <AdminSidebar />
 
       {/* Mobile Menu */}
-      <AdminMobileMenuNew />
+      <AdminMobileMenu />
 
-      {/* Main Content Area - Flexbox Layout */}
-      <div className="flex-1 flex flex-col lg:ml-72">
-        {/* Main Content */}
-        <main className="flex-1 pt-16 lg:pt-0 pb-16 lg:pb-0">
-          <div className="h-full">
-            {children}
-          </div>
+      {/* Main Content */}
+      <div className="lg:pl-72 pt-16 lg:pt-0">
+        <main className="min-h-screen flex flex-col">
+          {children}
         </main>
       </div>
     </div>
