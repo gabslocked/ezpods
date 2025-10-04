@@ -3,11 +3,11 @@
 import React, { useEffect } from 'react'
 import { useRouter, usePathname } from 'next/navigation'
 import { useAuth } from '@/hooks/use-auth'
-import { AdminSidebarNew } from '@/components/admin/admin-sidebar-new'
-import { AdminMobileMenuNew } from '@/components/admin/admin-mobile-menu-new'
+import { AdminSidebar } from '@/components/admin-sidebar'
+import { AdminMobileMenu } from '@/components/admin-mobile-menu'
 import { Loader2 } from 'lucide-react'
 
-export default function AdminLayoutNew({
+export default function AdminLayout({
   children,
 }: {
   children: React.ReactNode
@@ -31,18 +31,15 @@ export default function AdminLayoutNew({
   // Show loading while checking auth
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-950 flex items-center justify-center">
-        <div className="text-center">
-          <Loader2 className="h-12 w-12 animate-spin text-green-500 mx-auto mb-4" />
-          <p className="text-gray-400">Carregando painel administrativo...</p>
-        </div>
+      <div className="flex items-center justify-center min-h-screen bg-gray-950">
+        <Loader2 className="h-8 w-8 animate-spin text-green-500" />
       </div>
     )
   }
 
   // Allow login page without auth
   if (pathname === '/admin/login') {
-    return <div className="min-h-screen bg-gray-950">{children}</div>
+    return <div className="bg-gray-950 min-h-screen">{children}</div>
   }
 
   // Redirect non-admin users
@@ -51,20 +48,17 @@ export default function AdminLayoutNew({
   }
 
   return (
-    <div className="min-h-screen bg-gray-950 flex">
+    <div className="bg-gray-950 min-h-screen">
       {/* Desktop Sidebar */}
-      <AdminSidebarNew />
+      <AdminSidebar />
 
       {/* Mobile Menu */}
-      <AdminMobileMenuNew />
+      <AdminMobileMenu />
 
-      {/* Main Content Area - Flexbox Layout */}
-      <div className="flex-1 flex flex-col lg:ml-72">
-        {/* Main Content */}
-        <main className="flex-1 pt-16 lg:pt-0 pb-16 lg:pb-0">
-          <div className="h-full">
-            {children}
-          </div>
+      {/* Main Content */}
+      <div className="lg:pl-64 pt-16 lg:pt-0">
+        <main className="min-h-screen">
+          {children}
         </main>
       </div>
     </div>
