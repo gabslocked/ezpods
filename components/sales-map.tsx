@@ -1,35 +1,18 @@
 "use client"
 
-import React, { useEffect, useState } from 'react'
-import dynamic from 'next/dynamic'
+import React from 'react'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
+import dynamic from 'next/dynamic'
 
-// Importação dinâmica do mapa para evitar SSR
-const MapContainer = dynamic(
-  () => import('react-leaflet').then((mod) => mod.MapContainer),
-  { ssr: false }
-)
-const TileLayer = dynamic(
-  () => import('react-leaflet').then((mod) => mod.TileLayer),
-  { ssr: false }
-)
-const CircleMarker = dynamic(
-  () => import('react-leaflet').then((mod) => mod.CircleMarker),
-  { ssr: false }
-)
-const Popup = dynamic(
-  () => import('react-leaflet').then((mod) => mod.Popup),
-  { ssr: false }
-)
-
-interface SalesRegion {
-  city: string
-  state: string
-  orders: number
-  revenue: number
-  lat: number
-  lng: number
-}
+// Importação dinâmica para evitar SSR
+const MapComponent = dynamic(() => import('./sales-map-component'), {
+  ssr: false,
+  loading: () => (
+    <div className="h-[500px] flex items-center justify-center text-gray-400 bg-gray-900/50 rounded-lg border border-gray-700">
+      Carregando mapa...
+    </div>
+  )
+})
 
 // Coordenadas das principais cidades brasileiras
 const cityCoordinates: Record<string, { lat: number; lng: number }> = {
@@ -50,44 +33,6 @@ interface SalesMapProps {
 }
 
 export function SalesMap({ data }: SalesMapProps) {
-  const [mounted, setMounted] = useState(false)
-
-  useEffect(() => {
-    setMounted(true)
-  }, [])
-
-  if (!mounted) {
-    return (
-      <Card className="bg-gray-800/50 border-gray-600/30">
-        <CardHeader>
-          <CardTitle className="text-white">🗺️ Vendas por Região</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="h-[400px] flex items-center justify-center text-gray-400">
-            Carregando mapa...
-          </div>
-        </CardContent>
-      </Card>
-    )
-  }
-
-  // Adiciona coordenadas aos dados
-  const regionsWithCoords: SalesRegion[] = data
-    .map(region => ({
-      ...region,
-      lat: cityCoordinates[region.city]?.lat || 0,
-      lng: cityCoordinates[region.city]?.lng || 0,
-    }))
-    .filter(region => region.lat !== 0 && region.lng !== 0)
-
-  // Calcula o raio baseado na receita (maior receita = maior bolha)
-  const maxRevenue = Math.max(...regionsWithCoords.map(r => r.revenue))
-  const getRadius = (revenue: number) => {
-    const minRadius = 15
-    const maxRadius = 50
-    return minRadius + ((revenue / maxRevenue) * (maxRadius - minRadius))
-  }
-
   // Calcula cor baseada na quantidade de pedidos
   const getColor = (orders: number) => {
     if (orders >= 20) return '#10b981' // green-500
@@ -96,15 +41,24 @@ export function SalesMap({ data }: SalesMapProps) {
     return '#ef4444' // red-500
   }
 
+  // Adiciona coordenadas aos dados
+  const regionsWithCoords = data
+    .map(region => ({
+      ...region,
+      lat: cityCoordinates[region.city]?.lat || 0,
+      lng: cityCoordinates[region.city]?.lng || 0,
+    }))
+    .filter(region => region.lat !== 0 && region.lng !== 0)
+
   return (
     <Card className="bg-gray-800/50 border-gray-600/30">
       <CardHeader>
-        <CardTitle className="text-white flex items-center justify-between">
+        <CardTitle className="text-white flex items-center justify-between flex-wrap gap-2">
           <span>🗺️ Vendas por Região</span>
           <div className="flex items-center space-x-4 text-xs">
             <div className="flex items-center space-x-1">
               <div className="w-3 h-3 rounded-full bg-red-500"></div>
-              <span className="text-gray-400">{'<5 pedidos'}</span>
+              <span className="text-gray-400">{'<5'}</span>
             </div>
             <div className="flex items-center space-x-1">
               <div className="w-3 h-3 rounded-full bg-amber-500"></div>
@@ -122,57 +76,14 @@ export function SalesMap({ data }: SalesMapProps) {
         </CardTitle>
       </CardHeader>
       <CardContent>
-        <div className="h-[500px] rounded-lg overflow-hidden border border-gray-700">
-          <MapContainer
-            center={[-15.7801, -47.9292]} // Centro do Brasil
-            zoom={4}
-            style={{ height: '100%', width: '100%' }}
-            className="z-0"
-          >
-            <TileLayer
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-            />
-            {regionsWithCoords.map((region, index) => (
-              <CircleMarker
-                key={index}
-                center={[region.lat, region.lng]}
-                radius={getRadius(region.revenue)}
-                fillColor={getColor(region.orders)}
-                color="#fff"
-                weight={2}
-                opacity={0.8}
-                fillOpacity={0.6}
-              >
-                <Popup>
-                  <div className="text-sm">
-                    <div className="font-bold text-lg mb-1">
-                      {region.city} - {region.state}
-                    </div>
-                    <div className="space-y-1">
-                      <div>
-                        <span className="font-semibold">Pedidos:</span> {region.orders}
-                      </div>
-                      <div>
-                        <span className="font-semibold">Receita:</span> R$ {region.revenue.toFixed(2)}
-                      </div>
-                      <div className="text-xs text-gray-600 mt-2">
-                        Ticket médio: R$ {(region.revenue / region.orders).toFixed(2)}
-                      </div>
-                    </div>
-                  </div>
-                </Popup>
-              </CircleMarker>
-            ))}
-          </MapContainer>
-        </div>
+        <MapComponent data={data} />
         
         {/* Lista de regiões abaixo do mapa */}
-        <div className="mt-4 grid grid-cols-2 gap-2">
+        <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-2">
           {regionsWithCoords.slice(0, 10).map((region, index) => (
             <div
               key={index}
-              className="flex items-center justify-between p-2 bg-gray-900/50 rounded-lg border border-gray-700"
+              className="flex items-center justify-between p-2 bg-gray-900/50 rounded-lg border border-gray-700 hover:border-gray-600 transition-colors"
             >
               <div className="flex items-center space-x-2">
                 <div
