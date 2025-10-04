@@ -144,8 +144,8 @@ export async function GET(request: NextRequest) {
           COALESCE(SUM(o.total), 0) as total_revenue,
           COALESCE(SUM(oi.cost_price * oi.quantity), 0) as total_cost,
           COALESCE(SUM(o.total) - SUM(oi.cost_price * oi.quantity), 0) as gross_profit,
-          COALESCE(SUM(o.total) * 0.10, 0) as platform_fee,
-          COALESCE(SUM(o.total) - SUM(oi.cost_price * oi.quantity) - (SUM(o.total) * 0.10), 0) as net_profit
+          COALESCE(SUM(o.total) * 0.05, 0) as platform_fee,
+          COALESCE(SUM(o.total) - SUM(oi.cost_price * oi.quantity) - (SUM(o.total) * 0.05), 0) as net_profit
         FROM orders o
         LEFT JOIN order_items oi ON o.id = oi.order_id
         WHERE o.created_at >= DATE_TRUNC('month', CURRENT_DATE)
@@ -200,7 +200,7 @@ export async function GET(request: NextRequest) {
             total_cost: parseFloat(profitData.rows[0].total_cost),
             gross_profit: parseFloat(profitData.rows[0].gross_profit),
             platform_fee: parseFloat(profitData.rows[0].platform_fee),
-            platform_fee_rate: 10.0,
+            platform_fee_rate: 5.0,
             net_profit: parseFloat(profitData.rows[0].net_profit)
           }
         }

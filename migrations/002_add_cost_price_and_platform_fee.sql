@@ -31,8 +31,8 @@ CREATE TABLE IF NOT EXISTS platform_fees (
   total_cost DECIMAL(10,2) DEFAULT 0, -- Custo total dos produtos
   gross_profit DECIMAL(10,2) DEFAULT 0, -- Lucro bruto (revenue - cost)
   
-  -- Taxa de plataforma (10% do faturamento)
-  platform_fee_rate DECIMAL(5,2) DEFAULT 10.00, -- Percentual (10%)
+  -- Taxa de plataforma (5% do faturamento)
+  platform_fee_rate DECIMAL(5,2) DEFAULT 5.00, -- Percentual (5%)
   platform_fee_amount DECIMAL(10,2) DEFAULT 0, -- Valor da taxa
   
   -- Lucro líquido (após taxa de plataforma)
@@ -107,8 +107,8 @@ BEGIN
   -- Calcula lucro bruto
   v_gross_profit := v_total_revenue - v_total_cost;
   
-  -- Calcula taxa de plataforma (10% do faturamento)
-  v_platform_fee := v_total_revenue * 0.10;
+  -- Calcula taxa de plataforma (5% do faturamento)
+  v_platform_fee := v_total_revenue * 0.05;
   
   -- Calcula lucro líquido
   v_net_profit := v_gross_profit - v_platform_fee;

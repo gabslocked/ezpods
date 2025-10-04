@@ -326,7 +326,7 @@ export default function AdminDashboardPage() {
               R$ {dashboard.profit.net_profit.toFixed(2)}
             </div>
             <div className="text-xs text-red-400">
-              Taxa Plataforma (10%): -R$ {dashboard.profit.platform_fee.toFixed(2)}
+              Taxa Plataforma (5%): -R$ {dashboard.profit.platform_fee.toFixed(2)}
             </div>
           </CardContent>
         </Card>
